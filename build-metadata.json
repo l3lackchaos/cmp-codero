@@ -1,11 +1,11 @@
 {
-  "build_id": "e79720a7-e9ea-407d-a083-dcc847a9d329",
+  "build_id": "cdf96937-a973-427a-9a7c-8c7dfa5bdc0f",
   "site_id": "0414b5c2-2841-4f2e-81aa-ff2a6c5bf553",
   "tenant_id": "550e8400-e29b-41d4-a716-446655440001",
   "domain": "codero.site",
-  "completed_at": "2026-09-29T10:15:33.248195+00:00",
-  "total_pages": 21,
-  "built_pages": 21,
+  "completed_at": "2026-10-01T06:30:49.560233+00:00",
+  "total_pages": 22,
+  "built_pages": 22,
   "failed_pages": 0,
   "status": "completed"
 }

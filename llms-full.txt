@@ -4,6 +4,11 @@ This file contains the consolidated content of the codero.site website for LLM i
 
 ---
 
+## Page: Homepage
+<p>Homepage</p>
+
+---
+
 ## Page: Beachfront Land Plot Phuket
 Beachfront Land Plot Phuket
 
