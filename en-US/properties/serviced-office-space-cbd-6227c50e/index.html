@@ -513,37 +513,7 @@ body {
 <meta name="twitter:title" content="Serviced Office Space CBD">
 </head>
 <body>
-<title>Serviced Office Space CBD</title><main></main><span>f9095938-d848-4bec-91df-e843e9d79bd1</span><span>Property</span><span>Serviced Office Space CBD</span><span></span><span></span><span>Serviced Office Space CBD</span><span>serviced-office-space-cbd-6227c50e</span><span>/en-US/properties/serviced-office-space-cbd-6227c50e/</span><form id="form-a4f2feb1-4371-4238-b90f-8ab28729a211" data-form-id="a4f2feb1-4371-4238-b90f-8ab28729a211" novalidate class="uf-form">
-  <h2 class="form-title">Contact</h2>
-  
-
-  <div class="form-field form-field-text">
-  <label for="40b3b6b8-054d-458d-b8cc-91e94afd86c2" class="form-label">Name</label>
-  <input type="text" id="40b3b6b8-054d-458d-b8cc-91e94afd86c2" name="text_1" aria-invalid="false" class="form-input" />
-  
-</div>
-
-  <div class="form-field form-field-email">
-  <label for="dba103dd-5680-4eb3-b026-bf67dcfa6bb3" class="form-label">Email</label>
-  <input type="email" id="dba103dd-5680-4eb3-b026-bf67dcfa6bb3" name="email_0" aria-invalid="false" class="form-input" />
-  
-</div>
-
-  <div class="form-field form-field-textarea">
-  <label for="e0d2dab7-93e3-495c-8e01-fdbb81b8bf3d" class="form-label">Message</label>
-  <textarea id="e0d2dab7-93e3-495c-8e01-fdbb81b8bf3d" name="textarea_2" aria-invalid="false" class="form-textarea"></textarea>
-  
-</div>
-
-  <input type="hidden" name="formId" value="a4f2feb1-4371-4238-b90f-8ab28729a211" />
-  <input type="hidden" name="tenantId" value="" data-tenant-id />
-  <input type="hidden" name="siteId" value="" data-site-id />
-
-  
-  <div class="form-actions">
-    <button type="submit" class="form-submit">Submit</button>
-  </div>
-</form>
+<title>Serviced Office Space CBD</title><main></main><span>f9095938-d848-4bec-91df-e843e9d79bd1</span><span>Property</span><span>Serviced Office Space CBD</span><span></span><span></span><span>Serviced Office Space CBD</span><span>serviced-office-space-cbd-6227c50e</span><span>/en-US/properties/serviced-office-space-cbd-6227c50e/</span><form id="form-a4f2feb1-4371-4238-b90f-8ab28729a211" data-form-id="a4f2feb1-4371-4238-b90f-8ab28729a211" novalidate class="uf-form"><input type="hidden" id="job-id-field" name="jobId"><input type="hidden" id="sadang-sid-field" name="sadang_sid"><h2 class="form-title">Contact</h2><div class="form-field form-field-text"><label for="40b3b6b8-054d-458d-b8cc-91e94afd86c2" class="form-label">Name</label><input type="text" id="40b3b6b8-054d-458d-b8cc-91e94afd86c2" name="text_1" aria-invalid="false" class="form-input"/></div><div class="form-field form-field-email"><label for="dba103dd-5680-4eb3-b026-bf67dcfa6bb3" class="form-label">Email</label><input type="email" id="dba103dd-5680-4eb3-b026-bf67dcfa6bb3" name="email_0" aria-invalid="false" class="form-input"/></div><div class="form-field form-field-textarea"><label for="e0d2dab7-93e3-495c-8e01-fdbb81b8bf3d" class="form-label">Message</label><textarea id="e0d2dab7-93e3-495c-8e01-fdbb81b8bf3d" name="textarea_2" aria-invalid="false" class="form-textarea"></textarea></div><input type="hidden" name="formId" value="a4f2feb1-4371-4238-b90f-8ab28729a211"/><input type="hidden" name="tenantId" value="" data-tenant-id/><input type="hidden" name="siteId" value="" data-site-id/><div class="form-actions"><button type="submit" class="form-submit">Submit</button></div></form>
 <script type="text/javascript">
 <script src="https://cdn.uk.uforge.build/sadang/sadang-tracker.min.js" async data-sadang-id="tracker" data-config-url="https://cdn.uk.uforge.build/sadang/config/0414b5c2-2841-4f2e-81aa-ff2a6c5bf553.rules.json" data-allowed-origins="https://sdg.th.uforge.build"></script>
 
@@ -950,19 +920,19 @@ body {
         // Submit form data to the real public submission endpoint.
         // Payload shape must match PublicFormSubmissionData on the backend —
         // {formId, data, metadata, idempotencyKey} — not a flat body.
-        const response = await fetch('/public/forms/submit', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            formId: formIdValue,
-            data: data,
-            idempotencyKey: idempotencyKey,
-            metadata: {
-            }
-          })
-        });
+        //const response = await fetch('/public/forms/submit', {
+        //  method: 'POST',
+        //  headers: {
+        //    'Content-Type': 'application/json'
+        //  },
+        //  body: JSON.stringify({
+        //    formId: formIdValue,
+        //    data: data,
+        //    idempotencyKey: idempotencyKey,
+        //    metadata: {
+        //    }
+        //  })
+        // });
 
         const result = await response.json();
 
