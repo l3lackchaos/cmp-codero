@@ -2205,7 +2205,7 @@ Doncaster,<br/>DN4 6UE</p></div></div><div class="footer-bottom"><p>&copy; 2026 
         // Submit form data to the real public submission endpoint.
         // Payload shape must match PublicFormSubmissionData on the backend —
         // {formId, data, metadata, idempotencyKey} — not a flat body.
-        const response = await fetch('https://svc.uk.uforge.build/public/forms/submit', {
+        const response = await fetch('https://svc.uk.uforge.build/api/v1/submissions', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
