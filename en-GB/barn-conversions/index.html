@@ -743,87 +743,80 @@ nav a.active {
 }
 </style>
 <style type="text/css">
-* {
-  box-sizing: border-box;
+.nav-services a {
+    color: #d4ae5a;
 }
 
-body {
-  margin: 0;
+.nav-services .services-dropdown a {
+    color: #ffffffcc;
 }
 
-/* HERO */
-.hero {
-  min-height: 100vh;
+.nav-services .services-dropdown a:hover {
+    color: #d4ae5a;
+}
+
+.page-hero {
+  min-height: 52vh;
   background: linear-gradient(160deg, #4a0d18 0%, #7A1E30 100%);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   padding: 120px 48px 80px;
   position: relative;
   overflow: hidden;
 }
 
-.hero::before {
+.page-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: url(https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789361199819-lrjrcutkkd-PHOTO-2026-06-10-11-33-32_6.jpg) center/cover no-repeat;
-  opacity: 0.18;
+  background: url(https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362152090-xrfgugxq8oq-PHOTO-2026-06-10-11-49-07.jpg) center/cover no-repeat;
+  opacity: 0.45;
 }
 
-.hero-content {
+.page-hero-content {
   position: relative;
-  max-width: 720px;
+  max-width: 800px;
 }
 
-.hero-eyebrow {
-  display: inline-flex;
+.breadcrumb {
+  display: flex;
+  gap: 8px;
   align-items: center;
-  gap: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
   color: #D4AE5A;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 24px;
+  text-decoration: none;
 }
 
-.hero-eyebrow::before {
-  content: '';
-  display: block;
-  width: 32px;
-  height: 2px;
-  background: #B89040;
+.breadcrumb span {
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.hero-content h2 {
+.page-hero h2 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;
   color: #fff;
   line-height: 1.15;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   margin-top: 0px;
 }
 
-.hero-content h2 em {
+.page-hero h2 em {
   font-style: normal;
   color: #D4AE5A;
 }
 
-.hero-tagline {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.6);
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-.hero p {
+.page-hero p {
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.75);
-  max-width: 540px;
-  line-height: 1.8;
-  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.75;
+  margin-bottom: 32px;
   margin-top: 0px;
 }
 
@@ -831,17 +824,16 @@ body {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 56px;
 }
 
-.btn-gold {
+.btn-primary {
   background: #B89040;
   color: #fff;
-  padding: 16px 36px;
+  padding: 15px 32px;
   border-radius: 2px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
   transition: background 0.2s, transform 0.15s;
   display: flex;
   align-items: center;
@@ -850,19 +842,19 @@ body {
   height: fit-content;
 }
 
-.btn-gold:hover {
+.btn-primary:hover {
   background: #D4AE5A;
   transform: translateY(-1px);
 }
 
-.btn-ghost {
-  border: 2px solid rgba(255, 255, 255, 0.35);
+.btn-outline {
+  border: 2px solid rgba(255, 255, 255, 0.4);
   color: #fff;
-  padding: 14px 36px;
+  padding: 13px 32px;
   border-radius: 2px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.95rem;
   transition: border-color 0.2s;
   display: flex;
   align-items: center;
@@ -871,34 +863,12 @@ body {
   height: fit-content;
 }
 
-.btn-ghost:hover {
+.btn-outline:hover {
   border-color: #B89040;
 }
 
-.hero-stats {
-  display: flex;
-  gap: 48px;
-}
-
-.stat-num {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #D4AE5A;
-  line-height: 1;
-}
-
-.stat-label {
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 4px;
-}
-
-/* SECTIONS */
 section {
-  padding: 96px 48px;
+  padding: 88px 48px;
 }
 
 .section-inner {
@@ -928,229 +898,171 @@ section {
 
 .section-heading {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(1.75rem, 3vw, 2.6rem);
+  font-size: clamp(1.75rem, 3vw, 2.4rem);
   color: #6B1525;
   line-height: 1.2;
   margin-bottom: 20px;
   margin-top: 0px;
 }
 
-/* SERVICES GRID */
-.services-section {
-  background: #F5F0DC;
-}
-
-.services-grid {
+.content-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  margin-top: 56px;
-}
-
-.svc-card {
-  background: #fff;
-  padding: 40px 32px;
-  position: relative;
-  transition: box-shadow 0.2s;
-}
-
-.svc-card:hover {
-  box-shadow: 0 8px 32px rgba(107, 21, 37, 0.1);
-}
-
-.svc-num {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #F5F0DC;
-  line-height: 1;
-  margin-bottom: 20px;
-}
-
-.svc-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  color: #6B1525;
-  margin-bottom: 12px;
-}
-
-.svc-card p {
-  font-size: 0.9rem;
-  color: #7A6055;
-  line-height: 1.7;
-  margin-bottom: 24px;
-}
-
-.svc-link {
-  color: #B89040;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.svc-link:hover {
-  color: #6B1525;
-}
-
-/* ABOUT */
-.about-section {
-  background: #fff;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 80px;
-  align-items: center;
+  align-items: start;
 }
 
-.about-image img {
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  display: block;
-}
-
-.about-body p {
+.content-body p {
   color: #3D3530;
   font-size: 1rem;
   line-height: 1.85;
   margin-bottom: 20px;
 }
 
-.accreditations {
-  display: flex;
-  gap: 24px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.accred-badge {
-  background: #F5F0DC;
-  padding: 16px 24px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: #6B1525;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 53px;
-  height: fit-content;
-}
-
-/* PROJECTS */
-.projects-section {
-  background: #4a0d18;
-}
-
-.projects-section .section-heading {
-  color: #fff;
-}
-
-.projects-section .section-label {
-  color: #D4AE5A;
-}
-
-.projects-section .section-label::before {
-  background: #D4AE5A;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 56px;
-}
-
-.project-card {
-  position: relative;
-  overflow: hidden;
-}
-
-a.project-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.project-card img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s;
-}
-
-.project-card:hover img {
-  transform: scale(1.04);
-}
-
-.project-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 24px 20px 20px;
-  background: linear-gradient(to top, rgba(74, 13, 24, 0.9), transparent);
-}
-
-.project-caption h3 {
+.content-body h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  color: #fff;
-  margin-bottom: 4px;
+  font-size: 1.5rem;
+  color: #6B1525;
+  margin: 36px 0 16px;
 }
 
-.project-caption p {
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.6);
+.check-list {
+  list-style: none;
+  margin: 24px 0 32px;
+  padding-left: 0;
 }
 
-/* TESTIMONIALS */
-.testimonials-section {
-  background: #F5F0DC;
-}
-
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  margin-top: 56px;
-}
-
-.testimonial-card {
-  background: #fff;
-  padding: 36px 32px;
-}
-
-.testimonial-card p {
-  font-style: italic;
+.check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
   color: #3D3530;
-  font-size: 0.975rem;
-  line-height: 1.75;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
-.testimonial-card cite {
+.check-list li::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  background: #B89040;
+  margin-top: 2px;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.testimonial-pull {
+  background: #F5F0DC;
+  border-left: 4px solid #B89040;
+  padding: 28px 32px;
+  margin: 36px 0;
+}
+
+.testimonial-pull p {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #3D3530;
+  line-height: 1.75;
+  margin-bottom: 12px;
+  margin-top: 0px;
+}
+
+.testimonial-pull cite {
   font-style: normal;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: #6B1525;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
-.stars {
-  color: #B89040;
-  font-size: 0.9rem;
-  margin-bottom: 16px;
+.sidebar {
+  position: sticky;
+  top: 104px;
 }
 
-/* CTA BAND */
+.sidebar-card {
+  background: #F5F0DC;
+  padding: 36px 32px;
+  margin-bottom: 24px;
+}
+
+.sidebar-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #6B1525;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+
+.sidebar-card p {
+  font-size: 0.88rem;
+  color: #7A6055;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.sidebar-card a {
+  display: block;
+  color: #D4AE5A;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.sidebar-card a:hover {
+  color: #6B1525;
+}
+
+.call-card {
+  background: #4A0D18;
+  padding: 36px 32px;
+}
+
+.call-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 12px;
+  margin-top: 0px;
+}
+
+.call-card p {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 20px;
+}
+
+.call-card a.phone {
+  display: block;
+  color: #D4AE5A;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.gallery-section {
+  background: #F5F0DC;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
 .cta-section {
   background: #B89040;
   padding: 80px 48px;
@@ -1160,7 +1072,7 @@ a.project-card {
 .cta-section h2 {
   font-family: 'Playfair Display', serif;
   font-size: clamp(1.75rem, 3vw, 2.5rem);
-  color: #4a0d18;
+  color: #4A0D18;
   margin-bottom: 16px;
   margin-top: 0px;
 }
@@ -1180,7 +1092,7 @@ a.project-card {
 }
 
 .btn-dark {
-  background: #4a0d18;
+  background: #4A0D18;
   color: #fff;
   padding: 15px 32px;
   border-radius: 2px;
@@ -1190,17 +1102,17 @@ a.project-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 56px;
+  min-height: 55px;
   height: fit-content;
 }
 
 .btn-dark:hover {
-  background: #6b1525;
+  background: #6B1525;
 }
 
 .btn-white-outline {
   border: 2px solid rgba(74, 13, 24, 0.35);
-  color: #4a0d18;
+  color: #4A0D18;
   padding: 13px 32px;
   border-radius: 2px;
   text-decoration: none;
@@ -1209,7 +1121,7 @@ a.project-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 56px;
+  min-height: 55px;
   height: fit-content;
 }
 
@@ -1217,7 +1129,56 @@ a.project-card {
   background: rgba(74, 13, 24, 0.08);
 }
 
-/* CONTACT FORM */
+.related {
+  background: #fff;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.related-card {
+  border: 1px solid #EDE8DF;
+  padding: 32px 28px;
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.2s;
+}
+
+.related-card:hover {
+  border-color: #B89040;
+}
+
+.related-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: #6B1525;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.related-card p {
+  font-size: 0.88rem;
+  color: #7A6055;
+  line-height: 1.7;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.related-card span {
+  display: inline-block;
+  margin-top: 14px;
+  color: #B89040;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Contact Form */
 .contact-form-section {
   background: #fff;
   padding: 80px 48px;
@@ -1236,8 +1197,8 @@ a.project-card {
   font-family: 'Playfair Display', serif;
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   color: #6B1525;
-  margin-top: 0px;
   margin-bottom: 16px;
+  margin-top: 0px;
 }
 
 .contact-info p {
@@ -1364,33 +1325,29 @@ a.project-card {
 }
 
 @media (max-width: 900px) {
-  .hero {
-    padding: 100px 24px 64px;
+
+  .page-hero {
+    padding: 100px 24px 48px;
   }
 
   section {
     padding: 56px 24px;
   }
 
-  .services-grid {
-    grid-template-columns: 1fr;
-    gap: 2px;
-  }
-
-  .about-grid {
+  .content-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
-  .about-image img {
-    height: 280px;
+  .sidebar {
+    position: static;
   }
 
-  .projects-grid {
+  .gallery-grid {
     grid-template-columns: 1fr 1fr;
   }
 
-  .testimonials-grid {
+  .related-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1410,20 +1367,156 @@ a.project-card {
   .form-row {
     grid-template-columns: 1fr;
   }
+}
 
-  .hero-stats {
-    gap: 32px;
+/* ---- project gallery / lightbox ---- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  cursor: zoom-in;
+}
+
+.featured-image {
+  cursor: zoom-in;
+}
+
+.gallery-cta {
+  text-align: center;
+  margin-top: 34px;
+}
+
+.gallery-btn {
+  background: #B89040;
+  color: #fff;
+  border: none;
+  padding: 15px 34px;
+  font-family: 'Inter', sans-serif;
+  font-size: .95rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background .2s, transform .15s;
+}
+
+.gallery-btn:hover {
+  background: #D4AE5A;
+  transform: translateY(-1px);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(28, 6, 11, 0.95);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 88vw;
+  max-height: 80vh;
+  object-fit: contain;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, .55);
+}
+
+.lb-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, .5);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .65);
+  width: 58px;
+  height: 58px;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background .2s, transform .15s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lb-nav:active {
+  transform: translateY(-50%) scale(0.94);
+}
+
+.lb-prev {
+  left: 24px;
+}
+
+.lb-next {
+  right: 24px;
+}
+
+.lb-close {
+  position: absolute;
+  top: 22px;
+  right: 28px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.6rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: .85;
+}
+
+.lb-close:hover {
+  opacity: 1;
+}
+
+.lb-count {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, .85);
+  font-size: .8rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 600px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+@media (max-width:600px) {
+  .lb-nav {
+    width: 46px;
+    height: 46px;
+    font-size: 1.5rem;
   }
 
-  .hero-stats {
-    flex-wrap: wrap;
-    gap: 24px;
+  .lb-prev {
+    left: 8px;
+  }
+
+  .lb-next {
+    right: 8px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>
@@ -1695,58 +1788,62 @@ html { font-size: calc(1rem * var(--cmp-font-scale, 1)); }</style>
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Home",
+  "name": "Barn Conversions",
   "description": "",
-  "url": "/en-GB/"
+  "url": "/en-GB/barn-conversions/"
 }
 </script>
-<meta property="og:title" content="Home">
+<meta property="og:title" content="Barn Conversions">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Home">
-<link rel="canonical" href="https://lpmullen.netlify.app/en-GB/">
+<meta name="twitter:title" content="Barn Conversions">
 </head>
 <body>
 <header><div class="header-logo"><a href="/"><img src="
 https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/upload/1789374834212-o15etsr28t-logo.png
 " alt="L+P Mullen Construction"/></a></div><nav><a href="/">Home</a><a href="/#about">About</a><div class="nav-services"><a href="#">Services &#9662;</a><div class="services-dropdown"><a href="/en-GB/new-build-doncaster">New Build</a><a href="/en-GB/barn-conversions">Barn Conversions</a><a href="/en-GB/conservation-south-yorkshire">Conservation &amp; Heritage</a><a href="/en-GB/#svc-design-build">Design &amp; Build</a><a href="/en-GB/oak-frame">Oak Frame</a><a href="/en-GB/commercial">Commercial</a><a href="/en-GB/sustainable-extension">Sustainable Extensions</a><a href="/en-GB/extensions-doncaster">House Extensions</a><a href="/#svc-disability">Disability Access</a></div></div><a href="/#projects">Our Work</a><a href="#enquire">Contact</a><a href="#enquire" class="header-cta">Request a Quote</a></nav><div class="header-contact"><a href="tel:07961069102">Paul: 07961 069102</a><a href="tel:07931390723">Lee: 07931 390723</a></div><button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button></header>
-<section id="home" class="hero"><div class="hero-content"><div class="hero-eyebrow">Doncaster &amp; South Yorkshire</div><h2>Trusted Builders in<br><em>Doncaster &amp; South Yorkshire</em></h2><p class="hero-tagline">Quality Building Work, Crafted to Last</p><p>Experienced builders delivering reliable construction, renovations and property improvements with care,
-precision and pride.</p><div class="hero-btns"><a href="#enquire" class="btn-gold">Request a Free Quote</a><a href="#about" class="btn-ghost">About L+P Mullen</a></div><div class="hero-stats"><div class="stat"><div class="stat-num">50+</div><div class="stat-label">Years Experience</div></div><div class="stat"><div class="stat-num">Family</div><div class="stat-label">Run Business</div></div><div class="stat"><div class="stat-num">100%</div><div class="stat-label">Referral Built</div></div></div></div></section><section id="services" class="services-section"><div class="section-inner"><div class="section-label">What We Do</div><h2 class="section-heading">Our Services</h2><div class="services-grid"><div id="svc-new-build" class="svc-card"><div class="svc-num">01</div><h3>New Build Homes</h3><p>Bespoke new builds for private clients in Doncaster and South Yorkshire. Every project gets the personal
-attention of Lee and Paul directly.</p><a href="/new-build-doncaster" class="svc-link">Find out more →</a></div><div id="svc-barn" class="svc-card"><div class="svc-num">02</div><h3>Barn Conversions</h3><p>Agricultural and barn buildings transformed into exceptional homes, using traditional materials and methods
-with real craftsmanship.</p><a href="/barn-conversions" class="svc-link">Find out more →</a></div><div id="svc-conservation" class="svc-card"><div class="svc-num">03</div><h3>Conservation &amp; Heritage</h3><p>Specialist restoration of listed buildings and heritage structures across South Yorkshire using traditional
-lime and stonework.</p><a href="/conservation-south-yorkshire" class="svc-link">Find out more →</a></div><div id="svc-design-build" class="svc-card"><div class="svc-num">04</div><h3>Design &amp; Build</h3><p>We work with architects and designers to take projects from initial concept all the way through to a
-finished, signed-off build.</p><a href="#contact" class="svc-link">Enquire →</a></div><div id="svc-oak-frame" class="svc-card"><div class="svc-num">05</div><h3>Oak Frame</h3><p>Beautifully crafted oak frame structures from garden buildings and garages to full oak frame home
-extensions and new builds.</p><a href="/oak-frame" class="svc-link">Find out more →</a></div><div id="svc-commercial" class="svc-card"><div class="svc-num">06</div><h3>Commercial</h3><p>Commercial construction and fit-out across South Yorkshire offices, retail, industrial and mixed-use
-projects delivered to a high standard.</p><a href="/commercial" class="svc-link">Find out more →</a></div><div id="svc-sustainable" class="svc-card"><div class="svc-num">07</div><h3>Sustainable Extensions</h3><p>Energy-efficient extensions built with sustainable materials and methods reducing environmental impact
-without compromising on quality.</p><a href="/sustainable-extension" class="svc-link">Find out more →</a></div><div id="svc-extensions" class="svc-card"><div class="svc-num">08</div><h3>House Extensions</h3><p>Single and double storey extensions designed and built to the highest standard from initial design
-through to final fit-out.</p><a href="/extensions-doncaster" class="svc-link">Find out more →</a></div><div id="svc-disability" class="svc-card"><div class="svc-num">09</div><h3>Disability Access</h3><p>Thoughtful adaptations and conversions to improve accessibility wet rooms, ramps, stairlifts, widened
-doorways and more.</p><a href="#contact" class="svc-link">Enquire →</a></div></div></div></section><section id="about" class="about-section"><div class="section-inner"><div class="about-grid"><div class="about-image"><img src="
-https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789361744212-26uawweas9t-PHOTO-2026-06-10-11-41-08.jpg
-" alt="L+P Mullen — quality building work"></div><div class="about-body"><div class="section-label">About Us</div><h2 class="section-heading">A Family Business Built on Reputation</h2><p>L+P Mullen Construction Ltd is a family-run building contractor based in Doncaster, South Yorkshire.
-Brothers Lee and Paul Mullen bring over fifty years' combined experience to every project and in that
-time, they have built a reputation founded entirely on the quality of their work and the trust of the people
-they work for.</p><p>Lee and Paul lead every project personally, from the first site visit through to handover. For structural
-and general construction works, we have our own experienced team. Where specialist skills are called for
-plastering, electrics, plumbing, joinery and the like we bring in trusted tradespeople we have worked
-closely alongside for many years. These are craftspeople whose quality we know inside out and are proud to
-put our name to.</p><p>Our diary is kept busy almost entirely through referrals from previous clients. That's the only measure of
-quality that really matters to us.</p><div class="accreditations"><div class="accred-badge">Builders of Excellence Award Nominee</div><div class="accred-badge">50+ Years Combined Experience</div></div></div></div></div></section><section id="projects" class="projects-section"><div class="section-inner"><div class="section-label">Our Work</div><h2 class="section-heading">Recent Projects</h2><div class="projects-grid"><a href="/new-build-doncaster" class="project-card"><img src="
-https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789361738944-kfgo4mu4aa-PHOTO-2026-06-10-11-30-49.jpg
-" alt="New build home, South Yorkshire"><div class="project-caption"><h3>New Build Home</h3><p>South Yorkshire</p></div></a><a href="/extensions-doncaster" class="project-card"><img src="
-https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362082045-9gsu8vrvsf-PHOTO-2026-06-10-11-39-38.jpg
-" alt="House extension, Doncaster"><div class="project-caption"><h3>House Extension</h3><p>Doncaster</p></div></a><a href="/oak-frame" class="project-card"><img src="
-https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789361692894-tw63194db9-PHOTO-2026-06-10-11-27-56.jpg
-" alt="Oak frame building"><div class="project-caption"><h3>Oak Frame Build</h3><p>South Yorkshire</p></div></a><a href="/new-build-doncaster" class="project-card"><img src="
-https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789361740069-14l4erzyf3a-PHOTO-2026-06-10-11-33-32.jpg
-" alt="New build, Doncaster"><div class="project-caption"><h3>New Build Home</h3><p>Doncaster</p></div></a><a href="/barn-conversions" class="project-card"><img src="
-https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362152090-xrfgugxq8oq-PHOTO-2026-06-10-11-49-07.jpg
-" alt="Barn conversion"><div class="project-caption"><h3>Barn Conversion</h3><p>South Yorkshire</p></div></a><a href="/extensions-doncaster" class="project-card"><img src="
-https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362082578-2b5fqui4xut-PHOTO-2026-06-10-11-39-38_1.jpg
-" alt="Extension project"><div class="project-caption"><h3>House Extension</h3><p>South Yorkshire</p></div></a></div></div></section><section class="testimonials-section"><div class="section-inner"><div class="section-label">What Clients Say</div><h2 class="section-heading">Built on Referrals &amp; Reputation</h2><div class="testimonials-grid"><div class="testimonial-card"><div class="stars">★★★★★</div><p>"Their work is of a fantastic quality and high standard. We couldn't be more pleased with the result."</p><cite>Mr &amp; Mrs K Hoy - Barn Conversion, North Wheatley, Retford</cite></div><div class="testimonial-card"><div class="stars">★★★★★</div><p>"L+P Mullen transformed our derelict barn into a beautiful home. Professional, skilled and a pleasure to
-work with throughout."</p><cite>Client - South Yorkshire</cite></div><div class="testimonial-card"><div class="stars">★★★★★</div><p>"We had complete confidence in Lee and Paul from day one. They delivered exactly what they promised, on
-time and to an exceptional standard."</p><cite>Client - Doncaster</cite></div></div></div></section><section class="cta-section"><div class="section-inner"><h2>Ready to Start Your Project?</h2><p>Call Lee or Paul for a free, no-obligation discussion about your build. We cover Doncaster, South Yorkshire and
-surrounding areas.</p><div class="cta-buttons"><a href="tel:07961069102" class="btn-dark">Call Paul: 07961 069102</a><a href="tel:07931390723" class="btn-white-outline">Call Lee: 07931 390723</a></div></div></section><section id="enquire" class="contact-form-section"><div class="section-inner"><div class="contact-info"><div class="section-label">Get in Touch</div><h2>Let's Talk About Your Project</h2><p>Whether you have detailed plans or just an idea, we're happy to discuss what's possible. Fill in the form and
-we'll get back to you.</p><p>Prefer to speak directly? Lee and Paul are always happy to take a call.</p>
+<div class="page-hero"><div class="page-hero-content"><div class="breadcrumb"><a href="/">Home</a><span>›</span><span>Barn Conversions South Yorkshire</span></div><h2>Barn Conversions in<br/><em>South Yorkshire &amp; Beyond</em></h2><p>Turning derelict and agricultural buildings into exceptional homes with the craft, care and experience the work demands.</p><div class="hero-btns"><a href="#enquire" class="btn-primary">Request a Free Quote</a><a href="tel:07961069102" class="btn-outline">Call Us Today</a></div></div></div><section><div class="section-inner"><div class="content-grid"><div class="content-body"><div class="section-label">Barn Conversions South Yorkshire</div><h2 class="section-heading">Barn Conversions in South Yorkshire &amp; Beyond</h2><p>Converting a barn into a home requires genuine craft the kind that comes from decades of working with
+traditional materials, understanding old structures, and knowing when to preserve and when to rebuild. At
+L+P Mullen, barn and agricultural building conversions are work we have done for many years, and work we are
+proud to put our name to.</p><div class="testimonial-pull"><p>"Their work is of a fantastic quality and high standard. We couldn't be more pleased with the result."
+</p><cite>Mr &amp; Mrs K Hoy - Barn Conversion, North Wheatley, Retford</cite></div><h2>What's Involved in a Barn Conversion?</h2><p>Every barn conversion is different. Some require careful structural intervention to make an old building
+sound and watertight. Others involve sensitive planning negotiations with local conservation officers or the
+council's heritage team. We have experience with all of it working in South Yorkshire, Nottinghamshire,
+and the surrounding areas.</p><p>We manage the entire process: structural surveys, planning applications, building regulations, all trades,
+and final fit-out. You have one point of contact throughout Lee or Paul directly.</p><h2>Planning Permission for Barn Conversions</h2><p>Many agricultural buildings can be converted under Permitted Development rights or through a prior approval
+process. Where full planning permission is required, we have established relationships with local planners
+and architects across South Yorkshire and Nottinghamshire to help navigate the process efficiently.</p><ul class="check-list"><li>Full barn and agricultural building conversions</li><li>Structural assessment and repair</li><li>Traditional lime mortar and stonework</li><li>Planning applications and prior approval</li><li>Liaison with conservation officers</li><li>Full fit-out to the highest specification</li></ul></div><div class="sidebar"><div class="sidebar-card"><h3>Other Services</h3><a href="/new-build-doncaster">New Build - Doncaster &#8594;</a><a href="/extensions-doncaster">House Extensions &#8594;</a><a href="/barn-conversions">Barn Conversions &#8594;</a><a href="/conservation-south-yorkshire">Conservation &amp; Heritage &#8594;</a><a href="/#svc-design-build">Design &amp; Build &#8594;</a><a href="/#svc-disability">Disability Access &#8594;</a></div><div class="call-card"><h3>Get a Free Quote</h3><p>Whether you have plans drawn up or just an idea, we're happy to talk it through at no obligation.</p><a href="tel:07961069102" class="phone">Paul: 07961 069102</a><a href="tel:07931390723" class="phone">Lee: 07931 390723</a></div></div></div></div></section><section class="gallery-section"><div class="section-inner"><div class="section-label">Our Work</div><h2 class="section-heading">Recent Projects</h2><div class="gallery-grid"><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362152639-9pu33clstr4-PHOTO-2026-06-10-11-49-07_1.jpg
+" alt="Barn conversion 1"/><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362154721-w50gq51jvse-PHOTO-2026-06-10-11-49-08_4.jpg
+" alt="Barn conversion 2"/><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362155265-724i6r8usi-PHOTO-2026-06-10-11-49-08_5.jpg
+" alt="Barn conversion 3"/><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362155836-masvj9eai9-PHOTO-2026-06-10-11-49-08_6.jpg
+" alt="Barn conversion 4"/><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362156886-z20rzzxpckn-PHOTO-2026-06-10-11-49-08_8.jpg
+" alt="Barn conversion 5"/><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362157226-u1u5ai9ojk-PHOTO-2026-06-10-11-49-08_9.jpg
+" alt="Barn conversion 6"/></div><div class="gallery-cta"><button id="gallery-btn" class="gallery-btn" type="button">View Full Gallery
+&#8594;</button></div><div id="gallery-src" style="display:none;"><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362152639-9pu33clstr4-PHOTO-2026-06-10-11-49-07_1.jpg
+" alt="Barn conversion"><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362154721-w50gq51jvse-PHOTO-2026-06-10-11-49-08_4.jpg
+" alt="Barn conversion"><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362155265-724i6r8usi-PHOTO-2026-06-10-11-49-08_5.jpg
+" alt="Barn conversion"><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362155836-masvj9eai9-PHOTO-2026-06-10-11-49-08_6.jpg
+" alt="Barn conversion"><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362156886-z20rzzxpckn-PHOTO-2026-06-10-11-49-08_8.jpg
+" alt="Barn conversion"><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789362157226-u1u5ai9ojk-PHOTO-2026-06-10-11-49-08_9.jpg
+" alt="Barn conversion"><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789455592455-7kgfj6811gj-PHOTO-2026-07-29-11-19-19_1.jpg
+" alt="Barn conversion"><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789455592990-hdyy8psilp-PHOTO-2026-07-29-11-19-19_2.jpg
+" alt="Barn conversion"><img src="
+https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/1789455593509-wp2palnx31i-PHOTO-2026-07-29-11-19-19_4.jpg
+" alt="Barn conversion"></div></div></section><div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Project gallery"><button id="lb-close" class="lb-close" aria-label="Close gallery">&times;</button><button id="lb-prev" class="lb-nav lb-prev" aria-label="Previous photo"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 600 960" width="20px" fill="#ffffff"><path d="M426.67-53.33 0-480l426.67-426.67 87.66 88.34L176-480l338.33 338.33-87.66 88.34Z"/></svg></button><img id="lb-img" src="" alt="Project photo"/><button id="lb-next" class="lb-nav lb-next" aria-label="Next photo"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 800 960" width="20px" fill="#ffffff"><path d="M309.67-54.67 222-143l338.33-338.33L222-819.67 309.67-908l426.66 426.67L309.67-54.67Z"/></svg></button><div id="lb-count" class="lb-count"></div></div><section class="cta-section" id="contact"><div class="section-inner"><h2>Thinking About a Barn Conversion?</h2><p>Talk to Lee or Paul about your project. We work across South Yorkshire, Nottinghamshire and the surrounding areas.</p><div class="cta-buttons"><a href="tel:07961069102" class="btn-dark">Call Paul: 07961 069102</a><a href="tel:07931390723" class="btn-white-outline">Call Lee: 07931 390723</a></div></div></section><section class="contact-form-section" id="enquire"><div class="section-inner"><div class="contact-info"><div class="section-label">Get in Touch</div><h2>Let's Talk About Your Project</h2><p>Whether you have detailed plans or just an idea, we're happy to discuss what's possible. Fill in the form and we'll get back to you.</p><p>Prefer to speak directly? Lee and Paul are always happy to take a call.</p>
 <div class="contact-detail"><a href="tel:07961069102"><span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 13 19.79 19.79 0 0 1 1.27 4.4 2 2 0 0 1 3.24 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 17z"></path></svg></span>
 Paul: 07961 069102
 </a><a href="tel:07931390723"><span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 13 19.79 19.79 0 0 1 1.27 4.4 2 2 0 0 1 3.24 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 17z"></path></svg></span>
@@ -1812,10 +1909,31 @@ info@landpmullen.co.uk
   <div class="form-actions">
     <button type="submit" class="form-submit">Submit</button>
   </div>
-</form> </div></div></section>
+</form> </div></div></section><section class="related"><div class="section-inner"><div class="section-label">More Services</div><h2 class="section-heading">You Might Also Be Interested In</h2><div class="related-grid"><a href="/extensions-doncaster" class="related-card"><h3>House Extensions</h3><p>Single and double storey extensions designed and built to the highest standard across Doncaster.</p><span>Find out more &#8594;</span></a><a href="/new-build-doncaster" class="related-card"><h3>New Build Homes</h3><p>Bespoke new builds in Doncaster and South Yorkshire, combining traditional craft with contemporary design.</p><span>Find out more &#8594;</span></a><a href="/conservation-south-yorkshire" class="related-card"><h3>Conservation &amp; Heritage</h3><p>Sensitive restoration of listed buildings and heritage properties across South Yorkshire.</p><span>Find out more &#8594;</span></a></div></div></section>
 <footer><div class="footer-grid"><div class="footer-brand"><img src="https://cdn.uk.uforge.build/public/9bbfa7c1-49b3-454f-bd0e-5fedc467855a/4f44d610-6111-4dd3-b605-23912fa12888/snap1/upload/upload/1789374834212-o15etsr28t-logo.png" alt="L+P Mullen"/><p>A family-run building contractor with over fifty years' combined experience. Based in Doncaster, serving
 South Yorkshire and beyond.</p></div><div class="footer-col"><h4>Services</h4><a href="new-build-doncaster.html">New Build</a><a href="barn-conversions.html">Barn Conversions</a><a href="conservation-south-yorkshire.html">Conservation &amp; Heritage</a><a href="#svc-design-build">Design &amp; Build</a><a href="oak-frame.html">Oak Frame</a><a href="commercial.html">Commercial</a><a href="sustainable-extension.html">Sustainable Extensions</a><a href="extensions-doncaster.html">House Extensions</a><a href="#svc-disability">Disability Access</a></div><div class="footer-col"><h4>Company</h4><a href="#about">About Us</a><a href="#projects">Our Work</a><div style="display:flex;gap:10px;margin-top:14px;"><a href="https://www.facebook.com/LPMullenBuildingContractors/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(255,255,255,0.18);border-radius:4px;color:#D4AE5A;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H17V3.6c-.3-.04-1.3-.13-2.46-.13-2.43 0-4.09 1.48-4.09 4.21v2.35H7.7V13h2.75v8h3.05z"/></svg></a><a href="https://www.youtube.com/@l%26pmullen" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(255,255,255,0.18);border-radius:4px;color:#D4AE5A;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.16-.4-4.67a2.5 2.5 0 0 0-1.75-1.77C19.34 5.16 12 5.16 12 5.16s-7.34 0-8.85.4A2.5 2.5 0 0 0 1.4 7.33C1 8.84 1 12 1 12s0 3.16.4 4.67a2.5 2.5 0 0 0 1.75 1.77c1.51.4 8.85.4 8.85.4s7.34 0 8.85-.4a2.5 2.5 0 0 0 1.75-1.77C23 15.16 23 12 23 12zM9.75 15.5v-7L15.5 12l-5.75 3.5z"/></svg></a></div></div><div class="footer-col"><h4>Contact</h4><p>Paul: <a href="tel:07961069102">07961 069102</a></p><p style="margin-top:8px">Lee: <a href="tel:07931390723">07931 390723</a></p><p style="margin-top:16px; font-size:0.8rem; color:rgba(255,255,255,0.4);">9 Stretton Close,<br/>Cantley,
 Doncaster,<br/>DN4 6UE</p></div></div><div class="footer-bottom"><p>&copy; 2026 L+P Mullen Construction Ltd. All rights reserved.</p><p>Doncaster &middot; South Yorkshire</p></div></footer>
+<script type="text/javascript">
+(function () {
+      var srcEls = document.querySelectorAll('#gallery-src img'); if (!srcEls.length) return;
+      var src = Array.prototype.map.call(srcEls, function (i) { return i.getAttribute('src'); });
+      var lb = document.getElementById('lightbox'); if (!lb) return;
+      var img = document.getElementById('lb-img'), count = document.getElementById('lb-count'), idx = 0;
+      function show(i) { idx = (i + src.length) % src.length; img.src = src[idx]; count.textContent = (idx + 1) + ' / ' + src.length; }
+      function open(i) { show(i); lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      function close() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+      var gb = document.getElementById('gallery-btn'); if (gb) gb.addEventListener('click', function () { open(0); });
+      Array.prototype.forEach.call(document.querySelectorAll('.gallery-grid img, .featured-image'), function (im, i) { im.addEventListener('click', function () { open(i); }); });
+      document.getElementById('lb-next').addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+      document.getElementById('lb-prev').addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+      document.getElementById('lb-close').addEventListener('click', close);
+      lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+      document.addEventListener('keydown', function (e) { if (!lb.classList.contains('open')) return; if (e.key === 'Escape') close(); else if (e.key === 'ArrowRight') show(idx + 1); else if (e.key === 'ArrowLeft') show(idx - 1); });
+      var sx = null, sy = null;
+      lb.addEventListener('touchstart', function (e) { var tt = e.changedTouches[0]; sx = tt.clientX; sy = tt.clientY; }, { passive: true });
+      lb.addEventListener('touchend', function (e) { if (sx === null) return; var tt = e.changedTouches[0], dx = tt.clientX - sx, dy = tt.clientY - sy; if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { show(dx < 0 ? idx + 1 : idx - 1); } sx = null; sy = null; }, { passive: true });
+    })();
+</script>
 <script type="text/javascript" data-source="components">
 (function() {
   'use strict';

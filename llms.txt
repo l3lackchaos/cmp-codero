@@ -1,25 +1,17 @@
-# codero.site
-> Intelligent digital systems and tailored solutions by codero.site.
+# lpmullen.netlify.app
+> Intelligent digital systems and tailored solutions by lpmullen.netlify.app.
 
 ## Core Pages
-- [Cozy Suburban Family Home](/en-US/properties/cozy-suburban-family-home-624df30c/): Core page for codero.site.
 
 ## More Content
-- [Homepage](/en-US/)
-- [Beachfront Land Plot Phuket](/en-US/properties/beachfront-land-plot-phuket-ac9ae79b/)
-- [Chic City Townhouse](/en-US/properties/chic-city-townhouse-7b0e4656/)
-- [Compact Studio Near BTS](/en-US/properties/compact-studio-near-bts-ad7ead98/)
-- [Downtown Retail Storefront](/en-US/properties/downtown-retail-storefront-0249a55f/)
-- [Executive Penthouse Suite](/en-US/properties/executive-penthouse-suite-b057d8d1/)
-- [Family Townhouse With Garage](/en-US/properties/family-townhouse-with-garage-f9823332/)
-- [Garden View Condo Chiang Mai](/en-US/properties/garden-view-condo-chiang-mai-dff0c7ab/)
-- [Hillside Development Land](/en-US/properties/hillside-development-land-d5256b9b/)
-- [Historic Brownstone Duplex](/en-US/properties/historic-brownstone-duplex-3d1da331/)
-- [Industrial Warehouse Unit](/en-US/properties/industrial-warehouse-unit-dd3f36bb/)
-- [Lakefront Retreat Cabin](/en-US/properties/lakefront-retreat-cabin-e11cbffc/)
-- [Modern Downtown Condo](/en-US/properties/modern-downtown-condo-2f067291/)
-- [Modern Loft Conversion](/en-US/properties/modern-loft-conversion-558e84f6/)
-- [Pool Villa Hua Hin](/en-US/properties/pool-villa-hua-hin-e74ab130/)
+- [Home](/en-GB/)
+- [Barn Conversions](/en-GB/barn-conversions/)
+- [Commercial](/en-GB/commercial/)
+- [Heritage & Conservation Restoration](/en-GB/conservation-south-yorkshire/)
+- [House Extensions](/en-GB/extensions-doncaster/)
+- [New Build](/en-GB/new-build-doncaster/)
+- [Oak Frame](/en-GB/oak-frame/)
+- [Sustainable Extensions](/en-GB/sustainable-extension/)
 
 ## Essential Files
 - [Sitemap](/sitemap.xml): XML sitemap for all pages.

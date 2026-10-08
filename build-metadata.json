@@ -1,11 +1,11 @@
 {
-  "build_id": "f96731b5-6cb2-430f-8cf2-8f59c8e65441",
-  "site_id": "0414b5c2-2841-4f2e-81aa-ff2a6c5bf553",
-  "tenant_id": "550e8400-e29b-41d4-a716-446655440001",
-  "domain": "codero.site",
-  "completed_at": "2026-10-08T04:10:54.071596+00:00",
-  "total_pages": 22,
-  "built_pages": 22,
+  "build_id": "561f41b1-dc68-4f10-a426-61adc68f7665",
+  "site_id": "4f44d610-6111-4dd3-b605-23912fa12888",
+  "tenant_id": "9bbfa7c1-49b3-454f-bd0e-5fedc467855a",
+  "domain": "lpmullen.netlify.app",
+  "completed_at": "2026-10-07T10:56:47.814867+00:00",
+  "total_pages": 8,
+  "built_pages": 8,
   "failed_pages": 0,
   "status": "completed"
 }

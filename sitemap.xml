@@ -1,134 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://codero.site/en-US/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://lpmullen.netlify.app/en-GB/</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://codero.site/en-US/properties/beachfront-land-plot-phuket-ac9ae79b/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://lpmullen.netlify.app/en-GB/barn-conversions/</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://codero.site/en-US/properties/chic-city-townhouse-7b0e4656/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://lpmullen.netlify.app/en-GB/commercial/</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://codero.site/en-US/properties/compact-studio-near-bts-ad7ead98/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://lpmullen.netlify.app/en-GB/conservation-south-yorkshire/</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://codero.site/en-US/properties/cozy-suburban-family-home-624df30c/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://lpmullen.netlify.app/en-GB/extensions-doncaster/</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://codero.site/en-US/properties/downtown-retail-storefront-0249a55f/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://lpmullen.netlify.app/en-GB/new-build-doncaster/</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://codero.site/en-US/properties/executive-penthouse-suite-b057d8d1/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://lpmullen.netlify.app/en-GB/oak-frame/</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://codero.site/en-US/properties/family-townhouse-with-garage-f9823332/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/garden-view-condo-chiang-mai-dff0c7ab/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/hillside-development-land-d5256b9b/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/historic-brownstone-duplex-3d1da331/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/industrial-warehouse-unit-dd3f36bb/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/lakefront-retreat-cabin-e11cbffc/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/modern-downtown-condo-2f067291/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/modern-loft-conversion-558e84f6/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/pool-villa-hua-hin-e74ab130/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/quiet-cul-de-sac-house-51ee3e4f/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/riverside-luxury-villa-fe8765ad/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/seaview-villa-koh-samui-a484421e/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/serviced-office-space-cbd-6227c50e/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/suburban-investment-duplex-db9d717e/</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/properties/sukhumvit-high-rise-apartment-99e129f9/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://lpmullen.netlify.app/en-GB/sustainable-extension/</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

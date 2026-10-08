@@ -1,0 +1,268 @@
+{
+  "dni": {
+    "enabled": false,
+    "selector": "a[href^='tel:'], [data-sadang-dni]",
+    "number_map": {},
+    "cache_ttl_ms": 86400000,
+    "fallback_number": "",
+    "consent_required": "analytics"
+  },
+  "events": {
+    "allowed_event_types": [
+      "page_view",
+      "form_submit",
+      "click_phone",
+      "click_email",
+      "click_social",
+      "click_add_to_cart",
+      "click_checkout",
+      "scroll_depth",
+      "chat_conversion",
+      "listing_view",
+      "application_submit",
+      "form_analytics_submit",
+      "form_analytics_abandon",
+      "js_error",
+      "ecommerce_purchase"
+    ]
+  },
+  "heatmap": {
+    "enabled": true,
+    "move_enabled": true,
+    "click_enabled": true,
+    "scroll_enabled": true,
+    "click_throttle_ms": 0,
+    "move_batch_max_size": 50,
+    "scroll_throttle_ms": 2000,
+    "move_batch_interval_ms": 2000,
+    "move_sample_interval_ms": 100
+  },
+  "batching": {
+    "enabled": true,
+    "max_buffer_size": 10,
+    "flush_interval_ms": 3000
+  },
+  "site_id": "4f44d610-6111-4dd3-b605-23912fa12888",
+  "ecommerce": {
+    "enabled": true,
+    "providers": [
+      "gtm"
+    ],
+    "item_ref_source": {
+      "type": "both",
+      "meta_item_ref": "ff:item-ref",
+      "meta_variation": "ff:item-variation",
+      "jsonld_item_ref_path": "sku",
+      "jsonld_variation_path": "variant"
+    },
+    "purchase_event": "purchase",
+    "consent_required": "analytics"
+  },
+  "rage_click": {
+    "enabled": true,
+    "time_window_ms": 1000,
+    "click_threshold": 3,
+    "consent_required": "analytics",
+    "proximity_radius_px": 0
+  },
+  "web_vitals": {
+    "enabled": true,
+    "consent_required": "analytics"
+  },
+  "engagement": {
+    "heartbeat_interval_ms": 15000
+  },
+  "retry_queue": {
+    "enabled": true,
+    "max_retries": 5,
+    "queue_ttl_ms": 86400000,
+    "max_queue_size": 50,
+    "retry_interval_ms": 5000
+  },
+  "screenshot": {
+    "enabled": true,
+    "quality": 0.8,
+    "wait_for": "dom_ready",
+    "max_width": 1280,
+    "triggers": [
+      "page_load",
+      "spa_navigation",
+      "manual",
+      "modal"
+    ],
+    "variant_key": "",
+    "capture_delay_ms": 500,
+    "modal_selectors": [],
+    "consent_required": "personalization",
+    "max_captures_per_session": 20
+  },
+  "api_base_url": "https://sdg.uk.uforge.build",
+  "cmp_provider": "custom",
+  "cross_domain": {
+    "param": "_sdid",
+    "domains": [],
+    "enabled": false,
+    "consent_required": "analytics"
+  },
+  "default_tier": "deny",
+  "description": "",
+  "diagnostics": {
+    "log_endpoint": "/api/log/sdk-error"
+  },
+  "chat_tracking": {
+    "enabled": true,
+    "consent_required": "analytics"
+  },
+  "consent_audit": {
+    "enabled": true,
+    "endpoint": "/api/analytics/consent",
+    "include_ip_hash": false,
+    "log_tier_changes": true,
+    "include_user_agent": true
+  },
+  "cookie_domain": "",
+  "feature_flags": {
+    "enabled": false,
+    "refresh_interval_ms": 300000,
+    "evaluation_endpoint": "/api/flags/evaluate"
+  },
+  "config_base_url": "",
+  "consent_banner": {
+    "mode": "banner",
+    "theme": "light",
+    "locale": "",
+    "enabled": true,
+    "heading": "",
+    "message": "",
+    "geo_aware": false,
+    "position": "bottom",
+    "tcf_cmp_id": 0,
+    "custom_css": "",
+    "respect_dnt": true,
+    "respect_gpc": true,
+    "tcf_enabled": false,
+    "accept_label": "",
+    "consent_mode": true,
+    "reject_label": "",
+    "cookie_domain": "",
+    "re_prompt_days": 0,
+    "remote_config": false,
+    "customize_label": "",
+    "required_regions": [],
+    "cookie_expiry_days": 365,
+    "privacy_policy_url": "",
+    "save_preferences_label": ""
+  },
+  "error_tracking": {
+    "enabled": true,
+    "consent_required": "analytics",
+    "max_errors_per_session": 10
+  },
+  "form_analytics": {
+    "enabled": true,
+    "consent_required": "analytics",
+    "hesitation_threshold_ms": 3000
+  },
+  "form_selectors": [
+    "form"
+  ],
+  "page_overrides": [],
+  "session_replay": {
+    "enabled": false,
+    "canvas_fps": 2,
+    "sample_rate": 0.1,
+    "mask_all_text": true,
+    "exclude_paths": [],
+    "capture_canvas": false,
+    "mask_selectors": [
+      ".sensitive-data",
+      "[data-private]"
+    ],
+    "upload_endpoint": "/api/replay/segment",
+    "consent_required": "analytics",
+    "unmask_selectors": [],
+    "scroll_throttle_ms": 100,
+    "checkout_interval_ms": 60000,
+    "mouse_move_throttle_ms": 50,
+    "segment_max_size_bytes": 500000,
+    "max_recording_duration_ms": 600000,
+    "segment_flush_interval_ms": 10000
+  },
+  "consent_sources": [],
+  "event_listeners": {},
+  "identity_cookie": {
+    "enabled": false
+  },
+  "phone_selectors": [
+    "a[href^=\"tel:\"]",
+    "a[href^=\"callto:\"]"
+  ],
+  "tracker_version": "1.0.1",
+  "form_text_patterns": [
+    "submit",
+    "send",
+    "book",
+    "book now",
+    "submit form"
+  ],
+  "scroll_milestones": {
+    "enabled": true,
+    "thresholds": [
+      25,
+      50,
+      75,
+      100
+    ],
+    "consent_required": "analytics"
+  },
+  "enable_ref_tracking": true,
+  "phone_link_patterns": [
+    "tel:",
+    "callto:"
+  ],
+  "consent_enforcement": {
+    "strict_mode": false,
+    "log_violations": true,
+    "fallback_behavior": "deny"
+  },
+  "enable_form_tracking": false,
+  "form_data_attributes": [
+    "data-track-form",
+    "data-tracking-form"
+  ],
+  "impression_tracking": {
+    "enabled": true,
+    "consent_required": "analytics"
+  },
+  "metadata_extraction": {
+    "form_fields": [
+      "name",
+      "email",
+      "phone",
+      "subject"
+    ],
+    "url_parameters": [
+      "ref",
+      "campaign_id",
+      "listing_id"
+    ],
+    "data_attributes": true,
+    "element_properties": [
+      "id",
+      "className",
+      "href"
+    ]
+  },
+  "cookie_max_age_seconds": 31536000,
+  "enable_phone_tracking": false,
+  "form_button_selectors": [
+    "button",
+    "span",
+    "input[type=\"submit\"]"
+  ],
+  "form_tracking_classes": [
+    "track-form",
+    "tracking-form"
+  ],
+  "outbound_exclude_domains": []
+}
