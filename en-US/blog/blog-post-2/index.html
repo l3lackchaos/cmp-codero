@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlogPost 2 | Development Company Main Site</title>
+  <meta name="description" content="Demo BlogPost 2 for Development Company.">
+<style type="text/css" data-source="components">
+.site-header{border-bottom:1px solid var(--ff-border);padding:var(--ff-space)}.site-header .brand{max-width:var(--ff-measure);margin:0 auto;display:block;font-weight:700;font-size:1.125rem;text-decoration:none;color:var(--ff-fg)}
+
+.nav-primary{display:flex;flex-wrap:wrap;gap:1.25rem;max-width:var(--ff-measure);margin:0 auto;padding:.75rem var(--ff-space);border-bottom:1px solid var(--ff-border)}.nav-primary a{text-decoration:none;color:var(--ff-muted);font-size:.9375rem}.nav-primary a:hover{color:var(--ff-accent)}
+
+.site-footer{border-top:1px solid var(--ff-border);margin-top:calc(var(--ff-space)*3);padding:calc(var(--ff-space)*1.5) var(--ff-space)}.site-footer p{max-width:var(--ff-measure);margin:0 auto;color:var(--ff-muted)}
+
+.footer-legal{max-width:var(--ff-measure);margin:0 auto;padding:0 var(--ff-space) var(--ff-space);font-size:.85rem;color:var(--ff-muted)}.footer-legal a{color:inherit}
+
+.breadcrumbs{max-width:var(--ff-measure);margin:0 auto;padding:.75rem var(--ff-space);font-size:.85rem;color:var(--ff-muted)}.breadcrumbs a{color:inherit}
+
+.cta{max-width:var(--ff-measure);margin:calc(var(--ff-space)*2) auto;padding:calc(var(--ff-space)*1.5);border:1px solid var(--ff-border);border-radius:var(--ff-radius);display:flex;flex-wrap:wrap;gap:var(--ff-space);align-items:center;justify-content:space-between}.cta p{margin:0;font-weight:600}.cta a{background:var(--ff-accent);color:#fff;text-decoration:none;padding:.5rem 1rem;border-radius:var(--ff-radius)}
+</style>
+<style type="text/css">
+:root{--ff-bg:var(--cmp-scheme-bg,#ffffff);--ff-fg:var(--cmp-scheme-text,#16191d);--ff-muted:var(--cmp-scheme-muted,#5b6570);--ff-accent:var(--cmp-color-primary,#0b6bcb);--ff-border:var(--cmp-scheme-border,#e3e7ec);--ff-radius:8px;--ff-measure:72rem;--ff-space:1rem;--ff-font:var(--cmp-font-body,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif)}
+@media (prefers-color-scheme:dark){:root{--ff-bg:var(--cmp-scheme-bg,#0f1215);--ff-fg:var(--cmp-scheme-text,#e8ecf1);--ff-muted:var(--cmp-scheme-muted,#9aa5b1);--ff-accent:var(--cmp-color-primary,#6ea8fe);--ff-border:var(--cmp-scheme-border,#242a31)}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--ff-bg);color:var(--ff-fg);font-family:var(--ff-font);line-height:1.6;-webkit-text-size-adjust:100%}
+main{max-width:var(--ff-measure);margin:0 auto;padding:calc(var(--ff-space)*2) var(--ff-space)}
+h1{font-size:clamp(1.75rem,4vw,2.75rem);line-height:1.15;margin:0 0 .5rem;letter-spacing:-.015em}
+.subtitle{margin:0 0 1rem;color:var(--ff-muted);font-size:1.125rem}
+.summary{font-size:1.0625rem;margin:0 0 1.5rem}
+.meta{color:var(--ff-muted);font-size:.875rem;margin:0 0 1.5rem}
+.body>*+*{margin-top:1rem}
+img{max-width:100%;height:auto;border-radius:var(--ff-radius)}
+a{color:var(--ff-accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ff-accent);outline-offset:2px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(12rem,1fr));gap:.75rem;list-style:none;padding:0;margin:2rem 0 0}
+.gallery img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+.copyright{max-width:var(--ff-measure);margin:0 auto;padding:var(--ff-space);color:var(--ff-muted);font-size:.85rem}
+.tmpl-blog-post .body,.tmpl-blog-post-wide .body{max-width:38rem}.tmpl-blog-post .meta::before{content:"\2022 ";color:var(--ff-accent)}
+</style>
+<style id="design-tokens">:root {
+  --color-primary: #6d8c45;
+  --color-primary-hover: #5a7538;
+  --color-primary-active: #4b602f;
+  --color-secondary: #5c5c54;
+  --color-secondary-hover: #4a4a43;
+  --color-secondary-active: #383833;
+  --color-accent: #c1e74f;
+  --color-accent-hover: #d0ed7b;
+  --color-accent-active: #dff3a7;
+  --color-background: #ffffff;
+  --color-background-secondary: #f5f5f4;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f7fce9;
+  --color-text: #1a1d17;
+  --color-text-secondary: #4a4a43;
+  --color-text-muted: #707069;
+  --color-border: #e7e7e5;
+  --color-border-hover: #d0d0cc;
+  --color-success: #22c55e;
+  --color-success-hover: #16a34a;
+  --color-warning: #f59e0b;
+  --color-warning-hover: #d97706;
+  --color-error: #dc2626;
+  --color-error-hover: #b91c1c;
+  --color-info: #3b82f6;
+  --color-info-hover: #2563eb;
+  --color-layout-bg: #f5f5f4;
+  --color-sidebar-bg: #f5f5f4;
+  --color-sidebar-text: #1a1d17;
+  --color-sidebar-text-muted: #8a8a82;
+  --color-sidebar-item-hover: #f7fce9;
+  --color-sidebar-item-active: #6d8c45;
+  --color-sidebar-border: #e7e7e5;
+  --color-panel-bg: #ffffff;
+  --color-panel-border: #e7e7e5;
+  --color-overlay-bg: #000000;
+  --color-header-bg: #ffffff;
+  --color-header-text: #1a1d17;
+  --color-header-border: #e7e7e5;
+  --color-input-bg: #ffffff;
+  --color-input-border: #e7e7e5;
+  --color-input-focus: #6d8c45;
+  --color-card-bg: #ffffff;
+  --color-card-border: #e7e7e5;
+  --color-badge-bg: #f5f5f4;
+  --color-success-bg: #f0fdf4;
+  --color-success-border: #bbf7d0;
+  --color-success-text: #166534;
+  --color-warning-bg: #fefce8;
+  --color-warning-border: #fde68a;
+  --color-warning-text: #854d0e;
+  --color-error-bg: #fef2f2;
+  --color-error-border: #fecaca;
+  --color-error-text: #991b1b;
+  --color-info-bg: #eff6ff;
+  --color-info-border: #bfdbfe;
+  --color-info-text: #1e40af;
+  --color-success-bg-hover: #dcfce7;
+  --color-warning-bg-hover: #fef9c3;
+  --color-error-bg-hover: #fee2e2;
+  --color-info-bg-hover: #dbeafe;
+  --color-on-primary: #000000;
+  --color-on-secondary: #ffffff;
+  --color-on-accent: #1a1d17;
+  --color-on-error: #ffffff;
+  --color-on-warning: #1a1d17;
+  --color-on-success: #1a1d17;
+  --color-on-info: #1a1d17;
+  --color-primary-light: #eef9d3;
+  --color-primary-light-hover: #dff3a7;
+  --color-hue-purple-bg: #faf5ff;
+  --color-hue-purple-border: #e9d5ff;
+  --color-hue-purple-text: #6b21a8;
+  --color-hue-orange-bg: #fff7ed;
+  --color-hue-orange-border: #fed7aa;
+  --color-hue-orange-text: #9a3412;
+  --color-hue-teal-bg: #f0fdfa;
+  --color-hue-teal-border: #99f6e4;
+  --color-hue-teal-text: #115e59;
+  --color-hue-indigo-bg: #eef2ff;
+  --color-hue-indigo-border: #c7d2fe;
+  --color-hue-indigo-text: #3730a3;
+  --color-focus-ring: #6d8c45;
+  --color-disabled-bg: #f5f5f4;
+  --color-disabled-text: #b8b8b3;
+  --color-disabled-border: #e7e7e5;
+  --color-chart-series1: #8fb85c;
+  --color-chart-series2: #a8d06f;
+  --color-chart-series3: #6d8c45;
+  --color-chart-series4: #5c5c54;
+  --color-chart-series5: #4b602f;
+  --color-chart-series6: #bee58a;
+  --color-chart-series7: #d0ed7b;
+  --color-chart-series8: #c1e74f;
+  --color-chart-series9: #8a8a82;
+  --color-chart-series10: #b8b8b3;
+  --color-chart-series11: #dff3a7;
+  --color-chart-series12: #eef9d3;
+  --color-chart-grid: #f5f5f4;
+  --color-chart-tick: #8a8a82;
+  --color-chart-tooltip-bg: #262a23;
+  --color-chart-tooltip-title: #bee58a;
+  --color-chart-tooltip-body: #e7e7e5;
+  --color-chart-tooltip-border: #383833;
+  --color-chart-legend: #5c5c54;
+  --color-chart-surface: #ffffff;
+  --color-surface-sunken: #ebebe9;
+  --color-surface-raised: #ffffff;
+  --color-surface-inverse: #262a23;
+  --color-text-inverse: #f5f5f4;
+  --color-border-subtle: #f0f0ee;
+  --color-border-strong: #b8b8b3;
+  --radius-sm: 0.125rem;
+  --radius-base: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --font-heading: Inter;
+  --font-body: Inter;
+}
+
+.dark {
+  --color-primary: #bee58a;
+  --color-primary-hover: #a8d06f;
+  --color-primary-active: #8fb85c;
+  --color-secondary: #b8b8b3;
+  --color-secondary-hover: #d0d0cc;
+  --color-secondary-active: #e7e7e5;
+  --color-accent: #c1e74f;
+  --color-accent-hover: #d0ed7b;
+  --color-accent-active: #dff3a7;
+  --color-background: #1a1d17;
+  --color-background-secondary: #262a23;
+  --color-surface: #262a23;
+  --color-surface-hover: #383833;
+  --color-text: #f5f5f4;
+  --color-text-secondary: #d0d0cc;
+  --color-text-muted: #919189;
+  --color-border: #383833;
+  --color-border-hover: #4a4a43;
+  --color-success: #22c55e;
+  --color-success-hover: #16a34a;
+  --color-warning: #f59e0b;
+  --color-warning-hover: #d97706;
+  --color-error: #f87171;
+  --color-error-hover: #fca5a5;
+  --color-info: #3b82f6;
+  --color-info-hover: #2563eb;
+  --color-layout-bg: #1a1d17;
+  --color-sidebar-bg: #262a23;
+  --color-sidebar-text: #f5f5f4;
+  --color-sidebar-text-muted: #8a8a82;
+  --color-sidebar-item-hover: #383833;
+  --color-sidebar-item-active: #2d3b1c;
+  --color-sidebar-border: #383833;
+  --color-panel-bg: #262a23;
+  --color-panel-border: #383833;
+  --color-overlay-bg: #000000;
+  --color-header-bg: #262a23;
+  --color-header-text: #f5f5f4;
+  --color-header-border: #383833;
+  --color-input-bg: #262a23;
+  --color-input-border: #383833;
+  --color-input-focus: #bee58a;
+  --color-card-bg: #262a23;
+  --color-card-border: #383833;
+  --color-badge-bg: #262a23;
+  --color-success-bg: #052e16;
+  --color-success-border: #166534;
+  --color-success-text: #86efac;
+  --color-warning-bg: #451a03;
+  --color-warning-border: #92400e;
+  --color-warning-text: #fcd34d;
+  --color-error-bg: #450a0a;
+  --color-error-border: #991b1b;
+  --color-error-text: #fca5a5;
+  --color-info-bg: #172554;
+  --color-info-border: #1e40af;
+  --color-info-text: #93c5fd;
+  --color-success-bg-hover: #14532d;
+  --color-warning-bg-hover: #78350f;
+  --color-error-bg-hover: #7f1d1d;
+  --color-info-bg-hover: #1e3a8a;
+  --color-on-primary: #1a1d17;
+  --color-on-secondary: #1a1d17;
+  --color-on-accent: #1a1d17;
+  --color-on-error: #1a1d17;
+  --color-on-warning: #1a1d17;
+  --color-on-success: #1a1d17;
+  --color-on-info: #1a1d17;
+  --color-primary-light: #2d3b1c;
+  --color-primary-light-hover: #3a4c24;
+  --color-hue-purple-bg: #3b0764;
+  --color-hue-purple-border: #6b21a8;
+  --color-hue-purple-text: #d8b4fe;
+  --color-hue-orange-bg: #431407;
+  --color-hue-orange-border: #9a3412;
+  --color-hue-orange-text: #fdba74;
+  --color-hue-teal-bg: #042f2e;
+  --color-hue-teal-border: #115e59;
+  --color-hue-teal-text: #5eead4;
+  --color-hue-indigo-bg: #1e1b4b;
+  --color-hue-indigo-border: #3730a3;
+  --color-hue-indigo-text: #a5b4fc;
+  --color-focus-ring: #bee58a;
+  --color-disabled-bg: #262a23;
+  --color-disabled-text: #5c5c54;
+  --color-disabled-border: #383833;
+  --color-chart-series1: #bee58a;
+  --color-chart-series2: #d0ed7b;
+  --color-chart-series3: #a8d06f;
+  --color-chart-series4: #b8b8b3;
+  --color-chart-series5: #dff3a7;
+  --color-chart-series6: #eef9d3;
+  --color-chart-series7: #c1e74f;
+  --color-chart-series8: #8fb85c;
+  --color-chart-series9: #f7fce9;
+  --color-chart-series10: #8a8a82;
+  --color-chart-series11: #d0d0cc;
+  --color-chart-series12: #e7e7e5;
+  --color-chart-grid: #383833;
+  --color-chart-tick: #b8b8b3;
+  --color-chart-tooltip-bg: #f5f5f4;
+  --color-chart-tooltip-title: #4b602f;
+  --color-chart-tooltip-body: #383833;
+  --color-chart-tooltip-border: #d0d0cc;
+  --color-chart-legend: #b8b8b3;
+  --color-chart-surface: #262a23;
+  --color-surface-sunken: #15170f;
+  --color-surface-raised: #30352b;
+  --color-surface-inverse: #f5f5f4;
+  --color-text-inverse: #1a1d17;
+  --color-border-subtle: #262a23;
+  --color-border-strong: #4a4a43;
+}
+
+:where(body) {
+  font-family: var(--font-body), system-ui, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-heading), system-ui, sans-serif;
+}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "BlogPost 2",
+  "description": "Demo BlogPost 2 for Development Company.",
+  "url": "/en-US/blog/blog-post-2/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "BlogPost 2",
+  "description": "Demo BlogPost 2 for Development Company.",
+  "datePublished": "2026-10-08T08:17:41.736Z",
+  "dateModified": "2026-10-08T08:17:41.736Z"
+}
+</script>
+<meta property="og:title" content="BlogPost 2">
+<meta property="og:description" content="Demo BlogPost 2 for Development Company.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BlogPost 2">
+<meta name="twitter:description" content="Demo BlogPost 2 for Development Company.">
+</head>
+<body class="tmpl-shared-content-layout">
+  <header class="site-header"><a class="brand" href="/">Development Company</a></header>
+  <nav class="nav-primary"><a href="/">Home</a><a href="/about/">About</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></nav>
+  <nav class="breadcrumbs"><a href="/">Home</a> / <span>BlogPost 2</span></nav>
+  <main>
+    <article>
+      <h1>BlogPost 2</h1>
+      <p class="subtitle">From the team</p>
+      
+      <p class="summary">Demo BlogPost 2 for Development Company.</p>
+      <p class="meta">5 min read &middot; Product</p>
+      <div class="body"><p>Body copy for BlogPost 2.</p></div>
+      <ul class="gallery"></ul>
+    </article>
+  </main>
+  <aside class="cta"><p>Talk to Development Company</p><a href="/contact/">Get in touch</a></aside>
+  <footer class="site-footer"><p>Development Company</p></footer>
+  <div class="footer-legal"><a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a></div>
+  <p class="copyright">&copy; 2026 Development Company Main Site</p>
+</body>
+</html>
