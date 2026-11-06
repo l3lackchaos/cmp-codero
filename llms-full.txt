@@ -194,11 +194,6 @@ This file contains the consolidated content of the localhost:3000 website for LL
 
 ---
 
-## Page: หน้าแรกจ๊ะ
-<p>Welcome to Development Company.</p>
-
----
-
 ## Page: Product 1
 <p>Body copy for Product 1.</p>
 

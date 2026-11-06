@@ -25,5 +25,5 @@
 - [Location 1](/en-US/locations/location-1/): Demo Location 1 for Development Company.
 
 ## Essential Files
-- [Sitemap](/sitemap.xml): XML sitemap for all pages.
+- [Sitemap](https://localhost:3000/sitemap.xml): XML sitemap for all pages.
 - [Full Content](/llms-full.txt): A single file containing all page summaries for easier ingestion.

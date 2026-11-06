@@ -1,4 +1,7 @@
+# Content Signals Policy: https://contentsignals.org/
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
-Sitemap: /sitemap.xml
+Sitemap: https://localhost:3000/sitemap.xml
+LLM: /llms.txt
