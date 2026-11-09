@@ -1,11 +1,11 @@
 {
-  "build_id": "ff7f40d8-9f28-42e4-877b-177e7838b5df",
+  "build_id": "9698ae3d-ef6a-4fb3-a3e7-73083af1fb22",
   "site_id": "550e8400-e29b-41d4-a716-446655440002",
   "tenant_id": "550e8400-e29b-41d4-a716-446655440001",
   "domain": "localhost:3000",
-  "completed_at": "2026-11-09T07:14:33.082607+00:00",
-  "total_pages": 102,
-  "built_pages": 102,
+  "completed_at": "2026-11-09T07:38:23.716453+00:00",
+  "total_pages": 105,
+  "built_pages": 105,
   "failed_pages": 0,
   "status": "completed"
 }

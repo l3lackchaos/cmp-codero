@@ -5,6 +5,18 @@
     <lastmod>2026-11-05T10:00:41Z</lastmod>
   </url>
   <url>
+    <loc>https://localhost:3000/en-US/about/</loc>
+    <lastmod>2026-11-09T07:24:11Z</lastmod>
+  </url>
+  <url>
+    <loc>https://localhost:3000/en-US/blog/</loc>
+    <lastmod>2026-11-09T07:24:11Z</lastmod>
+  </url>
+  <url>
+    <loc>https://localhost:3000/en-US/contact/</loc>
+    <lastmod>2026-11-09T07:24:11Z</lastmod>
+  </url>
+  <url>
     <loc>https://localhost:3000/en-US/jobs/</loc>
     <lastmod>2026-11-05T10:00:41Z</lastmod>
   </url>

@@ -2,6 +2,8 @@
 > Intelligent digital systems and tailored solutions by localhost:3000.
 
 ## Core Pages
+- [About](/en-US/about/): About Development Company.
+- [Contact](/en-US/contact/): Get in touch.
 - [Service 2](/en-US/services/service-2/): Demo Service 2 for Development Company.
 - [Service 3](/en-US/services/service-3/): Demo Service 3 for Development Company.
 - [Service 4](/en-US/services/service-4/): Demo Service 4 for Development Company.
@@ -12,6 +14,7 @@
 
 ## More Content
 - [Development Company](/en-US/): Development Company builds and ships marketing sites on FunnelForge.
+- [Blog](/en-US/blog/): News and articles.
 - [BlogPost 1](/en-US/blog/blog-post-1/): Demo BlogPost 1 for Development Company.
 - [BlogPost 2](/en-US/blog/blog-post-2/): Demo BlogPost 2 for Development Company.
 - [BlogPost 3](/en-US/blog/blog-post-3/): Demo BlogPost 3 for Development Company.
@@ -25,7 +28,6 @@
 - [Job 2](/en-US/jobs/job-2/): Demo Job 2 for Development Company.
 - [Job 3](/en-US/jobs/job-3/): Demo Job 3 for Development Company.
 - [Job 4](/en-US/jobs/job-4/): Demo Job 4 for Development Company.
-- [Spring Offer](/en-US/landing-offer/): A landing page that names its template explicitly.
 
 ## Essential Files
 - [Sitemap](https://localhost:3000/sitemap.xml): XML sitemap for all pages.
