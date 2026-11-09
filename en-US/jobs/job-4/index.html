@@ -390,7 +390,7 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
 </head>
 <body class="tmpl-listing">
   <header class="site-header"><a class="brand" href="/">Development Company</a></header>
-  <nav class="nav-primary"><a href="/">Home</a><a href="/about/">About</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a><a href="/properties/" id="ikwrx">Properties</a></nav>
+  <nav class="nav-primary"><a href="/en-US/" id="i77h">Home</a><a href="/en-US/about/" id="ip73">About</a><a href="/en-US/blog/" id="id1f">Blog</a><a href="/en-US/contact/" id="im5to">Contact</a><a href="/en-US/properties/" id="ikwrx">Properties</a></nav>
   <main>
     <h1>Job 4</h1>
     <p class="summary">Demo Job 4 for Development Company.</p>
@@ -407,7 +407,7 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
   // card template holds whatever the editor last previewed (one record's price
   // and area), so keeping it would show that record's values on every card. A
   // single-record fill (clear unset) keeps the authored value (Req 7.6).
-  function fill(scope,rec,bindings,route,loc,clear){
+  function fill(scope,rec,bindings,route,loc,clear,imgOpt){
     bindings.forEach(function(bd){
       if(!bd.field)return;
       var f=bd.field.indexOf('item.')===0?bd.field.slice(5):bd.field;
@@ -417,7 +417,7 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
       s.textContent=String(v);
     });
     var a=scope.querySelector('[data-dyn-link]'); if(a){var h=itemHref(rec,route,loc); if(h)a.setAttribute('href',h); else a.removeAttribute('href');}
-    var ph=scope.querySelector('[data-dyn-img]'); if(ph)fillImg(ph,rec);
+    var ph=scope.querySelector('[data-dyn-img]'); if(ph)fillImg(ph,rec,imgOpt);
   }
   function safeUrl(u){if(typeof u!=='string')return null;u=u.trim();return (/^\/(?!\/)/.test(u)||/^https?:\/\//i.test(u))?u:null}
   // The record's own page: the baked route pattern of its type filled with its
@@ -449,9 +449,18 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
     }
     return out;
   }
-  function fillImg(ph,rec){
-    var list=imgList(rec); if(!list.length)return;
-    if(list.length>1&&ph.tagName!=='IMG'){slider(ph,list);return;}
+  // The block's card-image settings (cfg.cardImages), clamped: the config is
+  // author data, so only known values and bounded numbers get through.
+  function imgOpts(o){
+    o=o&&typeof o==='object'?o:{};
+    var max=Math.floor(Number(o.max)); if(!(max>=1))max=5; if(max>5)max=5;
+    var sec=Math.floor(Number(o.autoplaySeconds)); if(!(sec>=2))sec=0; if(sec>30)sec=30;
+    return {single:o.mode==='single',max:max,sec:sec,ind:o.indicator==='dots'||o.indicator==='none'?o.indicator:'counter'};
+  }
+  function fillImg(ph,rec,opt){
+    opt=imgOpts(opt);
+    var list=imgList(rec).slice(0,opt.single?1:opt.max); if(!list.length)return;
+    if(list.length>1&&ph.tagName!=='IMG'){slider(ph,list,opt);return;}
     var img=ph.tagName==='IMG'?ph:ph.querySelector('img');
     if(!img){img=document.createElement('img');img.style.cssText='display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit';ph.appendChild(img);}
     img.setAttribute('src',list[0].src);img.setAttribute('alt',list[0].alt);img.setAttribute('loading','lazy');
@@ -461,7 +470,7 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
   // item), so the slot moves out just ahead of the link; a click on the picture
   // still opens the item, and keyboard users reach the item through the link.
   // Only the first image loads up front; the rest load lazily.
-  function slider(ph,list){
+  function slider(ph,list,opt){
     var a=ph.closest?ph.closest('[data-dyn-link]'):null;
     if(a&&a.parentNode){a.parentNode.insertBefore(ph,a);}
     ph.setAttribute('role','group');ph.setAttribute('aria-roledescription','carousel');
@@ -476,11 +485,17 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
       track.appendChild(img);
     });
     ph.appendChild(track);
-    var cur=0, n=list.length;
+    var cur=0, n=list.length, dots=[];
+    // The position marker: a counter (announced politely as it changes), dots
+    // (each a button that jumps to its picture), or nothing.
     var count=document.createElement('span');
     count.style.cssText='position:absolute;right:8px;bottom:8px;padding:2px 8px;border-radius:999px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;line-height:1.5';
     count.setAttribute('aria-live','polite');
-    function go(i){cur=(i+n)%n;track.style.transform='translateX('+(-100*cur)+'%)';count.textContent=(cur+1)+' / '+n;}
+    function go(i){
+      cur=(i+n)%n;track.style.transform='translateX('+(-100*cur)+'%)';
+      count.textContent=(cur+1)+' / '+n;
+      dots.forEach(function(d,k){d.setAttribute('aria-current',k===cur?'true':'false');d.style.opacity=k===cur?'1':'.5';});
+    }
     function btn(label,glyph,side,d){
       var b=document.createElement('button');b.type='button';b.setAttribute('aria-label',label);b.textContent=glyph;
       b.style.cssText='position:absolute;top:50%;'+side+':6px;transform:translateY(-50%);width:32px;height:32px;border:0;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:18px;line-height:1;cursor:pointer';
@@ -488,7 +503,25 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
       ph.appendChild(b);
     }
     btn('Previous image','\u2039','left',-1);btn('Next image','\u203A','right',1);
-    ph.appendChild(count);go(0);
+    if(opt.ind==='counter')ph.appendChild(count);
+    if(opt.ind==='dots'){
+      var bar=document.createElement('div');bar.style.cssText='position:absolute;left:0;right:0;bottom:8px;display:flex;justify-content:center;gap:6px';
+      list.forEach(function(_,k){
+        var d=document.createElement('button');d.type='button';d.setAttribute('aria-label','Image '+(k+1)+' of '+n);
+        d.style.cssText='width:10px;height:10px;padding:0;border:0;border-radius:50%;background:#fff;cursor:pointer';
+        d.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();go(k);});
+        dots.push(d);bar.appendChild(d);
+      });
+      ph.appendChild(bar);
+    }
+    go(0);
+    // Auto-advance: never for reduced motion, paused while pointed at or focused.
+    if(opt.sec&&!REDUCED){
+      var held=false;
+      ph.addEventListener('mouseenter',function(){held=true});ph.addEventListener('mouseleave',function(){held=false});
+      ph.addEventListener('focusin',function(){held=true});ph.addEventListener('focusout',function(){held=false});
+      setInterval(function(){if(!held&&ph.isConnected)go(cur+1);},opt.sec*1000);
+    }
   }
   // A card saved before it carried an image slot: the grey placeholder the block
   // always drew (an empty div with an aspect-ratio) becomes the slot. An author's
@@ -506,7 +539,7 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
   }
   function single(el,cfg,url){
     fetch(url,{headers:{accept:'application/json'}}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(b){
-      var data=b&&b.data; var rec=Array.isArray(data)?data[0]:data; if(!rec)return; fill(el,rec,cfg.bindings,el.getAttribute('data-dyn-item-route'),el.getAttribute('data-dyn-default-locale'));
+      var data=b&&b.data; var rec=Array.isArray(data)?data[0]:data; if(!rec)return; fill(el,rec,cfg.bindings,el.getAttribute('data-dyn-item-route'),el.getAttribute('data-dyn-default-locale'),false,{mode:'single'});
     }).catch(function(){});
   }
   // Namespaces already claimed by a URL-synced listing on this page. Two listings
@@ -825,7 +858,7 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
       recs.forEach(function(rec){
         var c=tpl.cloneNode(true);c.setAttribute('data-dyn-clone','');
         if(car){c.style.flex='0 0 auto';c.style.scrollSnapAlign='start';c.setAttribute('role','listitem');if(!c.style.minWidth)c.style.minWidth='260px';}
-        fill(c,rec,cfg.bindings,route,dloc,true);frag.appendChild(c);
+        fill(c,rec,cfg.bindings,route,dloc,true,cfg.cardImages);frag.appendChild(c);
       });
       mount.appendChild(frag);
       if(car)dots();
