@@ -365,12 +365,18 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
   // Bindings carry the registry path ('typeFields.salary'), but the API serves
   // typeFields FLAT at the top level ('salary') — fall back to the bare key.
   function readField(o,p){var v=readPath(o,p);if(v!==undefined)return v;return p.indexOf('typeFields.')===0?readPath(o,p.slice(11)):undefined}
-  function fill(scope,rec,bindings,route,loc){
+  // clear: a per-record clone empties a slot its record has no value for. The
+  // card template holds whatever the editor last previewed (one record's price
+  // and area), so keeping it would show that record's values on every card. A
+  // single-record fill (clear unset) keeps the authored value (Req 7.6).
+  function fill(scope,rec,bindings,route,loc,clear){
     bindings.forEach(function(bd){
       if(!bd.field)return;
       var f=bd.field.indexOf('item.')===0?bd.field.slice(5):bd.field;
-      var v=readField(rec,f); if(v==null)return;
-      var s=scope.querySelector('[data-bind="'+bd.slot+'"]'); if(s)s.textContent=String(v);
+      var v=readField(rec,f);
+      var s=scope.querySelector('[data-bind="'+bd.slot+'"]'); if(!s)return;
+      if(v==null||typeof v==='object'){if(clear)s.textContent='';return;}
+      s.textContent=String(v);
     });
     var a=scope.querySelector('[data-dyn-link]'); if(a){var h=itemHref(rec,route,loc); if(h)a.setAttribute('href',h); else a.removeAttribute('href');}
     var ph=scope.querySelector('[data-dyn-img]'); if(ph)fillImg(ph,rec);
@@ -396,12 +402,55 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
   // when its url is safe. An <img> slot gets src/alt; any other slot (the grey
   // placeholder of a card saved before cards had an <img>) gets an <img> inside
   // it that fills it. No image, the placeholder stays as authored.
+  function imgList(rec){
+    var raw=rec&&Array.isArray(rec.images)&&rec.images.length?rec.images:(rec&&rec.image?[rec.image]:[]);
+    var out=[];
+    for(var i=0;i<raw.length&&out.length<10;i++){
+      var im=raw[i], src=safeUrl(im&&typeof im==='object'?im.url:im); if(!src)continue;
+      out.push({src:src,alt:im&&typeof im==='object'&&typeof im.alt==='string'?im.alt:''});
+    }
+    return out;
+  }
   function fillImg(ph,rec){
-    var im=rec&&rec.image, src=safeUrl(im&&typeof im==='object'?im.url:im); if(!src)return;
-    var alt=im&&typeof im==='object'&&typeof im.alt==='string'?im.alt:'';
+    var list=imgList(rec); if(!list.length)return;
+    if(list.length>1&&ph.tagName!=='IMG'){slider(ph,list);return;}
     var img=ph.tagName==='IMG'?ph:ph.querySelector('img');
     if(!img){img=document.createElement('img');img.style.cssText='display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit';ph.appendChild(img);}
-    img.setAttribute('src',src);img.setAttribute('alt',alt);img.setAttribute('loading','lazy');
+    img.setAttribute('src',list[0].src);img.setAttribute('alt',list[0].alt);img.setAttribute('loading','lazy');
+  }
+  // Several images: a small slider in the image slot. Its buttons cannot sit in
+  // the card's link (a control inside a link is invalid and would open the
+  // item), so the slot moves out just ahead of the link; a click on the picture
+  // still opens the item, and keyboard users reach the item through the link.
+  // Only the first image loads up front; the rest load lazily.
+  function slider(ph,list){
+    var a=ph.closest?ph.closest('[data-dyn-link]'):null;
+    if(a&&a.parentNode){a.parentNode.insertBefore(ph,a);}
+    ph.setAttribute('role','group');ph.setAttribute('aria-roledescription','carousel');
+    ph.style.position='relative';ph.style.overflow='hidden';
+    var track=document.createElement('div');
+    track.style.cssText='display:flex;height:100%;width:100%;'+(REDUCED?'':'transition:transform .3s ease');
+    list.forEach(function(it,i){
+      var img=document.createElement('img');
+      img.setAttribute('src',it.src);img.setAttribute('alt',it.alt);if(i>0)img.setAttribute('loading','lazy');
+      img.style.cssText='flex:0 0 100%;width:100%;height:100%;object-fit:cover;display:block'+(a?';cursor:pointer':'');
+      if(a)img.addEventListener('click',function(){var h=a.getAttribute('href');if(h)window.location.href=h;});
+      track.appendChild(img);
+    });
+    ph.appendChild(track);
+    var cur=0, n=list.length;
+    var count=document.createElement('span');
+    count.style.cssText='position:absolute;right:8px;bottom:8px;padding:2px 8px;border-radius:999px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;line-height:1.5';
+    count.setAttribute('aria-live','polite');
+    function go(i){cur=(i+n)%n;track.style.transform='translateX('+(-100*cur)+'%)';count.textContent=(cur+1)+' / '+n;}
+    function btn(label,glyph,side,d){
+      var b=document.createElement('button');b.type='button';b.setAttribute('aria-label',label);b.textContent=glyph;
+      b.style.cssText='position:absolute;top:50%;'+side+':6px;transform:translateY(-50%);width:32px;height:32px;border:0;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:18px;line-height:1;cursor:pointer';
+      b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();go(cur+d);});
+      ph.appendChild(b);
+    }
+    btn('Previous image','\u2039','left',-1);btn('Next image','\u203A','right',1);
+    ph.appendChild(count);go(0);
   }
   // A card saved before it carried an image slot: the grey placeholder the block
   // always drew (an empty div with an aspect-ratio) becomes the slot. An author's
@@ -738,7 +787,7 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
       recs.forEach(function(rec){
         var c=tpl.cloneNode(true);c.setAttribute('data-dyn-clone','');
         if(car){c.style.flex='0 0 auto';c.style.scrollSnapAlign='start';c.setAttribute('role','listitem');if(!c.style.minWidth)c.style.minWidth='260px';}
-        fill(c,rec,cfg.bindings,route,dloc);frag.appendChild(c);
+        fill(c,rec,cfg.bindings,route,dloc,true);frag.appendChild(c);
       });
       mount.appendChild(frag);
       if(car)dots();
