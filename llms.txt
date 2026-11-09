@@ -1,30 +1,22 @@
-# localhost:3000
-> Intelligent digital systems and tailored solutions by localhost:3000.
+# islandsafari.com
+> Intelligent digital systems and tailored solutions by islandsafari.com.
 
 ## Core Pages
-- [About](/en-US/about/): About Development Company.
-- [Contact](/en-US/contact/): Get in touch.
-- [Service 2](/en-US/services/service-2/): Demo Service 2 for Development Company.
-- [Service 3](/en-US/services/service-3/): Demo Service 3 for Development Company.
-- [Service 4](/en-US/services/service-4/): Demo Service 4 for Development Company.
+- [About Island Safaris](/en-US/about/): Core page for islandsafari.com.
 
 ## More Content
-- [Development Company](/en-US/): Development Company builds and ships marketing sites on FunnelForge.
-- [Blog](/en-US/blog/): News and articles.
-- [BlogPost 1](/en-US/blog/blog-post-1/): Demo BlogPost 1 for Development Company.
-- [BlogPost 2](/en-US/blog/blog-post-2/): Demo BlogPost 2 for Development Company.
-- [BlogPost 3](/en-US/blog/blog-post-3/): Demo BlogPost 3 for Development Company.
-- [BlogPost 4](/en-US/blog/blog-post-4/): Demo BlogPost 4 for Development Company.
-- [Event 1](/en-US/events/event-1/): Demo Event 1 for Development Company.
-- [Event 2](/en-US/events/event-2/): Demo Event 2 for Development Company.
-- [Event 3](/en-US/events/event-3/): Demo Event 3 for Development Company.
-- [Event 4](/en-US/events/event-4/): Demo Event 4 for Development Company.
-- [Open roles](/en-US/jobs/): Every published vacancy, filtered live.
-- [Job 1](/en-US/jobs/job-1/): Demo Job 1 for Development Company.
-- [Job 2](/en-US/jobs/job-2/): Demo Job 2 for Development Company.
-- [Job 3](/en-US/jobs/job-3/): Demo Job 3 for Development Company.
-- [Job 4](/en-US/jobs/job-4/): Demo Job 4 for Development Company.
+- [Home page](/en-US/)
+- [Exploring the Mergui Archipelago with Thomas Schmid](/en-US/blog/thomas-schmid-2019/)
+- [Shared departure](/en-US/departure/)
+- [Departures](/en-US/departures/)
+- [Itineraries](/en-US/itineraries/)
+- [Ten days in the Mergui Archipelago](/en-US/itinerary-10-days/)
+- [Six days in the Mergui Archipelago](/en-US/itinerary-6-days/)
+- [Plan your trip](/en-US/plan-your-trip/)
+- [Privacy Policy](/en-US/privacy-policy/)
+- [Private Mergui Archipelago charters](/en-US/private-charters/)
+- [MV Sea Gipsy](/en-US/sea-gipsy/)
 
 ## Essential Files
-- [Sitemap](https://localhost:3000/sitemap.xml): XML sitemap for all pages.
+- [Sitemap](https://islandsafari.com/sitemap.xml): XML sitemap for all pages.
 - [Full Content](/llms-full.txt): A single file containing all page summaries for easier ingestion.

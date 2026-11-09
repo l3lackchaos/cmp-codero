@@ -1,35 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://localhost:3000/sitemap-pages.xml</loc>
-    <lastmod>2026-11-09T07:24:11Z</lastmod>
+    <loc>https://islandsafari.com/sitemap-pages.xml</loc>
+    <lastmod>2026-11-09T08:12:32Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://localhost:3000/sitemap-blog.xml</loc>
-    <lastmod>2026-11-09T05:02:04Z</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://localhost:3000/sitemap-events.xml</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://localhost:3000/sitemap-jobs.xml</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://localhost:3000/sitemap-locations.xml</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://localhost:3000/sitemap-products.xml</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://localhost:3000/sitemap-properties.xml</loc>
-    <lastmod>2026-11-09T05:02:43Z</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://localhost:3000/sitemap-services.xml</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
+    <loc>https://islandsafari.com/sitemap-blog.xml</loc>
+    <lastmod>2026-11-09T06:26:20Z</lastmod>
   </sitemap>
 </sitemapindex>
