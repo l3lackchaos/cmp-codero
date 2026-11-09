@@ -1,9 +1,9 @@
 {
-  "build_id": "7a2ec195-587a-476c-bffb-1ff95a81e4ca",
+  "build_id": "fea0baf2-c807-483c-9564-86edc478ec0f",
   "site_id": "550e8400-e29b-41d4-a716-446655440002",
   "tenant_id": "550e8400-e29b-41d4-a716-446655440001",
   "domain": "localhost:3000",
-  "completed_at": "2026-11-09T03:44:55.108912+00:00",
+  "completed_at": "2026-11-09T04:00:41.217832+00:00",
   "total_pages": 40,
   "built_pages": 40,
   "failed_pages": 0,
