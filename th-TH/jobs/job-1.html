@@ -525,12 +525,19 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
       ph.appendChild(bar);
     }
     go(0);
-    // Auto-advance: never for reduced motion, paused while pointed at or focused.
+    // Auto-advance: never for reduced motion, paused while pointed at or focused, and a
+    // pause/play button the visitor controls (WCAG 2.2.2; template-library Req 3.10 - moving
+    // content needs a pause control, hover alone is not one for touch or keyboard users).
     if(opt.sec&&!REDUCED){
-      var held=false;
+      var held=false, stopped=false;
       ph.addEventListener('mouseenter',function(){held=true});ph.addEventListener('mouseleave',function(){held=false});
       ph.addEventListener('focusin',function(){held=true});ph.addEventListener('focusout',function(){held=false});
-      setInterval(function(){if(!held&&ph.isConnected)go(cur+1);},opt.sec*1000);
+      var pb=document.createElement('button');pb.type='button';pb.setAttribute('data-dyn-slider-pause','');
+      pb.style.cssText='position:absolute;left:8px;bottom:8px;width:28px;height:28px;border:0;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:12px;line-height:1;cursor:pointer';
+      function paint(){pb.setAttribute('aria-label',stopped?'Play slideshow':'Pause slideshow');pb.setAttribute('aria-pressed',stopped?'true':'false');pb.textContent=stopped?'\u25B6':'\u275A\u275A';}
+      pb.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();stopped=!stopped;paint();});
+      paint();ph.appendChild(pb);
+      setInterval(function(){if(!held&&!stopped&&ph.isConnected)go(cur+1);},opt.sec*1000);
     }
   }
   // A card saved before it carried an image slot: the grey placeholder the block
