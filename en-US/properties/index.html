@@ -368,6 +368,8 @@ body {
       var f=bd.field.indexOf('item.')===0?bd.field.slice(5):bd.field;
       var v=readField(rec,f);
       var s=scope.querySelector('[data-bind="'+bd.slot+'"]'); if(!s)return;
+      // A list of plain values (a Property's businessFunction) reads as "Sell, Rent".
+      if(Array.isArray(v)){v=v.filter(function(x){return x!=null&&typeof x!=='object'}).join(', ');if(!v)v=null;}
       if(v==null||typeof v==='object'){if(clear)s.textContent='';return;}
       s.textContent=String(v);
     });
@@ -398,7 +400,7 @@ body {
   function imgList(rec){
     var raw=rec&&Array.isArray(rec.images)&&rec.images.length?rec.images:(rec&&rec.image?[rec.image]:[]);
     var out=[];
-    for(var i=0;i<raw.length&&out.length<10;i++){
+    for(var i=0;i<raw.length&&out.length<20;i++){
       var im=raw[i], src=safeUrl(im&&typeof im==='object'?im.url:im); if(!src)continue;
       out.push({src:src,alt:im&&typeof im==='object'&&typeof im.alt==='string'?im.alt:''});
     }
@@ -408,7 +410,7 @@ body {
   // author data, so only known values and bounded numbers get through.
   function imgOpts(o){
     o=o&&typeof o==='object'?o:{};
-    var max=Math.floor(Number(o.max)); if(!(max>=1))max=5; if(max>5)max=5;
+    var max=Math.floor(Number(o.max)); if(!(max>=1))max=5; if(max>20)max=20;
     var sec=Math.floor(Number(o.autoplaySeconds)); if(!(sec>=2))sec=0; if(sec>30)sec=30;
     return {single:o.mode==='single',max:max,sec:sec,ind:o.indicator==='dots'||o.indicator==='none'?o.indicator:'counter'};
   }
@@ -788,11 +790,11 @@ body {
     }
     /**
      * The facets this listing asks for, one per value panel, in chunks of the API's cap per request
-     * (8, the listing's MAX_FACETS_PER_REQUEST): the first chunk rides on the page request, any
+     * (6, the listing's MAX_FACETS_PER_REQUEST): the first chunk rides on the page request, any
      * further chunk is its own request, so no panel loses its flags or counts.
      */
     var facetKeys=Array.prototype.map.call(fmul,function(box){return box.getAttribute('data-dyn-filter-multi');});
-    var facetChunks=[];for(var fc=0;fc<facetKeys.length;fc+=8)facetChunks.push(facetKeys.slice(fc,fc+8));
+    var facetChunks=[];for(var fc=0;fc<facetKeys.length;fc+=6)facetChunks.push(facetKeys.slice(fc,fc+6));
     function moreFacets(){facetChunks.slice(1).forEach(function(ch){fetch(base+q(ch),{headers:{accept:'application/json'}}).then(function(r){return r.ok?r.json():null}).then(function(b){if(b)paintFacets(b);}).catch(function(){});});}
     Array.prototype.forEach.call(fmul,function(box){
       var btn=box.querySelector('[data-dyn-multi-toggle]');
