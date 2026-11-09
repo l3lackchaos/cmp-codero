@@ -6,11 +6,15 @@
 - [Service 3](/en-US/services/service-3/): Demo Service 3 for Development Company.
 - [Service 4](/en-US/services/service-4/): Demo Service 4 for Development Company.
 - [Service 1](/th-TH/services/service-1/): Demo Service 1 for Development Company.
+- [Service 2](/th-TH/services/service-2/): Demo Service 2 for Development Company.
+- [Service 3](/th-TH/services/service-3/): Demo Service 3 for Development Company.
+- [Service 4](/th-TH/services/service-4/): Demo Service 4 for Development Company.
 
 ## More Content
 - [Development Company](/en-US/): Development Company builds and ships marketing sites on FunnelForge.
 - [BlogPost 1](/en-US/blog/blog-post-1/): Demo BlogPost 1 for Development Company.
 - [BlogPost 2](/en-US/blog/blog-post-2/): Demo BlogPost 2 for Development Company.
+- [BlogPost 3](/en-US/blog/blog-post-3/): Demo BlogPost 3 for Development Company.
 - [BlogPost 4](/en-US/blog/blog-post-4/): Demo BlogPost 4 for Development Company.
 - [Event 1](/en-US/events/event-1/): Demo Event 1 for Development Company.
 - [Event 2](/en-US/events/event-2/): Demo Event 2 for Development Company.
@@ -22,7 +26,6 @@
 - [Job 3](/en-US/jobs/job-3/): Demo Job 3 for Development Company.
 - [Job 4](/en-US/jobs/job-4/): Demo Job 4 for Development Company.
 - [Spring Offer](/en-US/landing-offer/): A landing page that names its template explicitly.
-- [Location 1](/en-US/locations/location-1/): Demo Location 1 for Development Company.
 
 ## Essential Files
 - [Sitemap](https://localhost:3000/sitemap.xml): XML sitemap for all pages.

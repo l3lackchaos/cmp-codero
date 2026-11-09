@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="th-TH">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -340,7 +340,7 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
   "@type": "WebPage",
   "name": "Job 4",
   "description": "Demo Job 4 for Development Company.",
-  "url": "/en-US/jobs/job-4/"
+  "url": "/th-TH/jobs/job-4/"
 }
 </script>
 <script type="application/ld+json">
@@ -349,7 +349,7 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
   "@type": "JobPosting",
   "title": "Job 4",
   "description": "\u003cp\u003eBody copy for Job 4.\u003c/p\u003e",
-  "url": "/en-US/jobs/job-4/",
+  "url": "/th-TH/jobs/job-4/",
   "datePosted": "2026-11-05T10:00:41.587Z",
   "hiringOrganization": {
     "@type": "Organization",
@@ -390,7 +390,7 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
 </head>
 <body class="tmpl-listing">
   <header class="site-header"><a class="brand" href="/">Development Company</a></header>
-  <nav class="nav-primary"><a href="/en-US/" id="i77h">Home</a><a href="/en-US/about/" id="ip73">About</a><a href="/en-US/blog/" id="id1f">Blog</a><a href="/en-US/contact/" id="im5to">Contact</a><a href="/en-US/properties/" id="ikwrx">Properties</a><ul><li><a href="/th-TH/index.html" hreflang="th-TH" lang="th-TH">ไทย</a></li><li><a href="/en-US/index.html" hreflang="en-US" lang="en-US" aria-current="true">English</a></li></ul></nav>
+  <nav class="nav-primary"><a href="/th-TH/" id="i77h">Home</a><a href="/th-TH/about/" id="ip73">About</a><a href="/th-TH/blog/" id="id1f">Blog</a><a href="/th-TH/contact/" id="im5to">Contact</a><a href="/th-TH/properties/" id="ikwrx">Properties</a><details class="ff-language-dropdown"><summary aria-label="Language">ไทย</summary><ul><li><a href="/en-US/index.html" hreflang="en-US" lang="en-US">English</a></li><li><a href="/th-TH/index.html" hreflang="th-TH" lang="th-TH" aria-current="true">ไทย</a></li></ul></details><ul><li><a href="/th-TH/index.html" hreflang="th-TH" lang="th-TH">ไทย</a></li><li><a href="/en-US/index.html" hreflang="en-US" lang="en-US" aria-current="true">English</a></li></ul></nav><nav class="ff-language-switcher" aria-label="Language"><ul><li><a href="/en-US/index.html" hreflang="en-US" lang="en-US">English</a></li><li><a href="/th-TH/index.html" hreflang="th-TH" lang="th-TH" aria-current="true">ไทย</a></li></ul></nav>
   <main>
     <h1>Job 4</h1>
     <p class="summary">Demo Job 4 for Development Company.</p>
@@ -420,6 +420,14 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
     });
     var a=scope.querySelector('[data-dyn-link]'); if(a){var h=itemHref(rec,route,loc); if(h)a.setAttribute('href',h); else a.removeAttribute('href');}
     var ph=scope.querySelector('[data-dyn-img]'); if(ph)fillImg(ph,rec,imgOpt);
+  }
+  // The locale this page was built for: the /{locale}/ every built route starts with
+  // (a region-tagged code, so /faq/ is not read as one), else <html lang> when it has a region.
+  function pageLocale(){
+    var m=/^\/([a-z]{2,3}-[a-z0-9]{2,8})(\/|$)/i.exec(location.pathname||'');
+    if(m)return m[1];
+    var l=(document.documentElement&&document.documentElement.getAttribute('lang'))||'';
+    return /^[a-z]{2,3}-[a-z0-9]{2,8}$/i.test(l)?l:'';
   }
   function safeUrl(u){if(typeof u!=='string')return null;u=u.trim();return (/^\/(?!\/)/.test(u)||/^https?:\/\//i.test(u))?u:null}
   // The record's own page: the baked route pattern of its type filled with its
@@ -699,6 +707,9 @@ h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.15;margin:0 0 .5rem}
       Object.keys(st.filters).forEach(function(k){vals(st.filters[k]).forEach(function(v){add(k,v);});});
       add('search',st.search);if(st.sortBy){add('sortBy',st.sortBy);add('sortOrder',st.sortOrder||'asc');}
       if(st.limit)add('limit',st.limit);add('page',st.page);
+      // The page's own locale, so a /th-TH/ page lists the Thai translation of each item
+      // (its title, slug and locale - and so its link) where one is published.
+      var pl=pageLocale();if(pl)parts.push('locale='+encodeURIComponent(pl));
       // A first page asks for its value panels' facets, so each value comes back marked selected / excluded / neutral.
       if(facetChunk&&facetChunk.length)parts.push('facets='+facetChunk.map(encodeURIComponent).join(','));
       return parts.length?('?'+parts.join('&')):'';

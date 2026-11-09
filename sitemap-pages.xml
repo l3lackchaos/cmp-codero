@@ -21,11 +21,47 @@
     <lastmod>2026-11-05T10:00:41Z</lastmod>
   </url>
   <url>
+    <loc>https://localhost:3000/en-US/page-3/</loc>
+    <lastmod>2026-11-09T05:01:31Z</lastmod>
+  </url>
+  <url>
     <loc>https://localhost:3000/en-US/page-4/</loc>
     <lastmod>2026-11-05T10:00:41Z</lastmod>
   </url>
   <url>
     <loc>https://localhost:3000/en-US/properties/</loc>
+    <lastmod>2026-11-05T10:00:41Z</lastmod>
+  </url>
+  <url>
+    <loc>https://localhost:3000/th-TH/</loc>
+    <lastmod>2026-11-05T10:00:41Z</lastmod>
+  </url>
+  <url>
+    <loc>https://localhost:3000/th-TH/jobs/</loc>
+    <lastmod>2026-11-05T10:00:41Z</lastmod>
+  </url>
+  <url>
+    <loc>https://localhost:3000/th-TH/landing-offer/</loc>
+    <lastmod>2026-11-05T10:00:41Z</lastmod>
+  </url>
+  <url>
+    <loc>https://localhost:3000/th-TH/page-1/</loc>
+    <lastmod>2026-11-05T10:00:41Z</lastmod>
+  </url>
+  <url>
+    <loc>https://localhost:3000/th-TH/page-2/</loc>
+    <lastmod>2026-11-05T10:00:41Z</lastmod>
+  </url>
+  <url>
+    <loc>https://localhost:3000/th-TH/page-3/</loc>
+    <lastmod>2026-11-09T05:01:31Z</lastmod>
+  </url>
+  <url>
+    <loc>https://localhost:3000/th-TH/page-4/</loc>
+    <lastmod>2026-11-05T10:00:41Z</lastmod>
+  </url>
+  <url>
+    <loc>https://localhost:3000/th-TH/properties/</loc>
     <lastmod>2026-11-05T10:00:41Z</lastmod>
   </url>
 </urlset>
