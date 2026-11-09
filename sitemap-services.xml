@@ -12,20 +12,4 @@
     <loc>https://localhost:3000/en-US/services/service-4/</loc>
     <lastmod>2026-11-05T10:00:41Z</lastmod>
   </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/services/service-1/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/services/service-2/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/services/service-3/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/services/service-4/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
 </urlset>

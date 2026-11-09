@@ -7,10 +7,6 @@
 - [Service 2](/en-US/services/service-2/): Demo Service 2 for Development Company.
 - [Service 3](/en-US/services/service-3/): Demo Service 3 for Development Company.
 - [Service 4](/en-US/services/service-4/): Demo Service 4 for Development Company.
-- [Service 1](/th-TH/services/service-1/): Demo Service 1 for Development Company.
-- [Service 2](/th-TH/services/service-2/): Demo Service 2 for Development Company.
-- [Service 3](/th-TH/services/service-3/): Demo Service 3 for Development Company.
-- [Service 4](/th-TH/services/service-4/): Demo Service 4 for Development Company.
 
 ## More Content
 - [Development Company](/en-US/): Development Company builds and ships marketing sites on FunnelForge.

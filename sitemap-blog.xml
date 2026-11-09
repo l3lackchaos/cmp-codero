@@ -16,20 +16,4 @@
     <loc>https://localhost:3000/en-US/blog/blog-post-4/</loc>
     <lastmod>2026-11-05T10:00:41Z</lastmod>
   </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/blog/blog-post-1/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/blog/blog-post-2/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/blog/blog-post-3/</loc>
-    <lastmod>2026-11-09T05:02:04Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/blog/blog-post-4/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
 </urlset>
