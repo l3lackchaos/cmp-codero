@@ -1,11 +1,11 @@
 {
-  "build_id": "243600a4-7706-4308-a4fa-581107d62a87",
-  "site_id": "550e8400-e29b-41d4-a716-446655440002",
-  "tenant_id": "550e8400-e29b-41d4-a716-446655440001",
-  "domain": "localhost:3000",
-  "completed_at": "2026-11-09T06:17:24.743401+00:00",
-  "total_pages": 102,
-  "built_pages": 102,
+  "build_id": "02e41050-b580-4fea-bb3c-bcd2f6996931",
+  "site_id": "278f7e80-ee53-4f30-ab6d-a106827537f5",
+  "tenant_id": "9d691b71-8d12-45a9-a44d-d580cc51591f",
+  "domain": "islandsafari.com",
+  "completed_at": "2026-11-09T04:15:34.478588+00:00",
+  "total_pages": 7,
+  "built_pages": 7,
   "failed_pages": 0,
   "status": "completed"
 }

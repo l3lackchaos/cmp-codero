@@ -1,67 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://localhost:3000/en-US/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
+    <loc>https://islandsafari.com/en-US/</loc>
+    <lastmod>2026-11-06T07:43:08Z</lastmod>
   </url>
   <url>
-    <loc>https://localhost:3000/en-US/jobs/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
+    <loc>https://islandsafari.com/en-US/about/</loc>
+    <lastmod>2026-11-06T07:41:21Z</lastmod>
   </url>
   <url>
-    <loc>https://localhost:3000/en-US/landing-offer/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
+    <loc>https://islandsafari.com/en-US/departure/</loc>
+    <lastmod>2026-11-06T07:41:21Z</lastmod>
   </url>
   <url>
-    <loc>https://localhost:3000/en-US/page-1/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
+    <loc>https://islandsafari.com/en-US/itinerary-10-days/</loc>
+    <lastmod>2026-11-06T07:41:21Z</lastmod>
   </url>
   <url>
-    <loc>https://localhost:3000/en-US/page-2/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
+    <loc>https://islandsafari.com/en-US/itinerary-6-days/</loc>
+    <lastmod>2026-11-06T07:41:21Z</lastmod>
   </url>
   <url>
-    <loc>https://localhost:3000/en-US/page-3/</loc>
-    <lastmod>2026-11-09T05:01:31Z</lastmod>
+    <loc>https://islandsafari.com/en-US/privacy-policy/</loc>
+    <lastmod>2026-11-06T07:41:21Z</lastmod>
   </url>
   <url>
-    <loc>https://localhost:3000/en-US/page-4/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/en-US/properties/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/jobs/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/landing-offer/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/page-1/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/page-2/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/page-3/</loc>
-    <lastmod>2026-11-09T05:01:31Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/page-4/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
-  </url>
-  <url>
-    <loc>https://localhost:3000/th-TH/properties/</loc>
-    <lastmod>2026-11-05T10:00:41Z</lastmod>
+    <loc>https://islandsafari.com/en-US/private-charters/</loc>
+    <lastmod>2026-11-09T02:24:47Z</lastmod>
   </url>
 </urlset>
