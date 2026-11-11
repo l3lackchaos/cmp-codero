@@ -1,0 +1,199 @@
+{
+  "dni": {
+    "enabled": false,
+    "selector": "[data-sadang-dni]",
+    "number_map": {},
+    "cache_ttl_ms": 300000,
+    "consent_required": "marketing"
+  },
+  "events": {},
+  "heatmap": {
+    "enabled": true,
+    "move_enabled": false,
+    "click_enabled": true,
+    "scroll_enabled": true,
+    "click_throttle_ms": 0,
+    "consent_required": "analytics",
+    "move_batch_max_size": 50,
+    "scroll_throttle_ms": 2000,
+    "move_batch_interval_ms": 2000,
+    "move_sample_interval_ms": 100
+  },
+  "batching": {
+    "enabled": true,
+    "max_buffer_size": 10,
+    "flush_interval_ms": 3000
+  },
+  "site_id": "278f7e80-ee53-4f30-ab6d-a106827537f5",
+  "ecommerce": {
+    "enabled": true,
+    "providers": [
+      "gtm"
+    ],
+    "item_ref_source": {
+      "type": "both",
+      "meta_item_ref": "ff:item-ref",
+      "meta_variation": "ff:item-variation",
+      "jsonld_item_ref_path": "sku",
+      "jsonld_variation_path": "variant"
+    },
+    "purchase_event": "purchase",
+    "consent_required": "analytics",
+    "custom_providers": {}
+  },
+  "rage_click": {
+    "enabled": true,
+    "time_window_ms": 1000,
+    "click_threshold": 3,
+    "consent_required": "analytics",
+    "proximity_radius_px": 0
+  },
+  "web_vitals": {
+    "enabled": true,
+    "consent_required": "analytics"
+  },
+  "engagement": {
+    "consent_required": "analytics",
+    "heartbeat_interval_ms": 30000
+  },
+  "retry_queue": {
+    "queue_ttl_ms": 86400000,
+    "max_queue_size": 50,
+    "retry_interval_ms": 5000
+  },
+  "screenshot": {
+    "format": "dom",
+    "enabled": true,
+    "quality": 0.8,
+    "wait_for": "dom_ready",
+    "max_width": 1280,
+    "triggers": [
+      "page_load",
+      "spa_navigation"
+    ],
+    "mask_all_text": true,
+    "mask_selectors": [],
+    "capture_delay_ms": 500,
+    "modal_selectors": [],
+    "consent_required": "personalization",
+    "unmask_selectors": [],
+    "exclude_selectors": [],
+    "max_captures_per_session": 20
+  },
+  "api_base_url": "https://sdg.th.uforge.build",
+  "cross_domain": {
+    "param": "_sdvid",
+    "domains": [],
+    "enabled": false,
+    "consent_required": "analytics"
+  },
+  "default_tier": "deny",
+  "diagnostics": {
+    "log_endpoint": "/api/log/sdk-error"
+  },
+  "chat_tracking": {
+    "enabled": true,
+    "provider": "auto",
+    "consent_required": "analytics",
+    "custom_providers": {}
+  },
+  "consent_audit": {
+    "enabled": true,
+    "endpoint": "/api/analytics/consent",
+    "include_ip_hash": false,
+    "log_tier_changes": true,
+    "include_user_agent": true
+  },
+  "feature_flags": {
+    "enabled": false,
+    "consent_required": "personalization",
+    "refresh_interval_ms": 0,
+    "evaluation_endpoint": "/api/flags/evaluate"
+  },
+  "consent_banner": {
+    "mode": "banner",
+    "theme": "light",
+    "layout": "bar",
+    "enabled": true,
+    "geo_aware": false,
+    "position": "bottom",
+    "card_align": "left",
+    "respect_dnt": true,
+    "respect_gpc": true,
+    "tcf_enabled": false,
+    "consent_mode": true,
+    "remote_config": false,
+    "required_regions": [],
+    "cookie_expiry_days": 365,
+    "tcf_ac_provider_ids": [],
+    "consent_mode_config": {
+      "region_defaults": [],
+      "url_passthrough": false,
+      "wait_for_update_ms": 500,
+      "ads_data_redaction": true
+    },
+    "tcf_purpose_one_treatment": false,
+    "default_tier_outside_regions": {
+      "analytics": true,
+      "marketing": true,
+      "personalization": true
+    }
+  },
+  "error_tracking": {
+    "enabled": true,
+    "consent_required": "analytics",
+    "max_errors_per_session": 10
+  },
+  "form_analytics": {
+    "enabled": true,
+    "selector": "form",
+    "consent_required": "analytics",
+    "exclude_selectors": [],
+    "hesitation_threshold_ms": 3000
+  },
+  "page_overrides": [],
+  "session_replay": {
+    "enabled": false,
+    "canvas_fps": 2,
+    "sample_rate": 0.1,
+    "mask_all_text": true,
+    "exclude_paths": [],
+    "capture_canvas": false,
+    "mask_selectors": [
+      ".sensitive-data",
+      "[data-private]"
+    ],
+    "upload_endpoint": "/api/replay/segment",
+    "consent_required": "personalization",
+    "unmask_selectors": [],
+    "scroll_throttle_ms": 150,
+    "checkout_interval_ms": 60000,
+    "mouse_move_throttle_ms": 50,
+    "segment_max_size_bytes": 500000,
+    "max_recording_duration_ms": 1800000,
+    "segment_flush_interval_ms": 10000
+  },
+  "consent_sources": [],
+  "event_listeners": {},
+  "identity_cookie": {
+    "enabled": false
+  },
+  "tracker_version": "1.0.1",
+  "scroll_milestones": {
+    "enabled": true,
+    "thresholds": [
+      25,
+      50,
+      75,
+      100
+    ],
+    "consent_required": "analytics"
+  },
+  "impression_tracking": {
+    "enabled": true,
+    "consent_required": "analytics"
+  },
+  "cookie_max_age_seconds": 31536000,
+  "default_tier_by_region": {},
+  "outbound_exclude_domains": []
+}

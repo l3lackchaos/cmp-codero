@@ -1,194 +1,154 @@
-# localhost:3000 - Full Documentation
+# islandsafari.com - Full Documentation
 
-This file contains the consolidated content of the localhost:3000 website for LLM ingestion.
-
----
-
-## Page: Development Company
-<p>Welcome to Development Company.</p>
+This file contains the consolidated content of the islandsafari.com website for LLM ingestion.
 
 ---
 
-## Page: BlogPost 1
-<p>Body copy for BlogPost 1.</p>
+## Page: Home page
+<p>Home page</p>
 
 ---
 
-## Page: BlogPost 2
-<p>Body copy for BlogPost 2.</p>
+## Page: About Myanmar
+<p>About Myanmar</p>
 
 ---
 
-## Page: BlogPost 4
-<p>Body copy for BlogPost 4.</p>
+## Page: About Island Safaris
+<p>About Island Safaris</p>
 
 ---
 
-## Page: Event 1
-<p>Body copy for Event 1.</p>
+## Page: Terms and Conditions
+<p>Terms and Conditions</p>
 
 ---
 
-## Page: Event 2
-<p>Body copy for Event 2.</p>
+## Page: Contact
+<p>Contact</p>
 
 ---
 
-## Page: Event 3
-<p>Body copy for Event 3.</p>
+## Page: Dawei (Tavoy)
+<p>Dawei (Tavoy)</p>
 
 ---
 
-## Page: Event 4
-<p>Body copy for Event 4.</p>
+## Page: Shared departure
+<p>Shared departure</p>
 
 ---
 
-## Page: Open roles
-<p>Every published vacancy, filtered live.</p>
+## Page: Departures
+<p>Departures</p>
 
 ---
 
-## Page: Job 1
-<p>Body copy for Job 1.</p>
+## Page: Photos & Videos
+<p>Photos &amp; Videos</p>
 
 ---
 
-## Page: Job 2
-<p>Body copy for Job 2.</p>
+## Page: Itineraries
+<p>Mergui Archipelago</p><p>itineraries</p>
 
 ---
 
-## Page: Job 3
-<p>Body copy for Job 3.</p>
+## Page: Ten days in the Mergui Archipelago
+<p>Ten days in the Mergui Archipelago</p>
 
 ---
 
-## Page: Job 4
-<p>Body copy for Job 4.</p>
+## Page: Four days in the Mergui Archipelago
+<p>Four days in the Mergui Archipelago</p>
 
 ---
 
-## Page: Spring Offer
-<p>Offer details.</p>
+## Page: Five days in the Mergui Archipelago
+<p>Five days in the Mergui Archipelago</p>
 
 ---
 
-## Page: Location 1
-<p>Body copy for Location 1.</p>
+## Page: Six days in the Mergui Archipelago
+<p>Six days in the Mergui Archipelago</p>
 
 ---
 
-## Page: Location 2
-<p>Body copy for Location 2.</p>
+## Page: Kawthaung - Ranong
+<p>Kawthaung and Ranong</p>
 
 ---
 
-## Page: Location 3
-<p>Body copy for Location 3.</p>
+## Page: Explore the Mergui Archipelago
+<p>Explore the Mergui Archipelago</p>
 
 ---
 
-## Page: Location 4
-<p>Body copy for Location 4.</p>
+## Page: Moken communities
+<p>Moken communities</p>
 
 ---
 
-## Page: Page 1
-<p>Body copy for Page 1.</p>
+## Page: Myeik (Mergui)
+<p>Myeik (Mergui)</p>
 
 ---
 
-## Page: Page 2
-<p>Body copy for Page 2.</p>
+## Page: News & Stories
+<p>News &amp; Stories</p>
 
 ---
 
-## Page: Page 4
-<p>Body copy for Page 4.</p>
+## Page: Now is the time to book a trip to this long-lost island
+<p></p><p></p><p></p>
 
 ---
 
-## Page: Product 2
-<p>Body copy for Product 2.</p>
+## Page: Real Life
+<p></p><p></p>
 
 ---
 
-## Page: Product 3
-<p>Body copy for Product 3.</p>
+## Page: New dawn for remote Andaman Sea island tourism
+<p></p><p></p>
 
 ---
 
-## Page: Product 4
-<p>Body copy for Product 4.</p>
+## Page: Sailing among Myanmar's islands of mystery
+<p></p><p></p>
 
 ---
 
-## Page: Properties
-<p>Browse the full portfolio.</p>
+## Page: On board MV Sea Gipsy
+<h1></h1><p></p>
 
 ---
 
-## Page: Family Home with Large Garden, Chiang Mai
-<p>A well-maintained family home on over 1 rai of land in a secure moo baan. Open-plan kitchen and living area, covered carport for 3 cars, mature garden with fruit trees. Walking distance to two international schools.</p>
+## Page: Secret cave joins Myanmar tours
+<p></p><p></p>
 
 ---
 
-## Page: Beachfront Studio at Hua Hin
-<p>Ground-floor studio with direct beach access, ideal for short-term rental or a weekend retreat. Managed building with reception, pool, restaurant on-site. Consistent occupancy year-round.</p>
+## Page: Exploring the Mergui Archipelago with Thomas Schmid
+<p></p><p></p>
 
 ---
 
-## Page: Development Land, East Pattaya (2 Rai)
-<p>Prime development land on the eastern corridor of Pattaya, suitable for a small villa project (6–8 units) or a single luxury estate. Chanote title, electricity and water on-site. No flood history.</p>
+## Page: Plan your trip
+<p>Plan your Mergui Archipelago trip</p>
 
 ---
 
-## Page: Luxury Pool Villa in Rawai, Phuket
-<p>Set on a hillside overlooking the Andaman Sea, this contemporary villa blends indoor-outdoor living with lush tropical gardens. The open-plan living area flows onto the pool deck. Chanote title, fully landscaped.</p>
+## Page: Privacy Policy
+<p>Privacy Policy</p>
 
 ---
 
-## Page: Property 1
-<p>Body copy for Property 1.</p>
+## Page: Private Mergui Archipelago charters
+<p>Private Mergui Archipelago charters</p>
 
 ---
 
-## Page: Property 2
-<p>Body copy for Property 2.</p>
-
----
-
-## Page: Property 3
-<p>Body copy for Property 3.</p>
-
----
-
-## Page: Property 4
-<p>Body copy for Property 4.</p>
-
----
-
-## Page: Grade A Office Space, Silom Road
-<p>Premium Grade A office space in a landmark Silom tower. Fully fitted with workstations for 30, meeting rooms, server room. Direct connection to MRT Silom station via sky bridge.</p>
-
----
-
-## Page: Modern 2-Bed Condo at Sukhumvit 39
-<p>This stunning 2-bedroom condominium offers modern living in the heart of Sukhumvit. Floor-to-ceiling windows provide panoramic city views. The building features a rooftop infinity pool, gym, and 24-hour security.</p>
-
----
-
-## Page: Service 2
-<p>Body copy for Service 2.</p>
-
----
-
-## Page: Service 3
-<p>Body copy for Service 3.</p>
-
----
-
-## Page: Service 4
-<p>Body copy for Service 4.</p>
+## Page: MV Sea Gipsy
+<p>MV Sea Gipsy</p>
 
