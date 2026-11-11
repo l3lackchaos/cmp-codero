@@ -4,171 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page</title>
-<style type="text/css" data-source="components">
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-.site-footer { padding: 58px 0 26px; background: #082f33; color: #d8e5e2; font: 16px/1.6 'DM Sans', sans-serif; letter-spacing: 0; }
-.site-footer .shell { width: min(calc(100% - 48px), 1200px); margin-inline: auto; }
-.site-footer .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1.15fr; gap: 36px; }
-.site-footer .brand { display: inline-block; font: 500 1.5rem/1.15 'Newsreader', serif; color: #fff; letter-spacing: 0; }
-.site-footer .brand small { display: block; margin-top: 6px; font: 500 .7rem/1.5 'DM Sans', sans-serif; text-transform: uppercase; color: #c3d4d1; letter-spacing: 0; }
-.site-footer h2 { margin: 0 0 16px; color: #fff; font: 600 .9rem/1.5 'DM Sans', sans-serif; letter-spacing: 0; }
-.site-footer p { max-width: 270px; margin: 18px 0; font-size: .88rem; color: #c3d4d1; }
-.site-footer .footer-grid a:not(.brand) { display: block; margin: 10px 0; color: #c3d4d1; font-size: .88rem; overflow-wrap: anywhere; }
-.site-footer .footer-policy-links { margin-top: 28px; }
-.site-footer a:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
-.site-footer a:focus-visible { outline: 3px solid #dca94e; outline-offset: 4px; }
-.site-footer .footer-bottom { display: flex; justify-content: space-between; gap: 24px; margin-top: 40px; padding-top: 22px; border-top: 1px solid #ffffff29; font-size: .82rem; color: #c3d4d1; }
-.site-footer .footer-bottom nav { display: flex; gap: 24px; flex-wrap: wrap; }
-.site-footer .footer-bottom a { margin: 0; color: inherit; }
-.policy-copy { max-width: 850px; }
-.policy-status { margin: 22px 0; color: #875f1f; font-weight: 600; }
-.policy-topics { margin: 28px 0 42px; }
-.policy-chapter { margin: 38px 0; }
-.policy-chapter h2 { font-size: 2rem; }
-.policy-chapter p, .policy-chapter li { color: var(--muted); }
-.policy-chapter li { margin: 8px 0; }
-.policy-copy table { min-width: 0; table-layout: fixed; }
-.policy-copy th, .policy-copy td { padding: 14px 12px; vertical-align: top; overflow-wrap: break-word; }
-.policy-copy caption { padding-bottom: 14px; text-align: left; color: var(--muted); font-size: .88rem; }
-.policy-confirmation { font-size: .9rem; color: #875f1f !important; }
-.policy-review { padding-top: 30px; border-top: 1px solid var(--line); }
-.policy-review ol { padding-left: 24px; }
-.policy-source { margin-top: 28px; font-size: .85rem; }
-@media (max-width: 900px) {
-  .site-footer .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 620px) {
-  .site-footer { padding-top: 42px; }
-  .site-footer .shell { width: calc(100% - 32px); }
-  .site-footer .footer-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
-  .site-footer .footer-bottom { flex-direction: column; gap: 16px; margin-top: 30px; }
-  .site-footer .footer-bottom nav { gap: 18px; }
-  .policy-chapter h2 { font-size: 1.8rem; }
-  .policy-copy th, .policy-copy td { font-size: .82rem; padding: 12px 8px; }
-}
-@media print { .site-footer { display: none; } }
-/* Original booking terms use the established site typography. */
-.policy-copy > h2 { font-family: 'Newsreader', serif; font-size: 2rem; line-height: 1.2; margin: 38px 0 18px; }
-.policy-copy > p, .policy-copy > ul { font-family: 'DM Sans', sans-serif; color: var(--muted); line-height: 1.75; }
-.policy-copy > ul li { margin: 8px 0; }
-@media(max-width: 700px) { .policy-copy > h2 { font-size: 1.8rem; } }
-/* Complete supplied company logo, including Moby Dick Tours lettering. */
-.brand { display: inline-flex; align-items: center; flex-shrink: 0; }
-.brand-logo { display: block; width: 92px; height: 70px; }
-.brand-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.site-footer .brand { display: inline-flex; }
-@media(max-width:700px) { .brand-logo { width: 79px; height: 60px; } }
-</style>
 <style type="text/css">
 * {
   box-sizing: border-box;
+font-family: "Tiny5 Duo", sans-serif;
 }
 
 body {
   margin: 0;
 }
 
-:root{--ink:#143334;--muted:#617776;--paper:#f6f7f3;--white:#fff;--sea:#0d5a60;--sea-light:#dcebea;--gold:#dca94e;--line:#d8e0dd;--deep:#082f33;--radius:6px;--max:1200px;}html{scroll-behavior:smooth;}body{margin:0;color:var(--ink);background:var(--paper);font-family:"DM Sans", sans-serif;font-size:16px;line-height:1.55;}body.modal-open{overflow:hidden;}img{max-width:100%;display:block;}a{color:inherit;text-decoration:none;}button, input, select, textarea{font:inherit;}button{cursor:pointer;}.shell{width:min(calc(100% - 40px), var(--max));margin:0 auto;}.site-header{position:absolute;z-index:20;inset:0 0 auto;color:white;border-bottom:1px solid rgba(255, 255, 255, .24);}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:28px;}.brand{font-family:"Newsreader", serif;font-size:1.35rem;font-weight:500;letter-spacing:0;}.brand small{display:block;font-family:"DM Sans", sans-serif;font-size:.65rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;opacity:.78;}.nav-links{display:flex;align-items:center;gap:28px;font-size:.92rem;}.nav-links a{opacity:.9;}.nav-links a:hover, .nav-links a:focus-visible{opacity:1;}.menu-toggle{display:none;width:44px;height:44px;border:0;background:transparent;color:white;padding:9px;}.menu-toggle span{display:block;height:2px;background:currentColor;margin:6px 0;}.btn{min-height:46px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 18px;border:1px solid var(--line);border-radius:var(--radius);background:white;color:var(--ink);font-weight:600;}.btn:hover{transform:translateY(-1px);}.btn-primary{background:var(--gold);border-color:var(--gold);color:#203334;}.btn-dark{background:var(--sea);border-color:var(--sea);color:white;}.btn-ghost{background:rgba(255, 255, 255, .12);border-color:rgba(255, 255, 255, .62);color:white;}.hero{min-height:100svh;position:relative;display:grid;align-items:stretch;color:white;background:var(--deep);}.hero-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 54%;}.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg, rgba(0, 0, 0, .48), transparent 150px), radial-gradient(ellipse 68% 60% at 84% 100%, rgba(0, 0, 0, .44), transparent 75%);}.hero-heading{text-shadow:0 1px 3px rgba(0, 0, 0, .5);}.hero-copy{text-shadow:0 1px 3px rgba(0, 0, 0, .5);}.hero-note, .site-header .brand, .nav-links>a:not(.btn), .nav-dropdown>summary{text-shadow:0 1px 3px rgba(0, 0, 0, .5);}.hero-content{position:relative;z-index:2;padding:134px 0 24px;display:grid;grid-template-columns:minmax(0, 1.05fr) minmax(540px, .95fr);grid-template-rows:auto 1fr;column-gap:76px;align-items:stretch;}.hero-heading{grid-column:2;align-self:start;padding-top:18px;transform:translateX(-190px);}.hero-details{grid-column:2;align-self:end;padding-bottom:0;}.eyebrow{margin:0 0 18px;text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:600;color:#dceceb;}h1, h2, h3{font-family:"Newsreader", serif;font-weight:500;line-height:1.04;letter-spacing:0;}h1{margin:0;font-size:clamp(2.9rem, 3.2vw, 3.4rem);max-width:720px;}h1 span{display:block;white-space:nowrap;}.hero-copy{max-width:480px;margin:0 0 24px;font-size:1.08rem;color:#e5eeee;}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;}.hero-note{margin-top:28px;display:flex;flex-wrap:wrap;gap:26px;font-size:.84rem;color:#d6e3e2;}.hero-note span{display:flex;align-items:center;gap:8px;}.hero-note i{width:6px;height:6px;border-radius:50%;background:var(--gold);}section{padding:96px 0;}.section-heading{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:38px;}.section-heading h2{margin:0;font-size:clamp(2.5rem, 5vw, 4.5rem);}.section-heading p{margin:0;color:var(--muted);max-width:560px;justify-self:end;}.departures-band{position:relative;padding:96px 0 84px;color:white;overflow:hidden;}.departures-band::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg, rgba(5, 43, 47, .88) 0%, rgba(5, 43, 47, .72) 48%, rgba(5, 43, 47, .58) 100%);}.departures-band .shell{position:relative;z-index:1;}.departures-band .section-heading p{color:#c4d6d4;}.departure-list{display:grid;grid-template-columns:repeat(3, 1fr);gap:16px;}.departure{min-height:320px;display:flex;flex-direction:column;gap:18px;padding:25px;border-radius:var(--radius);background:rgba(255, 255, 255, .97);color:var(--ink);box-shadow:0 18px 46px rgba(0, 0, 0, .28);}.departure.featured{border-top:5px solid var(--gold);padding-top:20px;}.departure time{display:block;font-family:"Newsreader", serif;line-height:1;}.date-range{display:block;font-size:3.7rem;}.date-month{display:block;margin-top:7px;font-family:"DM Sans", sans-serif;font-size:.88rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);}.departure .route{min-height:50px;color:var(--muted);}.price{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);font-size:1.08rem;font-weight:600;}.price small{display:block;color:var(--muted);font-size:.82rem;font-weight:400;}.departure .btn{width:100%;}.propose{margin-top:22px;display:flex;align-items:center;justify-content:space-between;gap:22px;background:var(--gold);color:#173335;padding:24px 26px;border-radius:var(--radius);}.propose p{margin:0;color:#415454;}.propose .btn{background:var(--deep);border-color:var(--deep);}.story{padding:0;display:grid;grid-template-columns:1.12fr .88fr;background:var(--deep);color:white;}.story-image{min-height:690px;width:100%;height:100%;object-fit:cover;}.story-content{padding:88px clamp(34px, 6vw, 96px);align-self:center;}.story-content h2{margin:0 0 24px;font-size:clamp(2.7rem, 5vw, 4.8rem);}.story-content p{color:#cadddc;}.story-stats{display:grid;grid-template-columns:repeat(3, 1fr);gap:16px;margin:34px 0;padding:25px 0;border-top:1px solid rgba(255, 255, 255, .19);border-bottom:1px solid rgba(255, 255, 255, .19);}.story-stats strong{display:block;font-family:"Newsreader", serif;font-size:1.9rem;color:white;}.story-stats span{font-size:.78rem;color:#b9cdcb;}.routes-grid{display:grid;grid-template-columns:repeat(12, 1fr);gap:18px;}.route-card{position:relative;min-height:460px;overflow:hidden;border-radius:var(--radius);color:white;background:var(--deep);}.route-card:nth-child(1){grid-column:span 7;}.route-card:nth-child(4){grid-column:span 7;}.route-card:nth-child(2){grid-column:span 5;}.route-card:nth-child(3){grid-column:span 5;}.route-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}.route-card:hover img{transform:scale(1.025);}.route-card>a{position:absolute;inset:0;display:block;}.route-card::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg, rgba(4, 26, 29, .88), rgba(4, 26, 29, .06) 66%);}.route-copy{position:absolute;z-index:2;inset:auto 24px 24px;}.route-copy h3{margin:2px 0 7px;font-size:2.15rem;}.route-copy p{margin:0;color:#dbe8e7;}.route-kicker{font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;color:#d8e7e5;}.route-card.alt{background:var(--sea);display:grid;place-items:end start;padding:28px;}.route-card.alt::after{display:none;}.route-card.alt .route-copy{position:static;}.route-card.alt .btn{margin-top:20px;}.private-charter{background:#e8eeea;}.charter-layout{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}.charter-copy{max-width:500px;}.charter-copy .eyebrow{color:var(--sea);}.charter-copy h2{margin:0 0 24px;font-size:clamp(2.7rem, 4.5vw, 4.2rem);line-height:1.06;}.charter-copy>p:not(.eyebrow){color:#4c6563;}.charter-rate{margin:30px 0 24px;padding:24px 0;border-top:1px solid #bacbc5;border-bottom:1px solid #bacbc5;}.charter-rate strong{display:block;font-family:"Newsreader", serif;font-size:clamp(2rem, 3vw, 2.7rem);line-height:1.15;}.charter-rate strong span{font-family:"DM Sans", sans-serif;font-size:1rem;font-weight:400;}.charter-rate p{margin:10px 0 0;color:var(--sea);font-weight:600;font-size:.92rem;}.charter-copy .charter-note{margin:20px 0 0;font-size:.82rem;}.charter-photo{margin:0;min-width:0;}.charter-photo img{width:100%;height:auto;aspect-ratio:4 / 3;object-fit:cover;object-position:center;border-radius:var(--radius);}.charter-photo figcaption{margin-top:12px;color:#526b67;font-size:.82rem;}.how{background:white;}.how-grid{display:grid;grid-template-columns:repeat(4, 1fr);gap:28px;}.step{padding-top:20px;border-top:2px solid var(--ink);}.step-number{font-family:"Newsreader", serif;font-size:2.2rem;color:var(--gold);}.step h3{font-family:"DM Sans", sans-serif;font-size:1rem;line-height:1.3;margin:17px 0 8px;}.step p{margin:0;color:var(--muted);font-size:.92rem;}.testimonial{position:relative;min-height:620px;display:grid;align-items:center;color:white;overflow:hidden;}.testimonial img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}.testimonial::after{content:"";position:absolute;inset:0;background:rgba(5, 32, 34, .67);}.quote{position:relative;z-index:2;max-width:880px;text-align:center;}blockquote{margin:0;font-family:"Newsreader", serif;font-size:clamp(2.2rem, 5vw, 4.6rem);line-height:1.12;}cite{display:block;margin-top:24px;font-style:normal;color:#d9e6e5;}.footer{padding:56px 0;background:#072b2f;color:white;}.footer-grid{display:grid;grid-template-columns:1.3fr repeat(3, .7fr);gap:36px;}.footer p, .footer a{color:#bcd0ce;}.footer h3{margin:0 0 12px;font-family:"DM Sans", sans-serif;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;}.footer a{display:block;margin:7px 0;}.footer-bottom{margin-top:44px;padding-top:20px;border-top:1px solid rgba(255, 255, 255, .16);color:#9bb5b3;font-size:.82rem;}dialog{width:min(calc(100% - 28px), 620px);max-height:calc(100dvh - 24px);overflow:auto;border:0;border-radius:8px;padding:0;color:var(--ink);box-shadow:0 24px 80px rgba(0, 0, 0, .32);}dialog::backdrop{background:rgba(3, 22, 24, .72);}.dialog-head{padding:24px 26px 18px;display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);}.dialog-head h2{margin:0;font-size:2rem;}.close{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:white;font-size:1.4rem;}.form{padding:24px 26px 28px;display:grid;grid-template-columns:1fr 1fr;gap:16px;}.field{display:grid;gap:6px;}.field.full{grid-column:1 / -1;}label{font-size:.85rem;font-weight:600;}input, select, textarea{width:100%;min-height:46px;padding:10px 12px;border:1px solid #bdcbc7;border-radius:5px;background:white;color:var(--ink);}textarea{min-height:86px;resize:vertical;}.form-note{grid-column:1 / -1;margin:0;color:var(--muted);font-size:.82rem;}.form-actions{grid-column:1 / -1;display:flex;justify-content:flex-end;gap:10px;}.success{display:none;padding:44px 30px;text-align:center;}.success h2{margin:0 0 10px;font-size:2.5rem;}.success p{color:var(--muted);}.nav-links{gap:20px;font-size:.875rem;}.nav-links>a{white-space:nowrap;}.nav-dropdown{position:relative;}.nav-dropdown>summary{display:flex;align-items:center;gap:6px;min-height:44px;cursor:pointer;list-style:none;white-space:nowrap;}.nav-dropdown>summary::-webkit-details-marker{display:none;}.nav-dropdown .nav-chevron{flex-shrink:0;transition:transform .15s;}.nav-dropdown[open] .nav-chevron{transform:rotate(180deg);}.nav-dropdown.is-current>summary{text-decoration:underline;text-underline-offset:8px;}.nav-dropdown-panel{position:absolute;top:calc(100% + 8px);left:-18px;z-index:40;min-width:230px;max-width:calc(100vw - 48px);max-height:calc(100svh - 120px);overflow-y:auto;padding:8px;background:#fff;color:#143334;border:1px solid #d8e0dd;border-radius:6px;box-shadow:0 10px 26px #082f3324;}.nav-links .nav-dropdown-panel a{display:block;padding:12px 14px;opacity:1;white-space:normal;color:#143334;border-radius:4px;}.nav-links .nav-dropdown-panel a:hover{background:#edf2ef;}.nav-dropdown>summary:focus-visible{outline:3px solid var(--gold);outline-offset:4px;}.draft-status{color:#875f1f;font-size:.85rem;font-weight:600;margin-bottom:26px;}.reference-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin:26px 0 0;font-size:.86rem;}.country-references{margin-top:38px;padding-top:24px;border-top:1px solid var(--line);}.country-hero>img{object-position:center top;}.feature-row figure{margin:0;}.feature-row figcaption{padding-top:10px;color:var(--muted);font-size:.8rem;}.health-section .draft-status{color:#875f1f;}.health-section h3{margin-top:28px;}.regional-links{display:flex;flex-wrap:wrap;gap:20px 32px;}.regional-photo{margin:38px auto 0;max-width:960px;}.regional-photo img{width:100%;height:auto;display:block;}.regional-photo figcaption{margin-top:12px;font-size:.82rem;color:var(--muted);}.regional-image-credit{margin-top:12px;margin-bottom:0;font-size:.82rem;color:var(--muted);}.regional-panorama{max-width:none;}.regional-review{margin-top:48px;padding-top:36px;border-top:1px solid var(--line);}.regional-review h2{font-size:2rem;}.regional-review p{color:var(--muted);}.planning-review{margin-top:24px;color:#875f1f;font-size:.9rem;}.arrival-options{margin:28px 0 44px;}.arrival-options h3{margin-top:24px;}.journal-card>.article-download{display:inline-block;flex:0 0 auto;align-self:flex-start;margin-top:16px;}.archive-header{padding:54px 0 48px;}.archive-heading{max-width:920px;}.archive-heading h1{font-size:3.4rem;overflow-wrap:break-word;}.archive-byline{margin:24px 0;color:var(--muted);font-size:.92rem;}.archive-context{max-width:78ch;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;}.archive-context a, .archive-body a{color:var(--sea);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;}.archive-reading{padding:58px 0;}.archive-body{max-width:78ch;margin:0 auto;line-height:1.8;overflow-wrap:break-word;}.archive-body p{margin-bottom:24px;}.archive-body h2, .archive-body h3{font-size:2rem;margin:38px 0 20px;}.archive-photo{margin:34px 0;}.archive-photo img{display:block;width:100%;height:auto;}.archive-actions{display:flex;flex-wrap:wrap;align-items:center;gap:24px;max-width:78ch;margin:44px auto 0;padding-top:28px;border-top:1px solid var(--line);}.regional-hero h1{max-width:100%;overflow-wrap:break-word;}.regional-moken>img{object-position:center 60%;}.brand{flex-shrink:0;}.editorial-band{background:#fff;}.editorial-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:36px;}.editorial-head h2{margin:0 0 14px;font-size:3.2rem;}.editorial-head p{max-width:560px;margin:0;color:var(--muted);}.editorial-head .editorial-kicker{margin-bottom:12px;}.editorial-kicker{display:block;color:var(--sea);font:600 .76rem/1.5 'DM Sans', sans-serif;letter-spacing:0;text-transform:uppercase;}.editorial-link{display:inline-block;font-weight:600;color:var(--sea);text-decoration:underline;text-underline-offset:5px;}.editorial-head>.editorial-link{flex-shrink:0;}.planning-links{display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:32px;}.planning-link{display:block;padding:24px 0 0;border-top:2px solid var(--gold);}.planning-link h3{margin:0 0 12px;font-size:1.8rem;}.planning-link p{margin:0 0 18px;color:var(--muted);}.planning-link:hover h3{color:var(--sea);}.journal-grid{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:32px;}.journal-grid.all-stories{grid-template-columns:repeat(3, minmax(0, 1fr));}.journal-card{min-width:0;display:flex;flex-direction:column;}.journal-card>a{display:flex;flex:1;flex-direction:column;}.journal-card img{width:100%;height:auto;aspect-ratio:1.8;object-fit:cover;border-radius:6px;}.journal-card .editorial-kicker{margin-top:24px;}.journal-card h2, .journal-card h3{margin:10px 0 12px;font-size:2rem;line-height:1.14;}.journal-card p{margin:0 0 18px;color:var(--muted);}.journal-credit{font-size:.8rem;}.journal-card .editorial-link{margin-top:auto;align-self:start;}.journal-card a:hover h2, .journal-card a:hover h3{color:var(--sea);}.archive-note{max-width:76ch;margin:36px 0 0;color:var(--muted);font-size:.88rem;}.archive-note a{text-decoration:underline;text-underline-offset:3px;}.menu-toggle:focus-visible{outline:3px solid var(--gold);outline-offset:5px;}.planning-link:focus-visible{outline:3px solid var(--gold);outline-offset:5px;}.editorial-link:focus-visible, .nav-links a:focus-visible, .journal-card a:focus-visible{outline:3px solid var(--gold);outline-offset:5px;}.visa-section{position:relative;padding:0;}.anchor-alias{position:absolute;top:0;left:0;}.visa-topics h3{margin-top:28px;}.visa-topics p{color:var(--muted);}.visa-section .closing-actions{margin-top:24px;}.journey-overview{display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 300px), 1fr));gap:32px;align-items:start;margin-top:28px;}.journey-overview>*{min-width:0;}.itinerary-route-map{width:100%;max-width:450px;}.itinerary-route-map h3, .journey-summary h2{margin:0 0 14px;font:600 1.125rem/1.4 'DM Sans', sans-serif;}.journey-summary .chapter{margin-bottom:28px;}.journey-summary .chapter:last-child{margin-bottom:0;}.journey-summary p, .journey-summary .included-list{font-size:.875rem;}.journey-summary .included-list{margin:0;}.journey-summary .included-list li{padding:3px 0;}.journey-summary .detail-list{grid-template-columns:minmax(0, 1fr);margin:16px 0 0;}.journey-summary .detail-list div{padding:12px 0;}.itinerary-map{margin:0;}.itinerary-map img{display:block;width:100%;height:auto;border:1px solid var(--line);background:#fff;}.itinerary-map figcaption{margin-top:12px;color:var(--muted);font-size:.88rem;}.gallery-sections{margin-bottom:38px;}.gallery-video-grid{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:32px;}.gallery-topics{display:flex;flex-wrap:wrap;gap:14px 28px;margin:-10px 0 48px;padding-bottom:26px;border-bottom:1px solid var(--line);}.gallery-group+.gallery-group{margin-top:60px;}.gallery-group .section-head{margin-bottom:24px;}.gallery-group h3{margin-bottom:12px;font-size:2rem;}.gallery-group .section-head p{max-width:720px;margin:0;}.gallery-item{min-width:0;display:flex;flex-direction:column;justify-content:flex-start;align-items:stretch;}.gallery-item img{height:auto;aspect-ratio:3 / 2;border-radius:3px;}.gallery-item .gallery-photo-frame{display:block;margin:0;aspect-ratio:3 / 2;overflow:hidden;border-radius:3px;}.gallery-photo-frame img{width:100%;height:100%;object-fit:cover;}.sea-gipsy-crop img{transform:scale(1.65);transform-origin:50% 100%;}.gallery-item:hover img{filter:brightness(1.04);}.gallery-item span{line-height:1.45;}.gallery-destination-film{margin-top:50px;padding-top:36px;border-top:1px solid var(--line);}.gallery-destination-film>p{max-width:700px;}.gallery-video-grid .video-caption{align-items:start;}.gallery-video-grid .video-caption small{display:block;margin-left:0;margin-top:4px;}.photo-dialog{padding:0;overflow:auto;color:#fff;max-height:calc(100svh - 28px);}.photo-toolbar{display:flex;align-items:center;justify-content:space-between;padding:10px 14px 10px 20px;min-height:58px;}.photo-dialog .photo-toolbar .close{position:static;background:#ffffff15;color:white;border:1px solid #ffffff45;}.photo-dialog>img{height:min(66svh, 760px);max-height:none;width:100%;object-fit:contain;}.photo-controls{display:grid;grid-template-columns:44px minmax(0, 1fr) 44px;align-items:center;gap:12px;padding:14px;}.photo-controls #photo-caption{padding:0;text-align:center;font-size:.9rem;line-height:1.5;}.photo-step{width:44px;height:44px;display:grid;place-items:center;color:white;background:transparent;border:1px solid #ffffff55;border-radius:4px;}.photo-step:hover{background:#ffffff15;}.site-footer{padding:58px 0 26px;background:#082f33;color:#d8e5e2;font:16px/1.6 'DM Sans', sans-serif;letter-spacing:0;}.site-footer .shell{width:min(calc(100% - 48px), 1200px);margin-inline:auto;}.site-footer .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.15fr;gap:36px;}.site-footer .brand{display:inline-block;font:500 1.5rem/1.15 'Newsreader', serif;color:#fff;letter-spacing:0;}.site-footer .brand small{display:block;margin-top:6px;font:500 .7rem/1.5 'DM Sans', sans-serif;text-transform:uppercase;color:#c3d4d1;letter-spacing:0;}.site-footer h2{margin:0 0 16px;color:#fff;font:600 .9rem/1.5 'DM Sans', sans-serif;letter-spacing:0;}.site-footer p{max-width:270px;margin:18px 0;font-size:.88rem;color:#c3d4d1;}.site-footer .footer-grid a:not(.brand){display:block;margin:10px 0;color:#c3d4d1;font-size:.88rem;overflow-wrap:anywhere;}.site-footer .footer-policy-links{margin-top:28px;}.site-footer a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px;}.site-footer a:focus-visible{outline:3px solid #dca94e;outline-offset:4px;}.site-footer .footer-bottom{display:flex;justify-content:space-between;gap:24px;margin-top:40px;padding-top:22px;border-top:1px solid #ffffff29;font-size:.82rem;color:#c3d4d1;}.site-footer .footer-bottom nav{display:flex;gap:24px;flex-wrap:wrap;}.site-footer .footer-bottom a{margin:0;color:inherit;}.policy-copy{max-width:850px;}.policy-status{margin:22px 0;color:#875f1f;font-weight:600;}.policy-topics{margin:28px 0 42px;}.policy-chapter{margin:38px 0;}.policy-chapter h2{font-size:2rem;}.policy-chapter p, .policy-chapter li{color:var(--muted);}.policy-chapter li{margin:8px 0;}.policy-copy table{min-width:0;table-layout:fixed;}.policy-copy th, .policy-copy td{padding:14px 12px;vertical-align:top;overflow-wrap:break-word;}.policy-copy caption{padding-bottom:14px;text-align:left;color:var(--muted);font-size:.88rem;}.policy-confirmation{font-size:.9rem;color:#875f1f !important;}.policy-review{padding-top:30px;border-top:1px solid var(--line);}.policy-review ol{padding-left:24px;}.policy-source{margin-top:28px;font-size:.85rem;}.policy-copy>h2{font-family:'Newsreader', serif;font-size:2rem;line-height:1.2;margin:38px 0 18px;}.policy-copy>p, .policy-copy>ul{font-family:'DM Sans', sans-serif;color:var(--muted);line-height:1.75;}.policy-copy>ul li{margin:8px 0;}.brand{display:inline-flex;align-items:center;flex-shrink:0;}.brand-logo{display:block;width:92px;height:70px;}.brand-logo img{display:block;width:100%;height:100%;object-fit:contain;}.site-footer .brand{display:inline-flex;}#departures{background-position:center center;background-attachment:46%;background-size:cover;background-image:url('https://cdn.th.uforge.build/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248658675-swj9ejzuro9-route.webp');background-repeat:repeat;}#i46rlk{background-image:url('https://cdn.th.uforge.build/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248658675-swj9ejzuro9-route.webp');background-repeat:repeat;background-position:center top;background-attachment:scroll;background-size:cover;}@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTg.ttf) format('truetype');}@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhTg.ttf) format('truetype');}@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAfJthTg.ttf) format('truetype');}@font-face{font-family:'Newsreader';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/newsreader/v26/cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438weI_ADA.ttf) format('truetype');}@font-face{font-family:'Newsreader';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/newsreader/v26/cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438wSo_ADA.ttf) format('truetype');}@media print{.site-footer{display:none;}}@media (max-width: 1100px){.menu-toggle{display:block;flex-shrink:0;}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;padding:24px;flex-direction:column;align-items:stretch;gap:18px;font-size:1rem;max-height:calc(100svh - 82px);overflow-y:auto;}.nav-links.open{display:flex;}.nav-dropdown{width:100%;}.nav-dropdown>summary{justify-content:space-between;}.nav-dropdown-panel{position:static;min-width:0;max-width:none;max-height:none;overflow:visible;margin-top:6px;box-shadow:none;}.site-header .nav-links{background:#fff;border-bottom:1px solid var(--line);}.home-page .site-header .nav-links{background:#082f33;border-bottom-color:#ffffff3d;}.journal-grid.all-stories{grid-template-columns:repeat(2, minmax(0, 1fr));}}@media (max-width: 900px){.nav-links{display:none;position:absolute;top:78px;left:0;right:0;padding:22px;background:rgba(6, 43, 47, .98);flex-direction:column;align-items:flex-start;}.nav-links.open{display:flex;}.menu-toggle{display:block;}.hero{min-height:100svh;}.hero-content{grid-template-columns:1fr;grid-template-rows:auto auto;gap:28px;}.hero-heading{grid-column:1;}.hero-details{grid-column:1;}.hero-heading{padding-top:0;max-width:720px;transform:none;}.hero-details{max-width:570px;padding-bottom:0;}h1 span{white-space:normal;}.section-heading{grid-template-columns:1fr;}.section-heading p{justify-self:start;}.departure-list{grid-template-columns:1fr 1fr;}.departure:last-child{grid-column:1 / -1;min-height:350px;}.story{grid-template-columns:1fr;}.story-image{min-height:480px;}.route-card:nth-child(n){grid-column:span 6;}.how-grid{grid-template-columns:1fr 1fr;}.charter-layout{grid-template-columns:1fr;gap:34px;}.charter-copy{max-width:680px;}.charter-photo img{aspect-ratio:4 / 3;object-position:center;}.footer-grid{grid-template-columns:1fr 1fr;}.site-footer .footer-grid{grid-template-columns:repeat(2, minmax(0, 1fr));}}@media (max-width: 700px){.policy-copy>h2{font-size:1.8rem;}}@media (max-width:700px){.brand-logo{width:79px;height:60px;}}@media (max-width: 620px){.shell{width:min(calc(100% - 28px), var(--max));}.nav{min-height:70px;}.nav-links{top:70px;}.hero{min-height:100svh;}.hero-media{object-position:58% center;}.hero-content{padding:126px 0 42px;gap:24px;}h1{font-size:clamp(3rem, 14vw, 4.4rem);}section{padding:70px 0;}.departure-list{grid-template-columns:1fr;}.departure:last-child{grid-column:auto;min-height:410px;}.propose{align-items:flex-start;flex-direction:column;}.story-image{min-height:360px;}.story-content{padding:56px 22px;}.routes-grid{grid-template-columns:1fr;}.route-card:nth-child(n){grid-column:auto;min-height:400px;}.how-grid{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr;}.form{grid-template-columns:1fr;padding:22px 18px;}.field.full{grid-column:auto;}.form-note{grid-column:auto;}.form-actions{grid-column:auto;}.form-actions{flex-direction:column-reverse;}.form-actions .btn{width:100%;}.archive-heading h1{font-size:2.4rem;}.archive-header{padding:38px 0;}.archive-reading{padding:38px 0;}.editorial-head{display:block;}.editorial-head h2{font-size:2.4rem;}.editorial-head>.editorial-link{margin-top:22px;}.planning-links{grid-template-columns:minmax(0, 1fr);gap:36px;}.journal-grid{grid-template-columns:minmax(0, 1fr);gap:36px;}.journal-grid.all-stories{grid-template-columns:minmax(0, 1fr);gap:36px;}.planning-link h3{font-size:1.6rem;}.journal-card h2, .journal-card h3{font-size:1.8rem;}.gallery-video-grid{grid-template-columns:minmax(0, 1fr);gap:36px;}.gallery-topics{gap:12px 20px;margin-bottom:36px;}.gallery-group+.gallery-group{margin-top:44px;}.gallery-group h3{font-size:1.7rem;}.gallery-item span{font-size:.8rem;}.photo-dialog>img{height:56svh;}.photo-controls{gap:8px;padding:12px 10px 18px;}.photo-controls #photo-caption{font-size:.8rem;}.site-footer{padding-top:42px;}.site-footer .shell{width:calc(100% - 32px);}.site-footer .footer-grid{grid-template-columns:minmax(0, 1fr);gap:28px;}.site-footer .footer-bottom{flex-direction:column;gap:16px;margin-top:30px;}.site-footer .footer-bottom nav{gap:18px;}.policy-chapter h2{font-size:1.8rem;}.policy-copy th, .policy-copy td{font-size:.82rem;padding:12px 8px;}}
+#iqtyv{padding:8px 10px;border:1px solid #d1d5db;border-radius:6px;font-size:14px;}#ikxwx{padding:8px 10px;border:1px solid #d1d5db;border-radius:6px;font-size:14px;flex:1;min-width:140px;}#iauzd{margin-left:auto;color:#6b7280;font-size:14px;}#iabf3{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px;}#iily9{display:none;color:#6b7280;padding:8px 0;}#ig8kn{display:none;color:#6b7280;}#iylyb{aspect-ratio:1;background:#f3f4f6;border-radius:6px;}#iczrj{margin:0;font-size:15px;}#icbrf{font-weight:600;color:#0f6e56;}#iqodm{font-size:12px;color:#6b7280;}#i12pf{border:1px solid #e5e7eb;border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:6px;}#i38hf{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;}#imdhs{margin:16px auto 0;display:block;padding:9px 18px;border:1px solid #d1d5db;border-radius:6px;background:#fff;cursor:pointer;}#inxqm{margin:0;}#i4xe2{max-width:1100px;margin:0 auto;padding:0 16px;background-color:black;background-image:url('https://cdn.th.uforge.build/preview/550e8400-e29b-41d4-a716-446655440001/0414b5c2-2841-4f2e-81aa-ff2a6c5bf553/uploads/1790646412653-145t37p3q3zl-657283776_1297369892247118_8414795237279976149_n.gif');background-repeat:repeat;background-position:left top;background-attachment:scroll;background-size:auto;}
 </style>
-<link rel="preload" as="font" type="font/woff2" href="/fonts/inter/Inter-Regular.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/fonts/inter/Inter-Medium.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/fonts/inter/Inter-SemiBold.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/fonts/inter/Inter-Bold.woff2" crossorigin>
-<link rel="stylesheet" href="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/cmp-standard/1.0.0/main.css">
-<link rel="stylesheet" href="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/Island Safari/css/footer.css">
-<link rel="stylesheet" href="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/Island Safari/css/style.css">
 <style id="design-tokens">:root {
-  --color-primary: #0d5a60;
-  --color-primary-hover: #0a4b50;
-  --color-primary-active: #083d41;
-  --color-secondary: #082f33;
-  --color-secondary-hover: #062428;
-  --color-secondary-active: #041a1d;
-  --color-accent: #dca94e;
-  --color-accent-hover: #cf9a3c;
-  --color-accent-active: #b8862f;
+  --color-primary: #6d8c45;
+  --color-primary-hover: #5a7538;
+  --color-primary-active: #4b602f;
+  --color-secondary: #5c5c54;
+  --color-secondary-hover: #4a4a43;
+  --color-secondary-active: #383833;
+  --color-accent: #c1e74f;
+  --color-accent-hover: #d0ed7b;
+  --color-accent-active: #dff3a7;
   --color-background: #ffffff;
-  --color-background-secondary: #f6f7f3;
+  --color-background-secondary: #f5f5f4;
   --color-surface: #ffffff;
-  --color-surface-hover: #eef3f1;
-  --color-text: #143334;
-  --color-text-secondary: #3c5556;
-  --color-text-muted: #617776;
-  --color-border: #d8e0dd;
-  --color-border-hover: #c2cecb;
-  --color-success: #2f7556;
-  --color-success-hover: #26614a;
-  --color-warning: #e69a00;
-  --color-warning-hover: #cc8800;
-  --color-error: #c0392b;
-  --color-error-hover: #a3301f;
-  --color-info: #1d5fa8;
-  --color-info-hover: #174d89;
-  --color-layout-bg: #f6f7f3;
-  --color-sidebar-bg: #f6f7f3;
-  --color-sidebar-text: #143334;
-  --color-sidebar-text-muted: #546a69;
-  --color-sidebar-item-hover: #e3ebe8;
-  --color-sidebar-item-active: #0d5a60;
-  --color-sidebar-border: #d8e0dd;
-  --color-rail-bg: #082f33;
-  --color-rail-text: #ffffff;
-  --color-rail-text-muted: #b9cdcb;
-  --color-rail-item-hover: #0d5a60;
-  --color-rail-item-active: #dca94e;
-  --color-rail-item-active-text: #143334;
+  --color-surface-hover: #f7fce9;
+  --color-text: #1a1d17;
+  --color-text-secondary: #4a4a43;
+  --color-text-muted: #8a8a82;
+  --color-border: #e7e7e5;
+  --color-border-hover: #d0d0cc;
+  --color-success: #22c55e;
+  --color-success-hover: #16a34a;
+  --color-warning: #f59e0b;
+  --color-warning-hover: #d97706;
+  --color-error: #dc2626;
+  --color-error-hover: #b91c1c;
+  --color-info: #3b82f6;
+  --color-info-hover: #2563eb;
+  --color-layout-bg: #f5f5f4;
+  --color-sidebar-bg: #f5f5f4;
+  --color-sidebar-text: #1a1d17;
+  --color-sidebar-text-muted: #8a8a82;
+  --color-sidebar-item-hover: #f7fce9;
+  --color-sidebar-item-active: #6d8c45;
+  --color-sidebar-border: #e7e7e5;
+  --color-rail-bg: #f5f5f4;
+  --color-rail-text: #1a1d17;
+  --color-rail-text-muted: #8a8a82;
+  --color-rail-item-hover: #f7fce9;
+  --color-rail-item-active: #6d8c45;
+  --color-rail-item-active-text: #000000;
   --color-panel-bg: #ffffff;
-  --color-panel-border: #d8e0dd;
+  --color-panel-border: #e7e7e5;
   --color-overlay-bg: #000000;
   --color-header-bg: #ffffff;
-  --color-header-text: #143334;
-  --color-header-border: #d8e0dd;
+  --color-header-text: #1a1d17;
+  --color-header-border: #e7e7e5;
   --color-input-bg: #ffffff;
-  --color-input-border: #d8e0dd;
-  --color-input-focus: #0d5a60;
+  --color-input-border: #e7e7e5;
+  --color-input-focus: #6d8c45;
   --color-card-bg: #ffffff;
-  --color-card-border: #d8e0dd;
-  --color-badge-bg: #e3ebe8;
-  --color-success-bg: #e9f4ef;
-  --color-success-border: #b5d9c8;
-  --color-success-text: #22573f;
-  --color-warning-bg: #fff7e8;
-  --color-warning-border: #f2d39b;
-  --color-warning-text: #8a4508;
-  --color-error-bg: #fcecea;
-  --color-error-border: #f0c0b9;
-  --color-error-text: #a3301f;
-  --color-info-bg: #eaf2fb;
-  --color-info-border: #bed5ef;
-  --color-info-text: #174d89;
-  --color-success-bg-hover: #d8ece2;
-  --color-warning-bg-hover: #ffefd2;
-  --color-error-bg-hover: #f9dcd8;
-  --color-info-bg-hover: #d8e7f7;
-  --color-on-primary: #ffffff;
+  --color-card-border: #e7e7e5;
+  --color-badge-bg: #f5f5f4;
+  --color-success-bg: #f0fdf4;
+  --color-success-border: #bbf7d0;
+  --color-success-text: #166534;
+  --color-warning-bg: #fefce8;
+  --color-warning-border: #fde68a;
+  --color-warning-text: #854d0e;
+  --color-error-bg: #fef2f2;
+  --color-error-border: #fecaca;
+  --color-error-text: #991b1b;
+  --color-info-bg: #eff6ff;
+  --color-info-border: #bfdbfe;
+  --color-info-text: #1e40af;
+  --color-success-bg-hover: #dcfce7;
+  --color-warning-bg-hover: #fef9c3;
+  --color-error-bg-hover: #fee2e2;
+  --color-info-bg-hover: #dbeafe;
+  --color-on-primary: #000000;
   --color-on-secondary: #ffffff;
-  --color-on-accent: #143334;
+  --color-on-accent: #1a1d17;
   --color-on-error: #ffffff;
-  --color-on-warning: #143334;
-  --color-on-success: #ffffff;
-  --color-on-info: #ffffff;
-  --color-primary-light: #dcebea;
-  --color-primary-light-hover: #cbe1df;
+  --color-on-warning: #1a1d17;
+  --color-on-success: #1a1d17;
+  --color-on-info: #1a1d17;
+  --color-primary-light: #eef9d3;
+  --color-primary-light-hover: #dff3a7;
   --color-hue-purple-bg: #faf5ff;
   --color-hue-purple-border: #e9d5ff;
   --color-hue-purple-text: #6b21a8;
@@ -181,36 +105,36 @@ body {
   --color-hue-indigo-bg: #eef2ff;
   --color-hue-indigo-border: #c7d2fe;
   --color-hue-indigo-text: #3730a3;
-  --color-focus-ring: #0d5a60;
-  --color-disabled-bg: #f0f3f1;
-  --color-disabled-text: #a3b4b2;
-  --color-disabled-border: #d8e0dd;
-  --color-chart-series1: #0d5a60;
-  --color-chart-series2: #dca94e;
-  --color-chart-series3: #3b8b69;
-  --color-chart-series4: #617776;
-  --color-chart-series5: #082f33;
-  --color-chart-series6: #8fc1bd;
-  --color-chart-series7: #b8862f;
-  --color-chart-series8: #4f9da3;
-  --color-chart-series9: #c2cecb;
-  --color-chart-series10: #ecd29f;
-  --color-chart-series11: #dcebea;
-  --color-chart-series12: #a3b4b2;
-  --color-chart-grid: #e6ece9;
-  --color-chart-tick: #617776;
-  --color-chart-tooltip-bg: #082f33;
-  --color-chart-tooltip-title: #dca94e;
-  --color-chart-tooltip-body: #dcebea;
-  --color-chart-tooltip-border: #143334;
-  --color-chart-legend: #3c5556;
+  --color-focus-ring: #6d8c45;
+  --color-disabled-bg: #f5f5f4;
+  --color-disabled-text: #b8b8b3;
+  --color-disabled-border: #e7e7e5;
+  --color-chart-series1: #8fb85c;
+  --color-chart-series2: #a8d06f;
+  --color-chart-series3: #6d8c45;
+  --color-chart-series4: #5c5c54;
+  --color-chart-series5: #4b602f;
+  --color-chart-series6: #bee58a;
+  --color-chart-series7: #d0ed7b;
+  --color-chart-series8: #c1e74f;
+  --color-chart-series9: #8a8a82;
+  --color-chart-series10: #b8b8b3;
+  --color-chart-series11: #dff3a7;
+  --color-chart-series12: #eef9d3;
+  --color-chart-grid: #f5f5f4;
+  --color-chart-tick: #8a8a82;
+  --color-chart-tooltip-bg: #262a23;
+  --color-chart-tooltip-title: #bee58a;
+  --color-chart-tooltip-body: #e7e7e5;
+  --color-chart-tooltip-border: #383833;
+  --color-chart-legend: #5c5c54;
   --color-chart-surface: #ffffff;
-  --color-surface-sunken: #eef2ef;
+  --color-surface-sunken: #ebebe9;
   --color-surface-raised: #ffffff;
-  --color-surface-inverse: #143334;
-  --color-text-inverse: #f6f7f3;
-  --color-border-subtle: #e6ece9;
-  --color-border-strong: #9aaeab;
+  --color-surface-inverse: #262a23;
+  --color-text-inverse: #f5f5f4;
+  --color-border-subtle: #f0f0ee;
+  --color-border-strong: #b8b8b3;
   --color-illustration-pot: #c97b52;
   --color-illustration-pot-rim: #b4643f;
   --color-illustration-soil: #5e4636;
@@ -243,65 +167,65 @@ body {
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --font-heading: Newsreader;
-  --font-body: DM Sans;
+  --font-heading: Inter;
+  --font-body: Inter;
 }
 
 .dark {
-  --color-primary: #4fb3ba;
-  --color-primary-hover: #72c4ca;
-  --color-primary-active: #95d4d9;
-  --color-secondary: #c4d6d4;
-  --color-secondary-hover: #dcebea;
-  --color-secondary-active: #f0f4f2;
-  --color-accent: #dca94e;
-  --color-accent-hover: #e6bd72;
-  --color-accent-active: #eed197;
-  --color-background: #061f22;
-  --color-background-secondary: #0b2a2d;
-  --color-surface: #0b2a2d;
-  --color-surface-hover: #143c40;
-  --color-text: #f0f4f2;
-  --color-text-secondary: #c4d6d4;
-  --color-text-muted: #8fa6a4;
-  --color-border: #1d4a4e;
-  --color-border-hover: #2a5c60;
-  --color-success: #5cb88f;
-  --color-success-hover: #7cc8a6;
-  --color-warning: #f5a524;
-  --color-warning-hover: #f8bb5a;
+  --color-primary: #bee58a;
+  --color-primary-hover: #a8d06f;
+  --color-primary-active: #8fb85c;
+  --color-secondary: #b8b8b3;
+  --color-secondary-hover: #d0d0cc;
+  --color-secondary-active: #e7e7e5;
+  --color-accent: #c1e74f;
+  --color-accent-hover: #d0ed7b;
+  --color-accent-active: #dff3a7;
+  --color-background: #1a1d17;
+  --color-background-secondary: #262a23;
+  --color-surface: #262a23;
+  --color-surface-hover: #383833;
+  --color-text: #f5f5f4;
+  --color-text-secondary: #d0d0cc;
+  --color-text-muted: #8a8a82;
+  --color-border: #383833;
+  --color-border-hover: #4a4a43;
+  --color-success: #22c55e;
+  --color-success-hover: #16a34a;
+  --color-warning: #f59e0b;
+  --color-warning-hover: #d97706;
   --color-error: #f87171;
   --color-error-hover: #fca5a5;
-  --color-info: #5b9bea;
-  --color-info-hover: #86b6f0;
-  --color-layout-bg: #061f22;
-  --color-sidebar-bg: #0b2a2d;
-  --color-sidebar-text: #f0f4f2;
-  --color-sidebar-text-muted: #8fa6a4;
-  --color-sidebar-item-hover: #143c40;
-  --color-sidebar-item-active: #0d5a60;
-  --color-sidebar-border: #1d4a4e;
-  --color-rail-bg: #041a1d;
-  --color-rail-text: #f0f4f2;
-  --color-rail-text-muted: #b9cdcb;
-  --color-rail-item-hover: #0b2a2d;
-  --color-rail-item-active: #dca94e;
-  --color-rail-item-active-text: #061f22;
-  --color-panel-bg: #0b2a2d;
-  --color-panel-border: #1d4a4e;
+  --color-info: #3b82f6;
+  --color-info-hover: #2563eb;
+  --color-layout-bg: #1a1d17;
+  --color-sidebar-bg: #262a23;
+  --color-sidebar-text: #f5f5f4;
+  --color-sidebar-text-muted: #8a8a82;
+  --color-sidebar-item-hover: #383833;
+  --color-sidebar-item-active: #bee58a;
+  --color-sidebar-border: #383833;
+  --color-rail-bg: #262a23;
+  --color-rail-text: #f5f5f4;
+  --color-rail-text-muted: #8a8a82;
+  --color-rail-item-hover: #383833;
+  --color-rail-item-active: #bee58a;
+  --color-rail-item-active-text: #1a1d17;
+  --color-panel-bg: #262a23;
+  --color-panel-border: #383833;
   --color-overlay-bg: #000000;
-  --color-header-bg: #0b2a2d;
-  --color-header-text: #f0f4f2;
-  --color-header-border: #1d4a4e;
-  --color-input-bg: #0b2a2d;
-  --color-input-border: #1d4a4e;
-  --color-input-focus: #4fb3ba;
-  --color-card-bg: #0b2a2d;
-  --color-card-border: #1d4a4e;
-  --color-badge-bg: #12363a;
-  --color-success-bg: #0c2a1e;
-  --color-success-border: #2f7556;
-  --color-success-text: #a8dcc3;
+  --color-header-bg: #262a23;
+  --color-header-text: #f5f5f4;
+  --color-header-border: #383833;
+  --color-input-bg: #262a23;
+  --color-input-border: #383833;
+  --color-input-focus: #bee58a;
+  --color-card-bg: #262a23;
+  --color-card-border: #383833;
+  --color-badge-bg: #262a23;
+  --color-success-bg: #052e16;
+  --color-success-border: #166534;
+  --color-success-text: #86efac;
   --color-warning-bg: #451a03;
   --color-warning-border: #92400e;
   --color-warning-text: #fcd34d;
@@ -311,19 +235,19 @@ body {
   --color-info-bg: #172554;
   --color-info-border: #1e40af;
   --color-info-text: #93c5fd;
-  --color-success-bg-hover: #123a2a;
+  --color-success-bg-hover: #14532d;
   --color-warning-bg-hover: #78350f;
   --color-error-bg-hover: #7f1d1d;
   --color-info-bg-hover: #1e3a8a;
-  --color-on-primary: #061f22;
-  --color-on-secondary: #061f22;
-  --color-on-accent: #061f22;
-  --color-on-error: #061f22;
-  --color-on-warning: #061f22;
-  --color-on-success: #061f22;
-  --color-on-info: #061f22;
-  --color-primary-light: #0d3f43;
-  --color-primary-light-hover: #12494d;
+  --color-on-primary: #1a1d17;
+  --color-on-secondary: #1a1d17;
+  --color-on-accent: #1a1d17;
+  --color-on-error: #1a1d17;
+  --color-on-warning: #1a1d17;
+  --color-on-success: #1a1d17;
+  --color-on-info: #1a1d17;
+  --color-primary-light: #2d3b1c;
+  --color-primary-light-hover: #3a4c24;
   --color-hue-purple-bg: #3b0764;
   --color-hue-purple-border: #6b21a8;
   --color-hue-purple-text: #d8b4fe;
@@ -336,36 +260,36 @@ body {
   --color-hue-indigo-bg: #1e1b4b;
   --color-hue-indigo-border: #3730a3;
   --color-hue-indigo-text: #a5b4fc;
-  --color-focus-ring: #dca94e;
-  --color-disabled-bg: #0b2a2d;
-  --color-disabled-text: #3d5f62;
-  --color-disabled-border: #1d4a4e;
-  --color-chart-series1: #4fb3ba;
-  --color-chart-series2: #dca94e;
-  --color-chart-series3: #5cb88f;
-  --color-chart-series4: #c4d6d4;
-  --color-chart-series5: #95d4d9;
-  --color-chart-series6: #eed197;
-  --color-chart-series7: #8fa6a4;
-  --color-chart-series8: #3b8b69;
-  --color-chart-series9: #dcebea;
-  --color-chart-series10: #b8862f;
-  --color-chart-series11: #f0f4f2;
-  --color-chart-series12: #617776;
-  --color-chart-grid: #143c40;
-  --color-chart-tick: #8fa6a4;
-  --color-chart-tooltip-bg: #f0f4f2;
-  --color-chart-tooltip-title: #0d5a60;
-  --color-chart-tooltip-body: #143334;
-  --color-chart-tooltip-border: #c4d6d4;
-  --color-chart-legend: #8fa6a4;
-  --color-chart-surface: #0b2a2d;
-  --color-surface-sunken: #041a1d;
-  --color-surface-raised: #12363a;
-  --color-surface-inverse: #f0f4f2;
-  --color-text-inverse: #061f22;
-  --color-border-subtle: #0b2a2d;
-  --color-border-strong: #2a5c60;
+  --color-focus-ring: #bee58a;
+  --color-disabled-bg: #262a23;
+  --color-disabled-text: #5c5c54;
+  --color-disabled-border: #383833;
+  --color-chart-series1: #bee58a;
+  --color-chart-series2: #d0ed7b;
+  --color-chart-series3: #a8d06f;
+  --color-chart-series4: #b8b8b3;
+  --color-chart-series5: #dff3a7;
+  --color-chart-series6: #eef9d3;
+  --color-chart-series7: #c1e74f;
+  --color-chart-series8: #8fb85c;
+  --color-chart-series9: #f7fce9;
+  --color-chart-series10: #8a8a82;
+  --color-chart-series11: #d0d0cc;
+  --color-chart-series12: #e7e7e5;
+  --color-chart-grid: #383833;
+  --color-chart-tick: #b8b8b3;
+  --color-chart-tooltip-bg: #f5f5f4;
+  --color-chart-tooltip-title: #4b602f;
+  --color-chart-tooltip-body: #383833;
+  --color-chart-tooltip-border: #d0d0cc;
+  --color-chart-legend: #b8b8b3;
+  --color-chart-surface: #262a23;
+  --color-surface-sunken: #15170f;
+  --color-surface-raised: #30352b;
+  --color-surface-inverse: #f5f5f4;
+  --color-text-inverse: #1a1d17;
+  --color-border-subtle: #262a23;
+  --color-border-strong: #4a4a43;
   --color-illustration-pot: #d98a60;
   --color-illustration-pot-rim: #c4714a;
   --color-illustration-soil: #4a362a;
@@ -394,468 +318,415 @@ body {
 
 :where(h1, h2, h3, h4, h5, h6) {
   font-family: var(--font-heading), system-ui, sans-serif;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter/Inter-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-:root {
-  --cmp-color-info: #06B6D4;
-  --cmp-color-error: #EF4444;
-  --cmp-color-primary: #3B82F6;
-  --cmp-color-success: #10B981;
-  --cmp-color-warning: #F59E0B;
-  --cmp-color-secondary: #BB8FCE;
-  --cmp-font-body: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --cmp-font-display: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --cmp-font-size-lg: 1.125rem;
-  --cmp-font-size-sm: 0.875rem;
-  --cmp-font-size-xl: 1.25rem;
-  --cmp-font-size-xs: 0.75rem;
-  --cmp-font-size-2xl: 1.5rem;
-  --cmp-font-size-3xl: 1.875rem;
-  --cmp-font-size-base: 1rem;
-  --cmp-font-weight-bold: 700;
-  --cmp-font-weight-medium: 500;
-  --cmp-font-weight-normal: 400;
-  --cmp-font-weight-semibold: 600;
-  --cmp-line-height-tight: 1.25;
-  --cmp-line-height-normal: 1.5;
-  --cmp-line-height-relaxed: 1.75;
-  --cmp-space-lg: 1.5rem;
-  --cmp-space-md: 1rem;
-  --cmp-space-sm: 0.5rem;
-  --cmp-space-xl: 2rem;
-  --cmp-space-xs: 0.25rem;
-  --cmp-space-2xl: 3rem;
-  --cmp-radius-lg: 12px;
-  --cmp-radius-md: 8px;
-  --cmp-radius-sm: 4px;
-  --cmp-radius-full: 9999px;
-  --cmp-shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-  --cmp-shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-  --cmp-shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-  --cmp-breakpoint-lg: 1024px;
-  --cmp-breakpoint-md: 768px;
-  --cmp-breakpoint-sm: 640px;
-  --cmp-breakpoint-xl: 1280px;
-  --cmp-z-modal: 1000;
-  --cmp-z-toast: 2000;
-  --cmp-z-dropdown: 100;
-  --cmp-animation-fadeIn: fadeIn 0.3s ease;
-  --cmp-opacity-overlay: 0.7;
-  --cmp-opacity-disabled: 0.5;
-  --cmp-scheme-bg: #FFFFFF;
-  --cmp-scheme-info: #06B6D4;
-  --cmp-scheme-text: #111827;
-  --cmp-scheme-error: #EF4444;
-  --cmp-scheme-border: #E5E7EB;
-  --cmp-scheme-primary: #3B82F6;
-  --cmp-scheme-success: #10B981;
-  --cmp-scheme-surface: #F9FAFB;
-  --cmp-scheme-warning: #F59E0B;
-  --cmp-scheme-secondary: #BB8FCE;
-  --cmp-icon-library: lucide;
-  --cmp-icon-prefix: icon-;
-  --cmp-font-scale: 1;
-}
-
-html { font-size: calc(1rem * var(--cmp-font-scale, 1)); }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --cmp-scheme-bg: #1A1A2E;
-    --cmp-color-info: #22D3EE;
-    --cmp-scheme-text: #F3F4F6;
-    --cmp-color-error: #F87171;
-    --cmp-scheme-border: #374151;
-    --cmp-color-primary: #60A5FA;
-    --cmp-color-success: #34D399;
-    --cmp-scheme-surface: #262640;
-    --cmp-color-warning: #FBBF24;
-    --cmp-color-secondary: #A78BFA;
-  }
 }</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Home page",
+  "name": "Homepage",
   "description": "",
   "url": "/en-US/"
 }
 </script>
-<meta property="og:title" content="Home page">
+<meta property="og:title" content="Homepage">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Home page">
+<meta name="twitter:title" content="Homepage">
 </head>
 <body>
-<header class="site-header"><div class="shell nav"><a href="#top" class="brand"><span class="brand-logo logo-on-photo"><img src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/upload/1793259131290-2qocq7wgwzk-moby-dick-complete-white.svg" alt="Moby Dick Tours" width="820" height="625" id="ijqm" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793259131290-2qocq7wgwzk-moby-dick-complete-white.svg"></span></a><nav id="menu" aria-label="Primary navigation" class="nav-links"><a href="/departures" id="i6pa">Departures</a><a href="/itineraries">Itineraries</a><a href="/sea-gipsy">MV Sea Gipsy</a><details class="nav-dropdown"><summary>Mergui<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-chevron"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="nav-dropdown-panel"><a href="/mergui-archipelago">Mergui Archipelago</a><a href="/about-myanmar">About Myanmar</a><a href="/kawthaung-ranong">Kawthaung - Ranong</a><a href="/myeik-mergui">Myeik (Mergui)</a><a href="/dawei-tavoy">Dawei (Tavoy)</a><a href="/moken-communities">Moken communities</a><a href="/gallery">Photos &amp; Videos</a></div></details><a href="/plan-your-trip">Plan your trip</a><a href="/news-stories">News &amp; Stories</a><a href="/contact">Contact</a><a href="/departures" class="btn btn-primary">Find your departure</a></nav><button type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu" class="menu-toggle"><span></span><span></span><span></span></button></div></header><main id="top"><section class="hero"><img src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/upload/1793248602480-m5drzhihzv7-aerial.webp" alt="MV Sea Gipsy anchored in turquoise water in the Mergui Archipelago" id="i2sj" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248602480-m5drzhihzv7-aerial.webp" class="hero-media"><div class="shell hero-content"><div class="hero-heading"><p class="eyebrow">Small-group island expeditions · Southern Myanmar</p><h1><span>Explore Stunning</span><span>Mergui Archipelago Charters</span></h1></div><div class="hero-details"><p class="hero-copy">Sail between remote islands aboard MV Sea Gipsy. Explore our shared cruises or tell us the dates that work for you.</p><div class="hero-actions"><a href="#departures" class="btn btn-primary">View upcoming departures</a><a href="/itineraries" class="btn btn-ghost">Explore itineraries</a></div><div class="hero-note"><span><i></i>4–10 guests per expedition</span><span><i></i>October to May</span><span><i></i>Departing Kawthaung</span></div></div></div></section><section id="boat" class="story"><img src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/upload/1793248631848-b7af9wkfia-hero.webp" alt="MV Sea Gipsy at sea" id="ieoii" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248631848-b7af9wkfia-hero.webp" class="story-image"><div class="story-content"><p class="eyebrow">Aboard MV Sea Gipsy</p><h2>Small ship. Immense archipelago.</h2><p>The Mergui Archipelago is a scattering of more than 700 islands in southern Myanmar. Aboard Sea Gipsy, the journey moves at island pace: snorkelling reefs, kayaking mangroves and anchoring far from crowded routes.</p><div class="story-stats"><div><strong>700+</strong><span>islands</span></div><div><strong>10</strong><span>guests maximum</span></div><div><strong>4</strong><span>guests to confirm</span></div></div><div class="hero-actions"><a href="/itineraries" class="btn btn-primary">Choose an itinerary</a><a href="/sea-gipsy" class="btn">Explore MV Sea Gipsy</a></div></div></section><section id="routes"><div class="shell"><div class="section-heading"><h2>Choose your island journey</h2><p>Four itineraries offer different depths of exploration. Prices are shown upfront and include shared accommodation, meals, transfers and guided activities.</p></div><div class="routes-grid"><article class="route-card"><a href="/itinerary-4-days"><img src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/upload/1793248658675-swj9ejzuro9-route.webp" alt="Turquoise lagoon among limestone islands" id="izclg" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248658675-swj9ejzuro9-route.webp"><div class="route-copy"><span class="route-kicker">A first taste of Mergui</span><h3>4 days / 3 nights</h3><p>From USD 1,300 per person sharing</p></div></a></article><article class="route-card"><a href="/itinerary-5-days"><img src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/upload/1793248631848-b7af9wkfia-hero.webp" alt="MV Sea Gipsy sailing through the Mergui Archipelago" id="i6dyj" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248631848-b7af9wkfia-hero.webp"><div class="route-copy"><span class="route-kicker">More time offshore</span><h3>5 days / 4 nights</h3><p>From USD 1,500 per person sharing</p></div></a></article><article class="route-card"><a href="/itinerary-6-days"><img src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/upload/1793248602480-m5drzhihzv7-aerial.webp" alt="MV Sea Gipsy anchored beside a remote Mergui island" id="i1at3" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248602480-m5drzhihzv7-aerial.webp"><div class="route-copy"><span class="route-kicker">The signature route</span><h3>6 days / 5 nights</h3><p>From USD 1,800 per person sharing</p></div></a></article><article class="route-card"><a href="/itinerary-10-days"><img src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/upload/1793248699595-q6i4q7npqha-boat.webp" alt="Quiet beach and limestone islands in the Mergui Archipelago" id="i5670f" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248699595-q6i4q7npqha-boat.webp"><div class="route-copy"><span class="route-kicker">The complete expedition</span><h3>10 days / 9 nights</h3><p>From USD 2,500 per person sharing</p></div></a></article></div></div></section><section id="private-charters" aria-labelledby="charter-heading" class="private-charter"><div class="shell charter-layout"><div class="charter-copy"><p class="eyebrow">Private charters · MV Sea Gipsy</p><h2 id="charter-heading">Your group.<br>Your own island adventure.</h2><p>Bring family, friends or colleagues together for a private cruise through the Mergui Archipelago. From a family gathering to a team escape or a special occasion, enjoy the boat exclusively with your own group.</p><div class="charter-rate"><strong>USD 3,000 <span>per day (24 hours)</span></strong><p>Exclusive boat hire · Up to 10 guests</p></div><a href="/private-charters" class="btn btn-dark">Explore private charters</a><p class="charter-note">Tell us your dates and what you have in mind. Your quotation will set out the itinerary, inclusions and any additional costs.</p></div><figure class="charter-photo"><img src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/upload/1793248719921-4sy5gy64ezk-private-charter-sea-gipsy.webp" alt="Full view of MV Sea Gipsy on blue water with guests kayaking alongside" loading="lazy" decoding="async" width="960" height="720" id="i61c37" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248719921-4sy5gy64ezk-private-charter-sea-gipsy.webp"><figcaption>MV Sea Gipsy — your own boat, with room for adventure.</figcaption></figure></div></section><section id="departures" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248658675-swj9ejzuro9-route.webp" class="departures-band"><div class="shell"><div class="section-heading"><h2>Upcoming shared departures</h2><p>Most guests travel as couples. Contact us about the listed dates, or tell us when you would like to travel and we will discuss the options.</p></div><div class="departure-list"><article class="departure featured"><time datetime="2027-01-12"><span class="date-range">12–17</span><span class="date-month">January 2027</span></time><div class="route">6 days / 5 nights<br>Southern Mergui route</div><div class="price">USD 1,800 <small>per person sharing</small></div><a href="/departure?trip=january" class="btn btn-dark">View trip details</a></article><article class="departure"><time datetime="2027-02-02"><span class="date-range">2–7</span><span class="date-month">February 2027</span></time><div class="route">6 days / 5 nights<br>Southern Mergui route</div><div class="price">USD 1,800 <small>per person sharing</small></div><a href="/departure?trip=february" class="btn btn-dark">View trip details</a></article><article class="departure"><time datetime="2027-03-18"><span class="date-range">18–22</span><span class="date-month">March 2027</span></time><div class="route">5 days / 4 nights<br>Island discovery route</div><div class="price">USD 1,500 <small>per person sharing</small></div><a href="/departure?trip=march" class="btn btn-dark">View trip details</a></article></div><div class="propose"><div><strong>None of these dates work?</strong><p>Tell us your preferred dates and we will check availability for your journey.</p><a href="/departures" id="i2zfm7">Browse all shared departures</a></div><a href="/contact#enquiry" class="btn btn-dark">Enquire about dates</a></div></div></section><section id="how" class="how"><div class="shell"><div class="section-heading"><h2>How to enquire</h2><p>A straightforward enquiry process for couples and small groups. No payment is taken when you contact us.</p></div><div class="how-grid"><article class="step"><span class="step-number">01</span><h3>Choose an itinerary</h3><p>Compare the journey length, route and per-person price.</p></article><article class="step"><span class="step-number">02</span><h3>Choose your dates</h3><p>Choose a listed date or tell us when you would like to travel.</p></article><article class="step"><span class="step-number">03</span><h3>Send an enquiry</h3><p>Tell us your group size and flexibility. No payment is taken yet.</p></article><article class="step"><span class="step-number">04</span><h3>Receive your quotation</h3><p>We check availability, discuss the arrangements and explain how to book.</p></article></div></div></section><section id="i46rlk" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248658675-swj9ejzuro9-route.webp" class="testimonial"><div class="shell quote"><blockquote>“Sensational voyage, amazing islands with impeccable service – a must for anyone’s bucket list.”</blockquote><cite>BaH &amp; Ket · Island Safaris guests</cite></div></section><section id="planning" class="editorial-band"><div class="shell"><div class="editorial-head"><div><p class="editorial-kicker">Plan your trip</p><h2>Before you set sail</h2><p>From your arrival in Kawthaung to your first evening aboard.</p></div><a href="/plan-your-trip" class="editorial-link">All trip planning information</a></div><div class="planning-links"><a href="/plan-your-trip#getting-here" class="planning-link"><h3>Getting here</h3><p>Plan your arrival in Kawthaung and your connection from Ranong.</p><span class="editorial-link">Plan your arrival</span></a><a href="/plan-your-trip#visas-entry" class="planning-link"><h3>Visas &amp; entry</h3><p>Check visa requirements, understand the separate cruise permit and prepare your documents.</p><span class="editorial-link">Visa &amp; entry information</span></a><a href="/plan-your-trip#preparation" class="planning-link"><h3>Before you travel</h3><p>Prepare for life aboard, from what to pack to practical booking questions.</p><span class="editorial-link">Prepare for your trip</span></a></div></div></section><section id="news"><div class="shell"><div class="editorial-head"><div><p class="editorial-kicker">From the archipelago</p><h2>News &amp; stories</h2><p>Life aboard, island discoveries and journeys remembered.</p></div><a href="/news-stories" class="editorial-link">All news &amp; stories</a></div><div class="journal-grid"><article class="journal-card"><a aria-label="Read On board MV Sea Gipsy" href="/on-board-the-mv-sea-gipsy"><img src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/upload/1793248994233-2n5488n0r8c-deck.webp" alt="Shaded dining space on the deck of MV Sea Gipsy" loading="lazy" width="1200" height="667" id="i8xptt" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248994233-2n5488n0r8c-deck.webp"><span class="editorial-kicker">Travel story</span><h3>On board MV Sea Gipsy</h3><p>A look at life aboard Sea Gipsy and journeys through the Mergui Archipelago.</p><p class="journal-credit">Island Safaris archive / Author and publication date to confirm</p><span class="editorial-link">Read article</span></a></article><article class="journal-card"><a aria-label="Read Sailing among Myanmar's islands of mystery" href="/by-miki-meek-mar-2013"><img src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/upload/1793248658675-swj9ejzuro9-route.webp" alt="Turquoise lagoon surrounded by islands in the Mergui Archipelago" loading="lazy" width="1200" height="667" id="i68won" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793248658675-swj9ejzuro9-route.webp"><span class="editorial-kicker">In the press</span><h3>Sailing among Myanmar's islands of mystery</h3><p>Miki Meek recounts a six-day voyage with friends and family among the islands.</p><p class="journal-credit">Miki Meek / The New York Times / 14 March 2013</p><span class="editorial-link">Read article</span></a></article></div></div></section></main><footer id="site-footer" class="site-footer"><div class="shell"><div class="footer-grid"><div><a href="/" class="brand"><span class="brand-logo"><img src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/upload/1793259131290-2qocq7wgwzk-moby-dick-complete-white.svg" alt="Moby Dick Tours" width="820" height="625" id="i9hz" data-asset-key="themes-and-assets/preview/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/uploads/1793259131290-2qocq7wgwzk-moby-dick-complete-white.svg"></span></a><p>Small-group cruises and private charters through the Mergui Archipelago aboard MV Sea Gipsy.</p><a href="/about">About Island Safaris</a></div><nav aria-label="Footer journey links"><h2>Your journey</h2><a href="/itineraries">Itineraries</a><a href="/departures">Shared departures</a><a href="/private-charters">Private charters</a><a href="/sea-gipsy">MV Sea Gipsy</a></nav><div class="footer-discover"><nav aria-label="Footer destination and planning links"><h2>Discover &amp; prepare</h2><a href="/mergui-archipelago">Mergui Archipelago</a><a href="/plan-your-trip">Plan your trip</a><a href="/news-stories">News &amp; Stories</a><a href="/gallery">Photos &amp; Videos</a></nav><nav aria-label="Footer policies" class="footer-policy-links"><h2>Policies</h2><a href="/booking-terms">Terms &amp; Conditions</a></nav></div><nav aria-label="Footer contact links"><h2>Contact</h2><a href="/contact">Contact the team</a><a href="mailto:info@islandsafarimergui.com">info@islandsafarimergui.com</a><a href="tel:+66819583310">+66 81 958 3310</a><a href="https://wa.me/66819583310" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://www.facebook.com/IslandSafariMerguiArchipelago" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://www.instagram.com/islandsafari/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.youtube.com/@islandsafarimergui" target="_blank" rel="noopener noreferrer">YouTube</a></nav></div><div class="footer-bottom"><span>© 2026 Island Safaris</span></div></div></footer>
-<script type="text/javascript" data-source="components">
-// navigation.js — destination dropdown menu (details.nav-dropdown)
-(() => {
-    'use strict';
-    const dropdowns = [...document.querySelectorAll('details.nav-dropdown')];
-    if (!dropdowns.length) return;
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5+Duo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title> Homepage </title><meta name="description" content="
 
-    // Close when clicking outside the menu or clicking a link inside it
-    document.addEventListener('click', event => {
-        dropdowns.forEach(d => {
-            if (!d.contains(event.target) || event.target.closest('a')) d.open = false;
-        });
+"><div>Welcome to Homepage Naja</div><main>Homepage
+
+<p class="subtitle"> Homepage </p>  <div class="content"> <p>Homepage</p> </div></main><div data-dyn-url="https://svc.th.uforge.build/api/v1/sites/0414b5c2-2841-4f2e-81aa-ff2a6c5bf553/listings/properties?limit=12" data-dyn-params="propertyType,businessFunction,availability,limit,propertyType_not,businessFunction_not,availability_not,priceRange_min,priceRange_max,numberOfBedrooms_min,numberOfBedrooms_max,numberOfBathroomsTotal_min,numberOfBathroomsTotal_max,floorSize_min,floorSize_max,lotSize_min,lotSize_max,yearBuilt_min,yearBuilt_max,numberOfParkingSpaces_min,numberOfParkingSpaces_max,amenityFeature,amenityFeature_not,furnished,furnished_not,addressLocality,addressLocality_not,developer,developer_not,project,project_not,projectRef,projectRef_not,buildingRef,buildingRef_not,viewType,viewType_not,poolType,poolType_not,structureType,structureType_not,direction,direction_not,legalStatus,legalStatus_not,ownership,ownership_not,mooringType,mooringType_not,parkingType,parkingType_not,maidRoom,maidRoom_not,isStandalone,isStandalone_not,numberOfRooms_min,numberOfRooms_max,referenceId,referenceId_not,petPolicy,petPolicy_not,smokingPolicy,smokingPolicy_not,numberOfAirCons_min,numberOfAirCons_max,location" data-dyn-default-locale="en-US" data-dyn-sort-options="[{&quot;value&quot;:&quot;publishedAt:asc&quot;,&quot;label&quot;:&quot;Published Date ↑&quot;},{&quot;value&quot;:&quot;publishedAt:desc&quot;,&quot;label&quot;:&quot;Published Date ↓&quot;},{&quot;value&quot;:&quot;title:asc&quot;,&quot;label&quot;:&quot;Title ↑&quot;},{&quot;value&quot;:&quot;title:desc&quot;,&quot;label&quot;:&quot;Title ↓&quot;},{&quot;value&quot;:&quot;price:asc&quot;,&quot;label&quot;:&quot;Price ↑&quot;},{&quot;value&quot;:&quot;price:desc&quot;,&quot;label&quot;:&quot;Price ↓&quot;},{&quot;value&quot;:&quot;area:asc&quot;,&quot;label&quot;:&quot;Area ↑&quot;},{&quot;value&quot;:&quot;area:desc&quot;,&quot;label&quot;:&quot;Area ↓&quot;}]" data-cmp-kind="dynamic" data-dyn="eyJjYXBhYmlsaXR5IjoicmVhbGVzdGF0ZSIsIml0ZW1UeXBlIjoiUHJvcGVydHkiLCJlbmRwb2ludElkIjoicHJvcGVydGllcy5saXN0IiwiZGF0YVNvdXJjZSI6eyJraW5kIjoiY29sbGVjdGlvbiIsInBhcmFtcyI6eyJsaW1pdCI6MTJ9fSwiYmluZGluZ01vZGUiOiJydW50aW1lIiwiYmluZGluZ3MiOlt7InNsb3QiOiJ0aXRsZSIsImZpZWxkIjoiaXRlbS50aXRsZSJ9LHsic2xvdCI6ImRldGFpbCIsImZpZWxkIjoiaXRlbS50eXBlRmllbGRzLnByb3BlcnR5VHlwZSJ9LHsic2xvdCI6Im1ldGEiLCJmaWVsZCI6Iml0ZW0udHlwZUZpZWxkcy5idXNpbmVzc0Z1bmN0aW9uIn1dfQ==" data-dyn-url-sync="" class="dyn-list"><div id="iabf3" class="dyn-list__bar"><select data-dyn-sort="" id="iqtyv"><option value="">Sort</option></select><input data-dyn-search="" placeholder="Search propertys…" id="ikxwx"><span data-dyn-count="" id="iauzd">0 results</span></div><div data-dyn-loading="" id="iily9">Loading…</div><p data-dyn-empty="" id="ig8kn">No propertys match your filters.</p><div id="i38hf" class="dyn-list__grid"><article data-dyn-item="" id="i12pf"><div id="iylyb"></div><h4 data-bind="title" id="iczrj">Seaview Villa Koh Samui</h4><span data-bind="detail" id="icbrf"></span><span data-bind="meta" id="iqodm"></span></article></div><button data-dyn-load-more="" type="button" id="imdhs">Load more</button></div><img src="https://cdn.th.uforge.build/preview/550e8400-e29b-41d4-a716-446655440001/0414b5c2-2841-4f2e-81aa-ff2a6c5bf553/uploads/1790646412653-145t37p3q3zl-657283776_1297369892247118_8414795237279976149_n.gif" id="iz0mg" data-asset-key="themes-and-assets/preview/550e8400-e29b-41d4-a716-446655440001/0414b5c2-2841-4f2e-81aa-ff2a6c5bf553/uploads/1790646412653-145t37p3q3zl-657283776_1297369892247118_8414795237279976149_n.gif"><img src="https://cdn.th.uforge.build/preview/550e8400-e29b-41d4-a716-446655440001/0414b5c2-2841-4f2e-81aa-ff2a6c5bf553/uploads/1790581881284-mnkenbwrp68-Screenshot_2026-09-03_093008.png" id="iqmo2" data-asset-key="themes-and-assets/preview/550e8400-e29b-41d4-a716-446655440001/0414b5c2-2841-4f2e-81aa-ff2a6c5bf553/uploads/1790581881284-mnkenbwrp68-Screenshot_2026-09-03_093008.png"><div id="i4xe2" data-asset-key="themes-and-assets/preview/550e8400-e29b-41d4-a716-446655440001/0414b5c2-2841-4f2e-81aa-ff2a6c5bf553/uploads/1790646412653-145t37p3q3zl-657283776_1297369892247118_8414795237279976149_n.gif"><p id="inxqm">This is example content for a Container — replace with your own.<br>ASD<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>SADKksjajdkasjdk</p></div>
+<script data-source="dynamic-data-hydrator">(function(){
+  function readPath(o,p){return p.split('.').reduce(function(a,k){return a&&typeof a==='object'?a[k]:undefined},o)}
+  // Bindings carry the registry path ('typeFields.salary'), but the API serves
+  // typeFields FLAT at the top level ('salary') — fall back to the bare key.
+  function readField(o,p){var v=readPath(o,p);if(v!==undefined)return v;return p.indexOf('typeFields.')===0?readPath(o,p.slice(11)):undefined}
+  function fill(scope,rec,bindings){
+    bindings.forEach(function(bd){
+      if(!bd.field)return;
+      var f=bd.field.indexOf('item.')===0?bd.field.slice(5):bd.field;
+      var v=readField(rec,f); if(v==null)return;
+      var s=scope.querySelector('[data-bind="'+bd.slot+'"]'); if(s)s.textContent=String(v);
     });
-
-    // Close when focus moves outside the menu
-    document.addEventListener('focusin', event => {
-        dropdowns.forEach(d => {
-            if (!d.contains(event.target)) d.open = false;
-        });
+  }
+  function single(el,cfg,url){
+    fetch(url,{headers:{accept:'application/json'}}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(b){
+      var data=b&&b.data; var rec=Array.isArray(data)?data[0]:data; if(!rec)return; fill(el,rec,cfg.bindings);
+    }).catch(function(){});
+  }
+  // Namespaces already claimed by a URL-synced listing on this page. Two listings
+  // sharing a namespace would overwrite each other's params, so the first to
+  // hydrate keeps sync and any later claimant silently falls back to no sync.
+  var claimed={};
+  var REDUCED=(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)||false;
+  /**
+   * Resolve the per-record template and where clones mount.
+   *
+   * A Filterable list marks its card with data-dyn-item. A Dynamic Data
+   * card carries no marker — the component ITSELF is the card — so repeat and
+   * carousel clone the component into a generated mount and keep the original as
+   * a hidden config carrier. Returning null means "no repetition": the caller
+   * fills the component once, which is the 'first' spotlight mode.
+   *
+   * Without this a marker-less collection component bailed out of hydration
+   * entirely: it never even fetched, so the editor preview showed record 1 while
+   * the published page sat on its authored placeholder text forever.
+   */
+  function scaffold(el,mode){
+    var host=el.querySelector('[data-dyn-item]');
+    if(host&&host.parentNode){
+      var t=host.cloneNode(true); t.removeAttribute('data-dyn-item');
+      var m=host.parentNode; m.removeChild(host);
+      return {tpl:t,mount:m};
+    }
+    if(mode!=='repeat'&&mode!=='carousel')return null;
+    var tpl=el.cloneNode(true);
+    // The clone must not look hydratable, or a re-run would treat it as another
+    // component and recurse.
+    ['data-dyn-url','data-dyn','data-dyn-url-sync','data-dyn-params','data-dyn-sort-options'].forEach(function(a){tpl.removeAttribute(a)});
+    var mount=document.createElement('div');
+    if(!el.parentNode)return null;
+    el.parentNode.insertBefore(mount,el);
+    el.style.display='none';
+    return {tpl:tpl,mount:mount,generated:true};
+  }
+  /** Wrap a mount in a scroll-snap track with prev/next + dots. */
+  function carousel(mount,label){
+    var vp=document.createElement('div');
+    vp.setAttribute('role','group');
+    vp.setAttribute('aria-roledescription','carousel');
+    if(label)vp.setAttribute('aria-label',label);
+    vp.style.cssText='position:relative';
+    mount.parentNode.insertBefore(vp,mount);
+    mount.style.cssText='display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:2px;scrollbar-width:none'+(REDUCED?'':';scroll-behavior:smooth');
+    mount.setAttribute('tabindex','0');
+    mount.setAttribute('role','list');
+    vp.appendChild(mount);
+    function btn(dir,txt){
+      var b=document.createElement('button');
+      b.type='button';
+      b.setAttribute('aria-label',dir<0?'Previous':'Next');
+      b.textContent=txt;
+      b.style.cssText='position:absolute;top:50%;transform:translateY(-50%);'+(dir<0?'left:-6px':'right:-6px')+';z-index:2;width:34px;height:34px;border-radius:999px;border:1px solid #d1d5db;background:#fff;color:#111;cursor:pointer;font-size:18px;line-height:1;display:none';
+      b.addEventListener('click',function(){
+        var f=mount.firstElementChild; if(!f)return;
+        mount.scrollBy({left:dir*(f.getBoundingClientRect().width+14),behavior:REDUCED?'auto':'smooth'});
+      });
+      vp.appendChild(b);
+      return b;
+    }
+    var prev=btn(-1,'\u2039'), next=btn(1,'\u203a');
+    var dots=document.createElement('div');
+    dots.style.cssText='display:flex;gap:6px;justify-content:center;margin-top:10px';
+    vp.appendChild(dots);
+    return {vp:vp,prev:prev,next:next,dots:dots};
+  }
+  function collection(el,cfg,url){
+    var mode=cfg.display||'first';
+    var sc=scaffold(el,mode);
+    // Spotlight: no per-record template, so the component is filled once from
+    // the first record — the same record the editor preview shows.
+    if(!sc){single(el,cfg,url);return;}
+    var tpl=sc.tpl, mount=sc.mount;
+    var car=mode==='carousel'?carousel(mount,cfg.itemType?cfg.itemType+' carousel':''):null;
+    if(mode==='repeat'&&sc.generated)mount.style.cssText='display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px';
+    var base=url.split('?')[0];
+    var allowed=(el.getAttribute('data-dyn-params')||'').split(',').filter(Boolean);
+    // data-dyn-url-sync (bare) => unprefixed params; data-dyn-url-sync="shop" =>
+    // params namespaced 'shop_*', so several listings can share one page.
+    var syncKey=el.getAttribute('data-dyn-url-sync');
+    var sync=syncKey!==null;
+    var pfx=syncKey?syncKey+'_':'';
+    if(sync){if(claimed[pfx])sync=false;else claimed[pfx]=1;}
+    var loadEl=el.querySelector('[data-dyn-loading]');
+    var emptyEl=el.querySelector('[data-dyn-empty]');
+    var countEl=el.querySelector('[data-dyn-count]');
+    var fsel=el.querySelectorAll('[data-dyn-filter]');
+    // A range filter is a PAIR of inputs, sent as key_min / key_max — ordinary
+    // entries in st.filters, so query building, the allow-list and URL sync all
+    // treat them like any other filter without further special-casing.
+    // (No backticks in here: this whole script is a TS template literal.)
+    var frng=el.querySelectorAll('[data-dyn-filter-min],[data-dyn-filter-max]');
+    function rkey(i){var a=i.getAttribute('data-dyn-filter-min');return a?a+'_min':i.getAttribute('data-dyn-filter-max')+'_max';}
+    var ss=el.querySelector('[data-dyn-sort]');
+    // Sort options are baked (static per item type), unlike facet options —
+    // populate the placeholder-only <select> the block ships with.
+    if(ss){try{JSON.parse(el.getAttribute('data-dyn-sort-options')||'[]').forEach(function(o){var op=document.createElement('option');op.value=o.value;op.textContent=o.label;ss.appendChild(op);});}catch(e){}}
+    var si=el.querySelector('[data-dyn-search]');
+    var lm=el.querySelector('[data-dyn-load-more]');
+    // Remember the authored inline display so hiding/showing load-more doesn't drop
+    // it (e.g. 'block' + margin:auto centring would degrade to inline-block).
+    var lmDisp=lm?lm.style.display:'';
+    // A generated repeat has no authored load-more button, so records past the
+    // page limit would be unreachable. Supply one. (A carousel doesn't need it —
+    // sliding IS its pagination.)
+    if(!lm&&sc.generated&&mode==='repeat'&&mount.parentNode){
+      lm=document.createElement('button'); lm.type='button'; lm.textContent='Load more';
+      lm.style.cssText='margin:16px auto 0;display:none;padding:9px 18px;border:1px solid #d1d5db;border-radius:6px;background:#fff;cursor:pointer';
+      mount.parentNode.insertBefore(lm,mount.nextSibling);
+      lmDisp='block';
+    }
+    // A filter value is a string OR an array of them (a multi-select). Repeated
+    // params carry the several — NOT a comma-joined string: real facet values
+    // contain commas ("Designers, All Other"), so joining and splitting would
+    // invent values nobody can filter by.
+    var st={page:1,limit:null,sortBy:null,sortOrder:null,search:'',filters:{}};
+    var NOT='_not';
+    function vals(v){return v==null||v===''?[]:(v.join?v:[v]);}
+    function addVal(o,k,v){if(o[k]===undefined)o[k]=v;else o[k]=vals(o[k]).concat([v]);}
+    /** A value is never both included and excluded: where a URL names it both ways, the exclude wins. True when changed. */
+    function oneWay(){
+      var changed=false;
+      Object.keys(st.filters).forEach(function(k){
+        if(k.length<=NOT.length||k.slice(-NOT.length)!==NOT)return;
+        var b=k.slice(0,-NOT.length);if(st.filters[b]===undefined)return;
+        var exc=vals(st.filters[k]);var keep=vals(st.filters[b]).filter(function(v){return exc.indexOf(v)<0;});
+        if(keep.length!==vals(st.filters[b]).length){changed=true;if(keep.length)st.filters[b]=keep;else delete st.filters[b];}
+      });
+      return changed;
+    }
+    var q0=url.indexOf('?')>=0?url.slice(url.indexOf('?')+1):'';
+    q0.split('&').forEach(function(p){if(!p)return;var i=p.indexOf('=');var k=decodeURIComponent(p.slice(0,i));var v=decodeURIComponent(p.slice(i+1));if(k==='limit')st.limit=v;else if(k==='sortBy')st.sortBy=v;else if(k==='sortOrder')st.sortOrder=v;else if(k==='search')st.search=v;else addVal(st.filters,k,v);});
+    oneWay();
+    function q(facetChunk){
+      var parts=[];function add(k,v){if(v==null||v==='')return;if(k==='limit'||k==='page'||k==='sortBy'||k==='sortOrder'||k==='search'||allowed.indexOf(k)>=0)parts.push(encodeURIComponent(k)+'='+encodeURIComponent(v));}
+      Object.keys(st.filters).forEach(function(k){vals(st.filters[k]).forEach(function(v){add(k,v);});});
+      add('search',st.search);if(st.sortBy){add('sortBy',st.sortBy);add('sortOrder',st.sortOrder||'asc');}
+      if(st.limit)add('limit',st.limit);add('page',st.page);
+      // A first page asks for its value panels' facets, so each value comes back marked selected / excluded / neutral.
+      if(facetChunk&&facetChunk.length)parts.push('facets='+facetChunk.map(encodeURIComponent).join(','));
+      return parts.length?('?'+parts.join('&')):'';
+    }
+    /** Whether a raw query key belongs to THIS listing's namespace. */
+    function mine(k){if(k.indexOf(pfx)!==0)return false;var b=k.slice(pfx.length);return b==='q'||b==='sort'||b==='page'||allowed.indexOf(b)>=0;}
+    function toUrl(){
+      // Carry every param that isn't ours through untouched, so a second synced
+      // listing (or unrelated query state) survives our pushState.
+      var p=[];
+      (location.search||'').replace(/^\?/,'').split('&').forEach(function(pair){if(!pair)return;var i=pair.indexOf('=');var k=decodeURIComponent(i<0?pair:pair.slice(0,i));if(!mine(k))p.push(pair);});
+      Object.keys(st.filters).forEach(function(k){vals(st.filters[k]).forEach(function(v){if(v)p.push(encodeURIComponent(pfx+k)+'='+encodeURIComponent(v));});});
+      if(st.search)p.push(encodeURIComponent(pfx+'q')+'='+encodeURIComponent(st.search));
+      if(st.sortBy)p.push(encodeURIComponent(pfx+'sort')+'='+encodeURIComponent(st.sortBy+':'+(st.sortOrder||'asc')));
+      if(st.page>1)p.push(encodeURIComponent(pfx+'page')+'='+st.page);
+      return location.pathname+(p.length?('?'+p.join('&')):'');
+    }
+    function fromUrl(){
+      st.filters={};st.search='';st.sortBy=null;st.sortOrder=null;st.page=1;
+      (location.search||'').replace(/^\?/,'').split('&').forEach(function(pair){if(!pair)return;var i=pair.indexOf('=');var k=decodeURIComponent(pair.slice(0,i));var v=decodeURIComponent(pair.slice(i+1));if(k.indexOf(pfx)!==0)return;k=k.slice(pfx.length);if(k==='q')st.search=v;else if(k==='sort'){var s=v.split(':');st.sortBy=s[0]||null;st.sortOrder=s[1]||'asc';}else if(k==='page')st.page=parseInt(v,10)||1;else if(allowed.indexOf(k)>=0)addVal(st.filters,k,v);});
+      // key=a&key_not=a: the exclude wins, and the URL is rewritten so it never says both.
+      if(oneWay()&&sync){try{history.replaceState({},'',toUrl())}catch(e){}}
+    }
+    function syncControls(){
+      Array.prototype.forEach.call(fsel,function(s){var k=s.getAttribute('data-dyn-filter');var vs=vals(st.filters[k]);if(s.multiple){Array.prototype.forEach.call(s.options,function(o){o.selected=vs.indexOf(o.value)>=0;});}else{s.value=vs[0]||'';}});
+      Array.prototype.forEach.call(frng,function(i){i.value=st.filters[rkey(i)]||'';});
+      Array.prototype.forEach.call(fmul,function(b){multiSync(b);});
+      if(ss)ss.value=st.sortBy?(st.sortBy+':'+(st.sortOrder||'asc')):'';
+      if(si)si.value=st.search;
+    }
+    // ── multi-select: a button + a panel of checkboxes the hydrator fills ──
+    // Values live in st.filters[key] as an ARRAY, exactly like a repeated param,
+    // so query building / URL sync / back-button need no special case.
+    // Every value key speaks one grammar (unified-listing-search R25): the checkbox INCLUDES a value (key=v, any of),
+    // the button beside it EXCLUDES it (key_not=v, none of). The two are ordinary st.filters entries under key and
+    // key_not, so query building, the allow-list (the bake admits key_not) and URL sync need no special case.
+    var fmul=el.querySelectorAll('[data-dyn-filter-multi]');
+    /**
+     * The exclude action's accessible name for this page's language: the block bakes one per locale its translations
+     * define. Picked by <html lang> (exactly, then by language), then the site's default locale (baked by the build),
+     * then the first entry; a block saved before the map existed carries one label. None at all: the value name alone.
+     */
+    function excludeLabel(box){
+      var m=null;try{m=JSON.parse(box.getAttribute('data-dyn-exclude-labels')||'null');}catch(e){m=null;}
+      var ks=m&&typeof m==='object'?Object.keys(m):[];
+      if(!ks.length)return box.getAttribute('data-dyn-exclude-label')||'';
+      function norm(l){return String(l||'').replace(/_/g,'-').toLowerCase();}
+      var wanted=[document.documentElement.lang,el.getAttribute('data-dyn-default-locale')];
+      for(var i=0;i<wanted.length;i++){
+        var w=norm(wanted[i]);if(!w)continue;
+        for(var j=0;j<ks.length;j++)if(norm(ks[j])===w)return m[ks[j]];
+        for(var n=0;n<ks.length;n++)if(norm(ks[n]).split('-')[0]===w.split('-')[0])return m[ks[n]];
+      }
+      return m[ks[0]];
+    }
+    function multiLabel(box){
+      var k=box.getAttribute('data-dyn-filter-multi');
+      var btn=box.querySelector('[data-dyn-multi-toggle]');
+      if(!btn)return;
+      var n=vals(st.filters[k]).length+vals(st.filters[k+NOT]).length;
+      btn.textContent=n?(box.getAttribute('data-dyn-multi-name')||k)+' ('+n+')':(box.getAttribute('data-dyn-multi-name')||k);
+    }
+    /** Show one value row as included, excluded or neutral (struck through and muted when excluded). */
+    function rowState(row,inc,exc){
+      var c=row.querySelector('input[type=checkbox]');var x=row.querySelector('button');var t=row.querySelector('span');
+      if(c)c.checked=inc;
+      if(x)x.setAttribute('aria-pressed',exc?'true':'false');
+      row.setAttribute('data-dyn-state',inc?'selected':exc?'excluded':'neutral');
+      if(t){t.style.textDecoration=exc?'line-through':'none';t.style.fontWeight=inc?'600':'400';t.style.color=exc?'var(--cmp-scheme-muted, GrayText)':'inherit';}
+      // Not by colour alone (WCAG 1.4.1): a pressed exclude changes SHAPE - an outlined circled slash becomes a heavy
+      // cross in a thicker frame - beside the struck-through value.
+      if(x){x.textContent=exc?'\u2716':'\u2298';x.style.borderWidth=exc?'2px':'1px';x.style.borderColor=exc?'var(--cmp-color-primary, Highlight)':'var(--cmp-scheme-border, GrayText)';x.style.fontWeight=exc?'700':'400';}
+    }
+    function multiSync(box){
+      var k=box.getAttribute('data-dyn-filter-multi');
+      var inc=vals(st.filters[k]),exc=vals(st.filters[k+NOT]);
+      Array.prototype.forEach.call(box.querySelectorAll('[data-dyn-value]'),function(row){var v=row.getAttribute('data-dyn-value');rowState(row,inc.indexOf(v)>=0,exc.indexOf(v)>=0);});
+      multiLabel(box);
+    }
+    /** Move value v of key k between include, exclude and neither; a value is never both. */
+    function setPick(k,v,side,on){
+      var other=side===k?k+NOT:k;
+      function drop(key){var r=vals(st.filters[key]).filter(function(x){return x!==v;});if(r.length)st.filters[key]=r;else delete st.filters[key];}
+      drop(other);drop(side);
+      if(on)st.filters[side]=vals(st.filters[side]).concat([v]);
+    }
+    /**
+     * Fill a key's panel with one row per value: {value,label,count,selected,excluded}. The flags come from the
+     * listing response's facet (R26.4) - an excluded value stays listed with its count, so it can be undone - or, for
+     * the preset list, from the request state. Keyboard focus survives a repaint.
+     */
+    function paint(box,values,fromFlags){
+      var k=box.getAttribute('data-dyn-filter-multi');
+      var panel=box.querySelector('[data-dyn-multi-panel]');if(!panel)return;
+      var xl=excludeLabel(box);
+      var a=document.activeElement,fv=null,fk=null,hadFocus=!!(a&&panel.contains(a));
+      if(hadFocus){var ar=a.closest?a.closest('[data-dyn-value]'):null;if(ar){fv=ar.getAttribute('data-dyn-value');fk=a.tagName;}}
+      panel.innerHTML='';
+      var inc=vals(st.filters[k]),exc=vals(st.filters[k+NOT]);
+      // A value the request picks stays listed even when the facet no longer counts it (count 0), so a pick can always be
+      // seen and undone; the box hides only when there are no values AND no picks.
+      var all=(values||[]).slice(),seen={};
+      all.forEach(function(o){seen[String(o.value)]=1;});
+      inc.concat(exc).forEach(function(v){if(!seen[v]){seen[v]=1;all.push({value:v,label:v,count:0,selected:inc.indexOf(v)>=0,excluded:exc.indexOf(v)>=0});}});
+      if(!all.length){box.style.display='none';return;}
+      box.style.display='';
+      var refocused=false;
+      all.forEach(function(o){
+        var v=String(o.value),name=o.label!=null&&o.label!==''?String(o.label):v;
+        var row=document.createElement('div');row.setAttribute('data-dyn-value',v);
+        row.style.cssText='display:flex;gap:6px;align-items:center;justify-content:space-between;padding:2px 4px';
+        var lab=document.createElement('label');lab.style.cssText='display:flex;gap:6px;align-items:center;flex:1;font-size:14px;cursor:pointer';
+        var c=document.createElement('input');c.type='checkbox';c.value=v;
+        var t=document.createElement('span');t.textContent=name+(o.count!=null?' ('+o.count+')':'');
+        lab.appendChild(c);lab.appendChild(t);
+        var x=document.createElement('button');x.type='button';
+        var xn=xl?xl.split('{value}').join(name):name;
+        x.setAttribute('aria-label',xn);x.title=xn;
+        x.style.cssText='flex:none;width:28px;height:28px;padding:0;border-radius:6px;border:1px solid var(--cmp-scheme-border, GrayText);background:transparent;color:inherit;cursor:pointer;font-size:15px;line-height:1';
+        row.appendChild(lab);row.appendChild(x);panel.appendChild(row);
+        rowState(row,fromFlags?!!o.selected:inc.indexOf(v)>=0,fromFlags?!!o.excluded:exc.indexOf(v)>=0);
+        c.addEventListener('change',function(){setPick(k,v,k,c.checked);multiSync(box);changed();});
+        x.addEventListener('click',function(){setPick(k,v,k+NOT,x.getAttribute('aria-pressed')!=='true');multiSync(box);changed();});
+        if(fv===v){(fk==='BUTTON'?x:c).focus();refocused=true;}
+      });
+      // The focused value left the list: keep focus in the panel, on its first control, rather than dropping it.
+      if(hadFocus&&!refocused){var first=panel.querySelector('input,button');if(first)first.focus();}
+      multiLabel(box);
+    }
+    /** Repaint every value panel from a response's facets (selected / excluded / neutral, R26.4). */
+    function paintFacets(b){
+      var fs=b&&b.facets;if(!fs)return;
+      Array.prototype.forEach.call(fmul,function(box){var f=fs[box.getAttribute('data-dyn-filter-multi')];if(f&&f.top){box.setAttribute('data-dyn-faceted','');paint(box,f.top,true);}});
+    }
+    /**
+     * The facets this listing asks for, one per value panel, in chunks of the API's cap per request
+     * (8, the listing's MAX_FACETS_PER_REQUEST): the first chunk rides on the page request, any
+     * further chunk is its own request, so no panel loses its flags or counts.
+     */
+    var facetKeys=Array.prototype.map.call(fmul,function(box){return box.getAttribute('data-dyn-filter-multi');});
+    var facetChunks=[];for(var fc=0;fc<facetKeys.length;fc+=8)facetChunks.push(facetKeys.slice(fc,fc+8));
+    function moreFacets(){facetChunks.slice(1).forEach(function(ch){fetch(base+q(ch),{headers:{accept:'application/json'}}).then(function(r){return r.ok?r.json():null}).then(function(b){if(b)paintFacets(b);}).catch(function(){});});}
+    Array.prototype.forEach.call(fmul,function(box){
+      var btn=box.querySelector('[data-dyn-multi-toggle]');
+      var panel=box.querySelector('[data-dyn-multi-panel]');
+      // Remember the authored label before any count is appended to it.
+      if(btn&&!box.getAttribute('data-dyn-multi-name'))box.setAttribute('data-dyn-multi-name',(btn.textContent||'').trim());
+      if(!btn||!panel)return;
+      function open(v){panel.hidden=!v;btn.setAttribute('aria-expanded',v?'true':'false');}
+      btn.addEventListener('click',function(e){e.stopPropagation();open(panel.hidden);});
+      panel.addEventListener('click',function(e){e.stopPropagation();});
+      document.addEventListener('click',function(){open(false);});
+      box.addEventListener('keydown',function(e){if(e.key==='Escape'){open(false);btn.focus();}});
     });
-
-    // Esc -> Close the open menu and return focus to the summary element
-    // (Uses capture to run before the mobile menu close handler in pages.js)
-    document.addEventListener('keydown', event => {
-        if (event.key !== 'Escape') return;
-        const openMenu = dropdowns.find(d => d.open);
-        if (!openMenu) return;
-        openMenu.open = false;
-        openMenu.querySelector('summary')?.focus();
-        event.preventDefault();
-        event.stopImmediatePropagation();
-    }, { capture: true });
-})();
-
-// pages.js — Refactored: prevent null/undefined, keep variables out of global scope, submit forms via AJAX
-(() => {
-    'use strict';
-
-    const $ = (sel, root = document) => root.querySelector(sel);
-    const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
-    const setText = (id, text) => {
-        const el = document.getElementById(id);
-        if (el) el.textContent = text ?? '';
-    };
-
-    /* ---------- Trip data (Departure page) ---------- */
-    function readTrips() {
-        const source = document.getElementById('departure-data');
-        if (!source) return { source: null, trip: null };
-        let records = [];
-        try {
-            records = JSON.parse(source.textContent);
-            if (!Array.isArray(records)) records = [];
-        } catch (err) {
-            console.error('departure-data is not valid JSON', err);
-        }
-        const key = new URLSearchParams(location.search).get('trip');
-        return { source, trip: records.find(r => r.id === key) || records[0] || null };
+    function clear(){var o=mount.querySelectorAll('[data-dyn-clone]');Array.prototype.forEach.call(o,function(n){n.parentNode.removeChild(n);});}
+    function render(recs,append){
+      if(!append)clear();
+      var frag=document.createDocumentFragment();
+      recs.forEach(function(rec){
+        var c=tpl.cloneNode(true);c.setAttribute('data-dyn-clone','');
+        if(car){c.style.flex='0 0 auto';c.style.scrollSnapAlign='start';c.setAttribute('role','listitem');if(!c.style.minWidth)c.style.minWidth='260px';}
+        fill(c,rec,cfg.bindings);frag.appendChild(c);
+      });
+      mount.appendChild(frag);
+      if(car)dots();
     }
-
-    function renderTrip(trip) {
-        if (!trip) return;
-        const intro = document.getElementById('departure-introduction');
-        const story = document.getElementById('departure-story');
-        if (trip.storyHTML && intro && story) {
-            intro.innerHTML = trip.introductionHTML ?? '';
-            story.innerHTML = trip.storyHTML;
-        }
-        setText('departure-date', trip.date);
-        setText('departure-route', trip.routeName);
-        setText('departure-duration', trip.duration);
-        setText('departure-price', trip.price);
-        setText('departure-hotel', `1 hotel night + ${trip.onboard} nights aboard`);
-
-        const action = document.getElementById('departure-action');
-        if (action) {
-            const query = new URLSearchParams({
-                route: String(trip.days),
-                dates: trip.date,
-                context: `${trip.date} - ${trip.duration}`
-            });
-            action.href = `contact.html?${query}#enquiry`;
-            action.textContent = 'Enquire about this trip';
-        }
-        const itinerary = document.getElementById('departure-itinerary');
-        if (itinerary && trip.itineraryURL) itinerary.href = trip.itineraryURL;
-        const image = document.getElementById('departure-image');
-        if (image && trip.image) {
-            image.src = `assets/${trip.image}`;
-            image.alt = trip.imageAlt ?? '';
-        }
-        if (trip.date) document.title = `${trip.date} | Island Safaris`;
+    /** Rebuild the carousel dots; nav hides itself when there's nothing to slide. */
+    function dots(){
+      var items=mount.querySelectorAll('[data-dyn-clone]');
+      var multi=items.length>1;
+      car.prev.style.display=multi?'block':'none';
+      car.next.style.display=multi?'block':'none';
+      car.dots.innerHTML='';
+      if(!multi)return;
+      Array.prototype.forEach.call(items,function(it,i){
+        var d=document.createElement('button');
+        d.type='button'; d.setAttribute('aria-label','Go to item '+(i+1));
+        d.style.cssText='width:8px;height:8px;padding:0;border-radius:999px;border:0;background:#d1d5db;cursor:pointer';
+        d.addEventListener('click',function(){mount.scrollTo({left:it.offsetLeft-mount.offsetLeft,behavior:REDUCED?'auto':'smooth'});});
+        car.dots.appendChild(d);
+      });
+      active();
     }
-
-    /* ---------- Prefill enquiry form from query string ---------- */
-    function prefillEnquiry() {
-        const holder = document.querySelector('#enquiry');
-        if (!holder) return;
-        // #enquiry might be a <section> rather than a <form>
-        const form = holder.matches('form') ? holder : $('form', holder);
-        if (!form) return;
-
-        const params = new URLSearchParams(location.search);
-        const route = params.get('route');
-        const select = form.elements.route;
-        if (route && select?.options && [...select.options].some(o => o.value === route)) {
-            select.value = route;
-        }
-        const dates = params.get('dates');
-        if (dates && form.elements.dates) form.elements.dates.value = dates;
-        const context = params.get('context');
-        const message = form.elements.message;
-        if (context && message && !message.value.trim()) {
-            message.value = `I am interested in ${context}.`;
-        }
+    /** Mark the dot whose slide is nearest the track's left edge. */
+    function active(){
+      if(!car||!car.dots.children.length)return;
+      var items=mount.querySelectorAll('[data-dyn-clone]');
+      var best=0,bd=Infinity;
+      Array.prototype.forEach.call(items,function(it,i){
+        var d=Math.abs(it.offsetLeft-mount.offsetLeft-mount.scrollLeft); if(d<bd){bd=d;best=i;}
+      });
+      Array.prototype.forEach.call(car.dots.children,function(d,i){
+        d.style.background=i===best?'#2563eb':'#d1d5db';
+        d.setAttribute('aria-current',i===best?'true':'false');
+      });
     }
-
-    /* ---------- Mobile menu ---------- */
-    function initMobileMenu() {
-        const toggle = $('.menu-toggle');
-        const menu = $('.nav-links');
-        if (!toggle || !menu) return;
-        const setOpen = open => {
-            toggle.setAttribute('aria-expanded', String(open));
-            toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
-            menu.classList.toggle('open', open);
-        };
-        toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
-        $$('a', menu).forEach(a => a.addEventListener('click', () => setOpen(false)));
-        document.addEventListener('keydown', event => {
-            if (event.key === 'Escape' && menu.classList.contains('open')) {
-                setOpen(false);
-                toggle.focus();
-            }
-        });
-    }
-
-    /* ---------- Videos (YouTube / Google Drive) ---------- */
-    function initVideos() {
-        const mount = (figure, src) => {
-            const frame = $('.video-frame', figure);
-            if (!frame || $('iframe', frame)) return;
-            const player = document.createElement('iframe');
-            player.src = src;
-            player.title = figure.dataset.videoTitle || 'Video';
-            player.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-            player.allowFullscreen = true;
-            player.referrerPolicy = 'strict-origin-when-cross-origin';
-            frame.replaceChildren(player);
-            player.focus();
-        };
-        $$('[data-video-id]').forEach(figure => {
-            $('.video-launch', figure)?.addEventListener('click', () => {
-                const id = figure.dataset.videoId;
-                if (!/^[\w-]{11}$/.test(id)) return;
-                const url = new URL(`https://www.youtube-nocookie.com/embed/${id}`);
-                url.search = new URLSearchParams({ autoplay: '1', playsinline: '1', rel: '0' });
-                mount(figure, url.href);
-            });
-        });
-        $$('[data-drive-video-id]').forEach(figure => {
-            $('.video-launch', figure)?.addEventListener('click', () => {
-                const id = figure.dataset.driveVideoId;
-                if (!/^[\w-]{20,80}$/.test(id)) return;
-                mount(figure, `https://drive.google.com/file/d/${id}/preview`);
-            });
-        });
-    }
-
-    /* ---------- General dialogs ---------- */
-    function initDialogs() {
-        $$('dialog').forEach(dialog => {
-            $$('[data-close]', dialog).forEach(b => b.addEventListener('click', () => dialog.close()));
-            dialog.addEventListener('click', event => {
-                if (event.target !== dialog) return;
-                const r = dialog.getBoundingClientRect();
-                if (event.clientX < r.left || event.clientX > r.right ||
-                    event.clientY < r.top || event.clientY > r.bottom) dialog.close();
-            });
-            dialog.addEventListener('close', () => document.body.classList.remove('modal-open'));
-        });
-    }
-
-    /* ---------- Forms: Live submission (Netlify Forms) ---------- */
-    function initForms() {
-        const showError = (form, text) => {
-            let box = $('.form-error', form.parentElement);
-            if (!box) {
-                box = document.createElement('p');
-                box.className = 'form-error';
-                box.setAttribute('role', 'alert');
-                form.after(box);
-            }
-            box.textContent = text;
-            box.hidden = !text;
-        };
-
-        $$('form[data-preview-form]').forEach(form => {
-            form.addEventListener('submit', async event => {
-                event.preventDefault();
-                if (!form.reportValidity()) return;
-
-                const success = $('.form-success', form.parentElement);
-                const submit = $('[type=submit]', form);
-                const data = new FormData(form);
-                if (!data.has('form-name') && form.getAttribute('name')) {
-                    data.set('form-name', form.getAttribute('name'));
-                }
-
-                showError(form, '');
-                if (submit) submit.disabled = true;
-                try {
-                    const res = await fetch(form.getAttribute('action') || '/', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                        body: new URLSearchParams(data).toString()
-                    });
-                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-                    form.hidden = true;
-                    if (success) {
-                        success.hidden = false;
-                        $('[tabindex]', success)?.focus();
-                    }
-                } catch (err) {
-                    console.error('Failed to submit form', err);
-                    showError(form, 'Failed to send message. Please try again or contact via email.');
-                } finally {
-                    if (submit) submit.disabled = false;
-                }
-            });
-        });
-
-        $$('[data-form-reset]').forEach(button => button.addEventListener('click', () => {
-            const parent = button.closest('.form-success')?.parentElement;
-            if (!parent) return;
-            const success = $('.form-success', parent);
-            const form = $('form', parent);
-            if (success) success.hidden = true;
-            if (form) {
-                form.reset();
-                form.hidden = false;
-                $('input:not([type=hidden])', form)?.focus();
-            }
-        }));
-    }
-
-    /* ---------- Departure filters ---------- */
-    function initFilters() {
-        const form = $('[data-departure-filters]');
-        const routeField = form?.elements.route;
-        if (!form || !routeField) return;
-        const cards = $$('[data-departure-card]');
-        const count = $('[data-filter-count]');
-        const empty = $('[data-empty-state]');
-
-        const apply = () => {
-            const route = routeField.value;
-            let shown = 0;
-            cards.forEach(card => {
-                const match = !route || card.dataset.days === route;
-                card.hidden = !match;
-                if (match) shown++;
-            });
-            if (count) count.textContent = `${shown} departure${shown === 1 ? '' : 's'}`;
-            if (empty) empty.hidden = shown !== 0;
-        };
-        const days = new URLSearchParams(location.search).get('days');
-        if (days && [...routeField.options].some(o => o.value === days)) routeField.value = days;
-        form.addEventListener('change', apply);
-        form.addEventListener('reset', () => setTimeout(apply, 0));
-        apply();
-    }
-
-    /* ---------- Photo gallery ---------- */
-    function initPhotos() {
-        const dialog = document.getElementById('photo-dialog');
-        const photos = $$('[data-photo]');
-        if (!dialog || !photos.length) return;
-        const image = $('img', dialog);
-        const caption = $('#photo-caption', dialog);
-        const counter = $('[data-photo-count]', dialog);
-        let current = 0;
-        let trigger;
-
-        const show = index => {
-            current = (index + photos.length) % photos.length;
-            const button = photos[current];
-            const thumb = $('img', button);
-            if (!thumb || !image) return;
-            image.src = button.dataset.full || thumb.src;
-            image.alt = thumb.alt;
-            if (caption) caption.textContent = thumb.alt + (button.dataset.credit ? ` · Photo: ${button.dataset.credit}` : '');
-            if (counter) counter.textContent = `${current + 1} of ${photos.length}`;
-        };
-        photos.forEach((button, i) => button.addEventListener('click', () => {
-            trigger = button;
-            show(i);
-            dialog.showModal();
-            document.body.classList.add('modal-open');
-        }));
-        $('[data-photo-previous]', dialog)?.addEventListener('click', () => show(current - 1));
-        $('[data-photo-next]', dialog)?.addEventListener('click', () => show(current + 1));
-        dialog.addEventListener('keydown', event => {
-            if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
-                event.preventDefault();
-                show(current + (event.key === 'ArrowLeft' ? -1 : 1));
-            }
-        });
-        dialog.addEventListener('close', () => trigger?.focus({ preventScroll: true }));
-    }
-
-    /* ---------- Print itinerary ---------- */
-    function initPrint() {
-        $('[data-print]')?.addEventListener('click', () => {
-            const rows = $$('.day-row');
-            const was = rows.map(r => r.open);
-            rows.forEach(r => (r.open = true));
-            // Restore state after printing finishes (window.print() does not block on mobile)
-            window.addEventListener('afterprint', () => rows.forEach((r, i) => (r.open = was[i])), { once: true });
-            window.print();
-        });
-    }
-
-    /* ---------- Initialization ---------- */
-    const { source, trip } = readTrips();
-    if (source) renderTrip(trip);
-    prefillEnquiry();
-    initMobileMenu();
-    initVideos();
-    initDialogs();
-    initForms();
-    initFilters();
-    initPhotos();
-    initPrint();
-})();
-</script>
-<script src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/cmp-standard/1.0.0/icons.js" defer></script>
-<script src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/Island Safari/js/navigation.js" defer></script>
-<script src="https://cdn.th.uforge.build/public/9d691b71-8d12-45a9-a44d-d580cc51591f/278f7e80-ee53-4f30-ab6d-a106827537f5/snap17/Island Safari/js/pages.js" defer></script>
+    // Envelope: ApiResponseHelper.success(items, meta) => {data:[…],meta:{total,hasMore,…}}.
+    // Tolerate a flat shape too so a non-standard endpoint still fills the count.
+    function meta(b){return (b&&b.meta)||b||{}}
+    function load(append){if(loadEl)loadEl.style.display='';fetch(base+q(append?null:facetChunks[0]),{headers:{accept:'application/json'}}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(b){if(loadEl)loadEl.style.display='none';if(!append){paintFacets(b);moreFacets();}var recs=Array.isArray(b&&b.data)?b.data:[];var m=meta(b);render(recs,append);if(countEl&&m.total!=null)countEl.textContent=m.total+' result'+(m.total===1?'':'s');if(emptyEl)emptyEl.style.display=(!append&&recs.length===0)?'':'none';if(lm&&m.hasMore!=null)lm.style.display=m.hasMore?lmDisp:'none';}).catch(function(){if(loadEl)loadEl.style.display='none';if(append)st.page=Math.max(1,st.page-1);});}
+    function changed(){st.page=1;if(sync){try{history.pushState({},'',toUrl())}catch(e){}}load(false);}
+    if(fsel.length){fetch(base+'/filter-presets',{headers:{accept:'application/json'}}).then(function(r){return r.ok?r.json():null}).then(function(p){if(!p)return;var pre=p.data||p;Array.prototype.forEach.call(fsel,function(sel){var k=sel.getAttribute('data-dyn-filter');if(sel.tagName!=='SELECT')return;var os=pre[k];if(!os||!os.length){sel.style.display='none';return}sel.style.display='';os.forEach(function(o){var op=document.createElement('option');op.value=o.value;op.textContent=o.value+(o.count!=null?' ('+o.count+')':'');sel.appendChild(op);});});if(sync)syncControls();}).catch(function(){});}
+    // The preset list fills a panel until the first response's facet arrives (an endpoint that returns no facets keeps
+    // it); it never repaints a panel the response has already marked.
+    if(fmul.length){fetch(base+'/filter-presets',{headers:{accept:'application/json'}}).then(function(r){return r.ok?r.json():null}).then(function(p){if(!p)return;var pre=p.data||p;Array.prototype.forEach.call(fmul,function(box){if(box.hasAttribute('data-dyn-faceted'))return;paint(box,pre[box.getAttribute('data-dyn-filter-multi')],false);});}).catch(function(){});}
+    Array.prototype.forEach.call(fsel,function(sel){var k=sel.getAttribute('data-dyn-filter');function picked(){if(!sel.multiple)return sel.value;var out=[];Array.prototype.forEach.call(sel.options,function(o){if(o.selected&&o.value)out.push(o.value);});return out;}function apply(){var v=picked();if(v&&v.length)st.filters[k]=v;else delete st.filters[k];changed();}if(sel.tagName==='SELECT'){sel.addEventListener('change',apply);}else{var ft;sel.addEventListener('input',function(){clearTimeout(ft);ft=setTimeout(apply,300);});}});
+    Array.prototype.forEach.call(frng,function(i){i.addEventListener('change',function(){var k=rkey(i);if(i.value!=='')st.filters[k]=i.value;else delete st.filters[k];changed();});});
+    if(ss)ss.addEventListener('change',function(){var v=(ss.value||'').split(':');st.sortBy=v[0]||null;st.sortOrder=v[1]||'asc';changed();});
+    if(si){var t;si.addEventListener('input',function(){clearTimeout(t);t=setTimeout(function(){st.search=si.value;changed();},300);});}
+    if(lm)lm.addEventListener('click',function(){st.page++;if(sync){try{history.replaceState({},'',toUrl())}catch(e){}}load(true);});
+    if(sync){fromUrl();syncControls();window.addEventListener('popstate',function(){fromUrl();syncControls();load(false);});}
+    if(car){var dt;mount.addEventListener('scroll',function(){clearTimeout(dt);dt=setTimeout(active,60);});}
+    load(false);
+  }
+  function run(){
+    var nodes=document.querySelectorAll('[data-dyn-url]');
+    Array.prototype.forEach.call(nodes,function(el){
+      var url=el.getAttribute('data-dyn-url'); if(!url)return;
+      // No same-origin check: per Design.md's Security model, the trust boundary
+      // is the bake step (strips any author/import-injected data-dyn-url and
+      // only ever emits a registry-resolved, allow-listed, @Public() no-credential
+      // endpoint URL — see the sibling test asserting that), not the URL's origin.
+      // The deployed page's own domain and api-services-public are legitimately
+      // different origins (SERVICES_API_URL bakes an absolute cross-origin URL),
+      // and the API reflects CORS accordingly since it serves no credentials.
+      var cfg; try{cfg=JSON.parse(decodeURIComponent(escape(atob(el.getAttribute('data-dyn')||''))))}catch(e){return}
+      if(!cfg||!cfg.bindings)return;
+      if(cfg.dataSource&&cfg.dataSource.kind==='collection')collection(el,cfg,url);else single(el,cfg,url);
+    });
+  }
+  if(document.readyState!=='loading')run();else document.addEventListener('DOMContentLoaded',run);
+})();</script>
 </body>
 </html>

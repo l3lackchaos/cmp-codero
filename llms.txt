@@ -1,22 +1,16 @@
-# islandsafari.com
-> Intelligent digital systems and tailored solutions by islandsafari.com.
+# codero.site
+> Intelligent digital systems and tailored solutions by codero.site.
 
 ## Core Pages
-- [About Island Safaris](/en-US/about/): Core page for islandsafari.com.
 
 ## More Content
-- [Home page](/en-US/)
-- [Exploring the Mergui Archipelago with Thomas Schmid](/en-US/blog/thomas-schmid-2019/)
-- [Shared departure](/en-US/departure/)
-- [Departures](/en-US/departures/)
-- [Itineraries](/en-US/itineraries/)
-- [Ten days in the Mergui Archipelago](/en-US/itinerary-10-days/)
-- [Six days in the Mergui Archipelago](/en-US/itinerary-6-days/)
-- [Plan your trip](/en-US/plan-your-trip/)
-- [Privacy Policy](/en-US/privacy-policy/)
-- [Private Mergui Archipelago charters](/en-US/private-charters/)
-- [MV Sea Gipsy](/en-US/sea-gipsy/)
+- [Homepage](/en-US/)
+- [Blog A](/en-US/blog/blog-a/)
+- [Blog B](/en-US/blog/blog-b/)
+- [Blog C](/en-US/blog/blog-c/)
+- [Blog D](/en-US/blog/blog-d/)
+- [Blog E](/en-US/blog/blog-e/)
 
 ## Essential Files
-- [Sitemap](https://islandsafari.com/sitemap.xml): XML sitemap for all pages.
+- [Sitemap](https://codero.site/sitemap.xml): XML sitemap for all pages.
 - [Full Content](/llms-full.txt): A single file containing all page summaries for easier ingestion.
