@@ -1,11 +1,11 @@
 {
-  "build_id": "13ebe30c-d70a-4711-bada-25dbfba9a217",
-  "site_id": "0414b5c2-2841-4f2e-81aa-ff2a6c5bf553",
+  "build_id": "b54870a7-1ebd-43d2-b117-3afa1a09cdc6",
+  "site_id": "550e8400-e29b-41d4-a716-446655440002",
   "tenant_id": "550e8400-e29b-41d4-a716-446655440001",
-  "domain": "codero.site",
-  "completed_at": "2026-11-11T06:51:28.821791+00:00",
-  "total_pages": 27,
-  "built_pages": 6,
-  "failed_pages": 21,
-  "status": "partial"
+  "domain": "localhost:3000",
+  "completed_at": "2026-11-11T07:01:18.566487+00:00",
+  "total_pages": 38,
+  "built_pages": 38,
+  "failed_pages": 0,
+  "status": "completed"
 }

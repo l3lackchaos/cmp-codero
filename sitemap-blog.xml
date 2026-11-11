@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://codero.site/en-US/blog/blog-a/</loc>
-    <lastmod>2026-11-11T02:10:22Z</lastmod>
+    <loc>https://localhost:3000/en-US/blog/blog-post-1/</loc>
+    <lastmod>2026-11-11T04:53:41Z</lastmod>
   </url>
   <url>
-    <loc>https://codero.site/en-US/blog/blog-b/</loc>
-    <lastmod>2026-11-11T02:10:40Z</lastmod>
+    <loc>https://localhost:3000/en-US/blog/blog-post-2/</loc>
+    <lastmod>2026-11-11T04:53:41Z</lastmod>
   </url>
   <url>
-    <loc>https://codero.site/en-US/blog/blog-c/</loc>
-    <lastmod>2026-11-11T02:20:42Z</lastmod>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/blog/blog-d/</loc>
-    <lastmod>2026-11-11T02:12:51Z</lastmod>
-  </url>
-  <url>
-    <loc>https://codero.site/en-US/blog/blog-e/</loc>
-    <lastmod>2026-11-11T02:20:42Z</lastmod>
+    <loc>https://localhost:3000/en-US/blog/blog-post-4/</loc>
+    <lastmod>2026-11-11T04:53:41Z</lastmod>
   </url>
 </urlset>
