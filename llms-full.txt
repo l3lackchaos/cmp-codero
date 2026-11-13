@@ -1,154 +1,139 @@
-# islandsafari.com - Full Documentation
+# codero.site - Full Documentation
 
-This file contains the consolidated content of the islandsafari.com website for LLM ingestion.
-
----
-
-## Page: Home page
-<p>Home page</p>
+This file contains the consolidated content of the codero.site website for LLM ingestion.
 
 ---
 
-## Page: About Myanmar
-<p>About Myanmar</p>
+## Page: Homepage
+<p>Homepage</p>
 
 ---
 
-## Page: About Island Safaris
-<p>About Island Safaris</p>
+## Page: Blog A
+<p>a</p>
 
 ---
 
-## Page: Terms and Conditions
-<p>Terms and Conditions</p>
+## Page: Blog B
+<p>B</p>
 
 ---
 
-## Page: Contact
-<p>Contact</p>
+## Page: Blog C
+<p>C</p>
 
 ---
 
-## Page: Dawei (Tavoy)
-<p>Dawei (Tavoy)</p>
+## Page: Blog D
+<p>D</p>
 
 ---
 
-## Page: Shared departure
-<p>Shared departure</p>
+## Page: Blog E
+<p>E</p>
 
 ---
 
-## Page: Departures
-<p>Departures</p>
+## Page: Beachfront Land Plot Phuket
+Beachfront Land Plot Phuket
 
 ---
 
-## Page: Photos & Videos
-<p>Photos &amp; Videos</p>
+## Page: Chic City Townhouse
+Chic City Townhouse
 
 ---
 
-## Page: Itineraries
-<p>Mergui Archipelago</p><p>itineraries</p>
+## Page: Compact Studio Near BTS
+Compact Studio Near BTS
 
 ---
 
-## Page: Ten days in the Mergui Archipelago
-<p>Ten days in the Mergui Archipelago</p>
+## Page: Cozy Suburban Family Home
+Cozy Suburban Family Home
 
 ---
 
-## Page: Four days in the Mergui Archipelago
-<p>Four days in the Mergui Archipelago</p>
+## Page: Downtown Retail Storefront
+Downtown Retail Storefront
 
 ---
 
-## Page: Five days in the Mergui Archipelago
-<p>Five days in the Mergui Archipelago</p>
+## Page: Executive Penthouse Suite
+Executive Penthouse Suite
 
 ---
 
-## Page: Six days in the Mergui Archipelago
-<p>Six days in the Mergui Archipelago</p>
+## Page: Family Townhouse With Garage
+Family Townhouse With Garage
 
 ---
 
-## Page: Kawthaung - Ranong
-<p>Kawthaung and Ranong</p>
+## Page: Garden View Condo Chiang Mai
+Garden View Condo Chiang Mai
 
 ---
 
-## Page: Explore the Mergui Archipelago
-<p>Explore the Mergui Archipelago</p>
+## Page: Hillside Development Land
+Hillside Development Land
 
 ---
 
-## Page: Moken communities
-<p>Moken communities</p>
+## Page: Historic Brownstone Duplex
+Historic Brownstone Duplex
 
 ---
 
-## Page: Myeik (Mergui)
-<p>Myeik (Mergui)</p>
+## Page: Industrial Warehouse Unit
+Industrial Warehouse Unit
 
 ---
 
-## Page: News & Stories
-<p>News &amp; Stories</p>
+## Page: Lakefront Retreat Cabin
+Lakefront Retreat Cabin
 
 ---
 
-## Page: Now is the time to book a trip to this long-lost island
-<p></p><p></p><p></p>
+## Page: Modern Downtown Condo
+Modern Downtown Condo
 
 ---
 
-## Page: Real Life
-<p></p><p></p>
+## Page: Modern Loft Conversion
+Modern Loft Conversion
 
 ---
 
-## Page: New dawn for remote Andaman Sea island tourism
-<p></p><p></p>
+## Page: Pool Villa Hua Hin
+Pool Villa Hua Hin
 
 ---
 
-## Page: Sailing among Myanmar's islands of mystery
-<p></p><p></p>
+## Page: Quiet Cul-de-Sac House
+Quiet Cul-de-Sac House
 
 ---
 
-## Page: On board MV Sea Gipsy
-<h1></h1><p></p>
+## Page: Riverside Luxury Villa
+Riverside Luxury Villa
 
 ---
 
-## Page: Secret cave joins Myanmar tours
-<p></p><p></p>
+## Page: Seaview Villa Koh Samui
+Seaview Villa Koh Samui
 
 ---
 
-## Page: Exploring the Mergui Archipelago with Thomas Schmid
-<p></p><p></p>
+## Page: Serviced Office Space CBD
+Serviced Office Space CBD
 
 ---
 
-## Page: Plan your trip
-<p>Plan your Mergui Archipelago trip</p>
+## Page: Suburban Investment Duplex
+Suburban Investment Duplex
 
 ---
 
-## Page: Privacy Policy
-<p>Privacy Policy</p>
-
----
-
-## Page: Private Mergui Archipelago charters
-<p>Private Mergui Archipelago charters</p>
-
----
-
-## Page: MV Sea Gipsy
-<p>MV Sea Gipsy</p>
+## Page: Sukhumvit High-Rise Apartment
+Sukhumvit High-Rise Apartment
 

@@ -1,28 +1,26 @@
-# islandsafari.com
-> Intelligent digital systems and tailored solutions by islandsafari.com.
+# codero.site
+> Intelligent digital systems and tailored solutions by codero.site.
 
 ## Core Pages
-- [About Myanmar](/en-US/about-myanmar/): Core page for islandsafari.com.
-- [About Island Safaris](/en-US/about/): Core page for islandsafari.com.
-- [Contact](/en-US/contact/): Core page for islandsafari.com.
+- [Cozy Suburban Family Home](/en-US/properties/cozy-suburban-family-home-624df30c/): Core page for codero.site.
 
 ## More Content
-- [Home page](/en-US/)
-- [Terms and Conditions](/en-US/booking-terms/)
-- [Dawei (Tavoy)](/en-US/dawei-tavoy/)
-- [Shared departure](/en-US/departure/)
-- [Departures](/en-US/departures/)
-- [Photos & Videos](/en-US/gallery/)
-- [Itineraries](/en-US/itineraries/)
-- [Ten days in the Mergui Archipelago](/en-US/itinerary-10-days/)
-- [Four days in the Mergui Archipelago](/en-US/itinerary-4-days/)
-- [Five days in the Mergui Archipelago](/en-US/itinerary-5-days/)
-- [Six days in the Mergui Archipelago](/en-US/itinerary-6-days/)
-- [Kawthaung - Ranong](/en-US/kawthaung-ranong/)
-- [Explore the Mergui Archipelago](/en-US/mergui-archipelago/)
-- [Moken communities](/en-US/moken-communities/)
-- [Myeik (Mergui)](/en-US/myeik-mergui/)
+- [Homepage](/en-US/)
+- [Blog A](/en-US/blog/blog-a/)
+- [Blog B](/en-US/blog/blog-b/)
+- [Blog C](/en-US/blog/blog-c/)
+- [Blog D](/en-US/blog/blog-d/)
+- [Blog E](/en-US/blog/blog-e/)
+- [Beachfront Land Plot Phuket](/en-US/properties/beachfront-land-plot-phuket-ac9ae79b/)
+- [Chic City Townhouse](/en-US/properties/chic-city-townhouse-7b0e4656/)
+- [Compact Studio Near BTS](/en-US/properties/compact-studio-near-bts-ad7ead98/)
+- [Downtown Retail Storefront](/en-US/properties/downtown-retail-storefront-0249a55f/)
+- [Executive Penthouse Suite](/en-US/properties/executive-penthouse-suite-b057d8d1/)
+- [Family Townhouse With Garage](/en-US/properties/family-townhouse-with-garage-f9823332/)
+- [Garden View Condo Chiang Mai](/en-US/properties/garden-view-condo-chiang-mai-dff0c7ab/)
+- [Hillside Development Land](/en-US/properties/hillside-development-land-d5256b9b/)
+- [Historic Brownstone Duplex](/en-US/properties/historic-brownstone-duplex-3d1da331/)
 
 ## Essential Files
-- [Sitemap](https://islandsafari.com/sitemap.xml): XML sitemap for all pages.
+- [Sitemap](https://codero.site/sitemap.xml): XML sitemap for all pages.
 - [Full Content](/llms-full.txt): A single file containing all page summaries for easier ingestion.

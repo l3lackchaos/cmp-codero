@@ -3,5 +3,5 @@ User-agent: *
 Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
-Sitemap: https://islandsafari.com/sitemap.xml
+Sitemap: https://codero.site/sitemap.xml
 LLM: /llms.txt
