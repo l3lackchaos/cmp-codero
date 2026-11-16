@@ -7427,6 +7427,62 @@
     </div>
   </footer>
   <script type="text/javascript" data-source="components">
+    /* ---------- Prefill enquiry form from query string ---------- */
+    function prefillEnquiry() {
+      const params = new URLSearchParams(location.search);
+      const route = params.get('route');
+      const dates = params.get('dates');
+      const context = params.get('context');
+      if (!route && !dates && !context) return;
+
+      const findForm = () =>
+        document.querySelector('form.uf-form[data-form-id]') ||
+        document.querySelector('#enquiry form') ||
+        (document.querySelector('#enquiry')?.matches('form') ? document.querySelector('#enquiry') : null);
+
+      const fill = form => {
+        const el = form.elements;
+
+        // route: ?route=6 -> option "6 days / 5 nights"
+        if (route && el.route?.options) {
+          const options = [...el.route.options];
+          const match =
+            options.find(o => o.value === route) ||
+            options.find(o => o.value.startsWith(`${route} days`));
+          if (match) el.route.value = match.value;
+        }
+
+        if (dates && el.dates && !el.dates.value.trim()) {
+          el.dates.value = dates;
+        }
+
+        if (context && el.message && !el.message.value.trim()) {
+          el.message.value = `I am interested in ${context}.`;
+        }
+
+        // Notify frameworks/validators that values changed
+        ['route', 'dates', 'message'].forEach(name => {
+          el[name]?.dispatchEvent(new Event('input', { bubbles: true }));
+          el[name]?.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+      };
+
+      const form = findForm();
+      if (form) {
+        fill(form);
+        return;
+      }
+
+      // The form is rendered later by the form service, so wait for it
+      const observer = new MutationObserver(() => {
+        const found = findForm();
+        if (!found) return;
+        observer.disconnect();
+        fill(found);
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+      setTimeout(() => observer.disconnect(), 10000); // give up after 10 seconds
+    }
     // navigation.js — destination dropdown menu (details.nav-dropdown)
     (() => {
       'use strict';
