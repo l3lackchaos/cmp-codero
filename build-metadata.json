@@ -1,11 +1,11 @@
 {
-  "build_id": "65c7cb7e-61cb-4462-9003-5dd674d308d3",
-  "site_id": "0414b5c2-2841-4f2e-81aa-ff2a6c5bf553",
-  "tenant_id": "550e8400-e29b-41d4-a716-446655440001",
-  "domain": "codero.site",
-  "completed_at": "2026-11-13T04:25:17.333841+00:00",
-  "total_pages": 27,
-  "built_pages": 27,
+  "build_id": "042dd547-869e-40d9-8313-c96167fb0e8a",
+  "site_id": "278f7e80-ee53-4f30-ab6d-a106827537f5",
+  "tenant_id": "9d691b71-8d12-45a9-a44d-d580cc51591f",
+  "domain": "islandsafari.com",
+  "completed_at": "2026-11-16T02:39:28.490606+00:00",
+  "total_pages": 33,
+  "built_pages": 33,
   "failed_pages": 0,
   "status": "completed"
 }
