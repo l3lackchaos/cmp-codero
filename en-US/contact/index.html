@@ -7430,59 +7430,69 @@
     /* ---------- Prefill enquiry form from query string ---------- */
     function prefillEnquiry() {
       const params = new URLSearchParams(location.search);
+      const guests = params.get('guests');
       const route = params.get('route');
       const dates = params.get('dates');
       const context = params.get('context');
-      if (!route && !dates && !context) return;
+      if (!guests && !route && !dates && !context) return;
 
       const findForm = () =>
         document.querySelector('form.uf-form[data-form-id]') ||
-        document.querySelector('#enquiry form') ||
-        (document.querySelector('#enquiry')?.matches('form') ? document.querySelector('#enquiry') : null);
+        document.querySelector('form:has([name="route"][name="dates"])') ||
+        document.querySelector('#enquiry form');
 
-      const fill = form => {
-        const el = form.elements;
+      // Set value in a way React-controlled inputs notice
+      const setValue = (field, value) => {
+        if (!field) return;
+        const proto = field instanceof HTMLSelectElement ? HTMLSelectElement.prototype
+          : field instanceof HTMLTextAreaElement ? HTMLTextAreaElement.prototype
+            : HTMLInputElement.prototype;
+        Object.getOwnPropertyDescriptor(proto, 'value').set.call(field, value);
+        field.dispatchEvent(new Event('input', { bubbles: true }));
+        field.dispatchEvent(new Event('change', { bubbles: true }));
+      };
 
-        // route: ?route=6 -> option "6 days / 5 nights"
-        if (route && el.route?.options) {
-          const options = [...el.route.options];
-          const match =
-            options.find(o => o.value === route) ||
-            options.find(o => o.value.startsWith(`${route} days`));
-          if (match) el.route.value = match.value;
-        }
-
-        if (dates && el.dates && !el.dates.value.trim()) {
-          el.dates.value = dates;
-        }
-
-        if (context && el.message && !el.message.value.trim()) {
-          el.message.value = `I am interested in ${context}.`;
-        }
-
-        // Notify frameworks/validators that values changed
-        ['route', 'dates', 'message'].forEach(name => {
-          el[name]?.dispatchEvent(new Event('input', { bubbles: true }));
-          el[name]?.dispatchEvent(new Event('change', { bubbles: true }));
+      const touched = new Set(); // fields the user edited themselves
+      const watch = form => {
+        if (form.dataset.prefillWatching) return;
+        form.dataset.prefillWatching = '1';
+        form.addEventListener('input', e => {
+          if (e.isTrusted && e.target.name) touched.add(e.target.name);
         });
       };
 
-      const form = findForm();
-      if (form) {
-        fill(form);
-        return;
-      }
+      const fill = form => {
+        const el = form.elements;
+        watch(form);
 
-      // The form is rendered later by the form service, so wait for it
-      const observer = new MutationObserver(() => {
-        const found = findForm();
-        if (!found) return;
-        observer.disconnect();
-        fill(found);
-      });
-      observer.observe(document.body, { childList: true, subtree: true });
-      setTimeout(() => observer.disconnect(), 10000); // give up after 10 seconds
+        if (guests && !touched.has('guests') && el.guests?.options &&
+          [...el.guests.options].some(o => o.value === guests)) {
+          if (el.guests.value !== guests) setValue(el.guests, guests);
+        }
+        if (route && !touched.has('route') && el.route?.options) {
+          const options = [...el.route.options];
+          const match = options.find(o => o.value === route) ||
+            options.find(o => o.value.startsWith(`${route} days`));
+          if (match && el.route.value !== match.value) setValue(el.route, match.value);
+        }
+        if (dates && !touched.has('dates') && el.dates && el.dates.value !== dates) {
+          setValue(el.dates, dates);
+        }
+        if (context && !touched.has('message') && el.message) {
+          const text = `I am interested in ${context}.`;
+          if (el.message.value !== text) setValue(el.message, text);
+        }
+      };
+
+      // Retry for ~5s so values are re-applied if hydration wipes them
+      let tries = 0;
+      const timer = setInterval(() => {
+        const form = findForm();
+        if (form) fill(form);
+        if (++tries >= 25) clearInterval(timer);
+      }, 200);
     }
+
     // navigation.js — destination dropdown menu (details.nav-dropdown)
     (() => {
       'use strict';
