@@ -7426,7 +7426,7 @@
       <div class="footer-bottom"><span>© 2026 Island Safaris</span></div>
     </div>
   </footer>
-  <script type="text/javascript" data-source="components">
+  <script type="text/javascript">
     /* ---------- Prefill enquiry form from query string ---------- */
     function prefillEnquiry() {
       const params = new URLSearchParams(location.search);
@@ -7498,7 +7498,8 @@
     } else {
       prefillEnquiry();
     }
-
+  </script>
+  <script type="text/javascript" data-source="components">
     // navigation.js — destination dropdown menu (details.nav-dropdown)
     (() => {
       'use strict';
@@ -7592,7 +7593,7 @@
         if (trip.date) document.title = `${trip.date} | Island Safaris`;
       }
 
-      /* ---------- Prefill enquiry form from query string ---------- 
+      /* ---------- Prefill enquiry form from query string ---------- */
       function prefillEnquiry() {
         const holder = document.querySelector('#enquiry');
         if (!holder) return;
@@ -7613,7 +7614,7 @@
         if (context && message && !message.value.trim()) {
           message.value = `I am interested in ${context}.`;
         }
-      }*/
+      }
 
       /* ---------- Mobile menu ---------- */
       function initMobileMenu() {
