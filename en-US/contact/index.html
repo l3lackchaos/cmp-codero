@@ -7607,6 +7607,11 @@
         if (context && message && !message.value.trim()) {
           message.value = `I am interested in ${context}.`;
         }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', prefillEnquiry);
+        } else {
+          prefillEnquiry();
+        }
       }
 
       /* ---------- Mobile menu ---------- */
