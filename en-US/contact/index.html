@@ -7492,6 +7492,12 @@
         if (++tries >= 25) clearInterval(timer);
       }, 200);
     }
+    // Call it OUTSIDE the function
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', prefillEnquiry);
+    } else {
+      prefillEnquiry();
+    }
 
     // navigation.js — destination dropdown menu (details.nav-dropdown)
     (() => {
@@ -7586,7 +7592,7 @@
         if (trip.date) document.title = `${trip.date} | Island Safaris`;
       }
 
-      /* ---------- Prefill enquiry form from query string ---------- */
+      /* ---------- Prefill enquiry form from query string ---------- 
       function prefillEnquiry() {
         const holder = document.querySelector('#enquiry');
         if (!holder) return;
@@ -7607,12 +7613,7 @@
         if (context && message && !message.value.trim()) {
           message.value = `I am interested in ${context}.`;
         }
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', prefillEnquiry);
-        } else {
-          prefillEnquiry();
-        }
-      }
+      }*/
 
       /* ---------- Mobile menu ---------- */
       function initMobileMenu() {
