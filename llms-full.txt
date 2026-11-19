@@ -1,169 +1,210 @@
-# islandsafari.com - Full Documentation
-
-This file contains the consolidated content of the islandsafari.com website for LLM ingestion.
+# Island Safaris Mergui | Small-group island expeditions
 
 ---
 
-## Page: Home page
-<p>Home page</p>
+## Home page (en-US)
+
+Path: /en-US/
+
+Home page
 
 ---
 
-## Page: About Myanmar
-<p>About Myanmar</p>
+## About Myanmar (en-US)
+
+Path: /en-US/about-myanmar/
+
+About Myanmar
 
 ---
 
-## Page: About Island Safaris
-<p>About Island Safaris</p>
+## About Island Safaris (en-US)
+
+Path: /en-US/about/
+
+About Island Safaris
 
 ---
 
-## Page: Terms and Conditions
-<p>Terms and Conditions</p>
+## Terms and Conditions (en-US)
+
+Path: /en-US/booking-terms/
+
+Terms and Conditions
 
 ---
 
-## Page: Contact
-<p>Contact</p>
+## Contact (en-US)
+
+Path: /en-US/contact/
+
+Contact
 
 ---
 
-## Page: Dawei (Tavoy)
-<p>Dawei (Tavoy)</p>
+## Dawei (Tavoy) (en-US)
+
+Path: /en-US/dawei-tavoy/
+
+Dawei (Tavoy)
 
 ---
 
-## Page: Shared departure
-<p>Shared departure</p>
+## Shared departure (en-US)
+
+Path: /en-US/departure/
+
+Shared departure
 
 ---
 
-## Page: Departures
-<p>Departures</p>
+## Departures (en-US)
+
+Path: /en-US/departures/
+
+Departures
 
 ---
 
-## Page: 2-7 February 2027
-<p>2-7 February 2027</p>
+## 2-7 February 2027 (en-US)
+
+Path: /en-US/departures/february-2027/
+
+2-7 February 2027
 
 ---
 
-## Page: 12-17 January 2027
-<p>12-17 January 2027</p>
+## 12-17 January 2027 (en-US)
+
+Path: /en-US/departures/january-2027/
+
+12-17 January 2027
 
 ---
 
-## Page: 18-22 March 2027
-<p>18-22 March 2027</p>
+## 18-22 March 2027 (en-US)
+
+Path: /en-US/departures/march-2027/
+
+18-22 March 2027
 
 ---
 
-## Page: Photos & Videos
-<p>Photos &amp; Videos</p>
+## Photos & Videos (en-US)
+
+Path: /en-US/gallery/
+
+Photos & Videos
 
 ---
 
-## Page: Itineraries
-<p>Mergui Archipelago</p><p>itineraries</p>
+## Itineraries (en-US)
+
+Path: /en-US/itineraries/
+
+Mergui Archipelago
+itineraries
 
 ---
 
-## Page: Ten days in the Mergui Archipelago
-<p>Ten days in the Mergui Archipelago</p>
+## Ten days in the Mergui Archipelago (en-US)
+
+Path: /en-US/itinerary-10-days/
+
+Ten days in the Mergui Archipelago
 
 ---
 
-## Page: Four days in the Mergui Archipelago
-<p>Four days in the Mergui Archipelago</p>
+## Four days in the Mergui Archipelago (en-US)
+
+Path: /en-US/itinerary-4-days/
+
+Four days in the Mergui Archipelago
 
 ---
 
-## Page: Five days in the Mergui Archipelago
-<p>Five days in the Mergui Archipelago</p>
+## Five days in the Mergui Archipelago (en-US)
+
+Path: /en-US/itinerary-5-days/
+
+Five days in the Mergui Archipelago
 
 ---
 
-## Page: Six days in the Mergui Archipelago
-<p>Six days in the Mergui Archipelago</p>
+## Six days in the Mergui Archipelago (en-US)
+
+Path: /en-US/itinerary-6-days/
+
+Six days in the Mergui Archipelago
 
 ---
 
-## Page: Kawthaung - Ranong
-<p>Kawthaung and Ranong</p>
+## Kawthaung - Ranong (en-US)
+
+Path: /en-US/kawthaung-ranong/
+
+Kawthaung and Ranong
 
 ---
 
-## Page: Explore the Mergui Archipelago
-<p>Explore the Mergui Archipelago</p>
+## Explore the Mergui Archipelago (en-US)
+
+Path: /en-US/mergui-archipelago/
+
+Explore the Mergui Archipelago
 
 ---
 
-## Page: Moken communities
-<p>Moken communities</p>
+## Moken communities (en-US)
+
+Path: /en-US/moken-communities/
+
+Moken communities
 
 ---
 
-## Page: Myeik (Mergui)
-<p>Myeik (Mergui)</p>
+## Myeik (Mergui) (en-US)
+
+Path: /en-US/myeik-mergui/
+
+Myeik (Mergui)
 
 ---
 
-## Page: News & Stories
-<p>News &amp; Stories</p>
+## News & Stories (en-US)
+
+Path: /en-US/news-stories/
+
+News & Stories
 
 ---
 
-## Page: Now is the time to book a trip to this long-lost island
-<p></p><p></p><p></p>
+## Plan your trip (en-US)
+
+Path: /en-US/plan-your-trip/
+
+Plan your Mergui Archipelago trip
 
 ---
 
-## Page: Real Life
-<p></p><p></p>
+## Privacy Policy (en-US)
+
+Path: /en-US/privacy-policy/
+
+Privacy Policy
 
 ---
 
-## Page: New dawn for remote Andaman Sea island tourism
-<p></p><p></p>
+## Private Mergui Archipelago charters (en-US)
+
+Path: /en-US/private-charters/
+
+Private Mergui Archipelago charters
 
 ---
 
-## Page: Sailing among Myanmar's islands of mystery
-<p></p><p></p>
+## MV Sea Gipsy (en-US)
 
----
+Path: /en-US/sea-gipsy/
 
-## Page: On board MV Sea Gipsy
-<h1></h1><p></p>
-
----
-
-## Page: Secret cave joins Myanmar tours
-<p></p><p></p>
-
----
-
-## Page: Exploring the Mergui Archipelago with Thomas Schmid
-<p></p><p></p>
-
----
-
-## Page: Plan your trip
-<p>Plan your Mergui Archipelago trip</p>
-
----
-
-## Page: Privacy Policy
-<p>Privacy Policy</p>
-
----
-
-## Page: Private Mergui Archipelago charters
-<p>Private Mergui Archipelago charters</p>
-
----
-
-## Page: MV Sea Gipsy
-<p>MV Sea Gipsy</p>
-
+MV Sea Gipsy

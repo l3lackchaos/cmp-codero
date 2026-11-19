@@ -1,28 +1,42 @@
-# islandsafari.com
-> Intelligent digital systems and tailored solutions by islandsafari.com.
+# Island Safaris Mergui | Small-group island expeditions
 
-## Core Pages
-- [About Myanmar](/en-US/about-myanmar/): Core page for islandsafari.com.
-- [About Island Safaris](/en-US/about/): Core page for islandsafari.com.
-- [Contact](/en-US/contact/): Core page for islandsafari.com.
+> Explore the Mergui Archipelago aboard MV Sea Gipsy. Choose a shared cruise or charter the boat exclusively for a group of up to 10 guests.
 
-## More Content
-- [Home page](/en-US/)
-- [Terms and Conditions](/en-US/booking-terms/)
-- [Dawei (Tavoy)](/en-US/dawei-tavoy/)
-- [Shared departure](/en-US/departure/)
-- [Departures](/en-US/departures/)
-- [2-7 February 2027](/en-US/departures/february-2027/)
-- [12-17 January 2027](/en-US/departures/january-2027/)
-- [18-22 March 2027](/en-US/departures/march-2027/)
-- [Photos & Videos](/en-US/gallery/)
-- [Itineraries](/en-US/itineraries/)
-- [Ten days in the Mergui Archipelago](/en-US/itinerary-10-days/)
-- [Four days in the Mergui Archipelago](/en-US/itinerary-4-days/)
-- [Five days in the Mergui Archipelago](/en-US/itinerary-5-days/)
-- [Six days in the Mergui Archipelago](/en-US/itinerary-6-days/)
-- [Kawthaung - Ranong](/en-US/kawthaung-ranong/)
+## Pages
+- [Home page](https://islandsafari.com/en-US/) (en-US)
+- [About Myanmar](https://islandsafari.com/en-US/about-myanmar/) (en-US)
+- [About Island Safaris](https://islandsafari.com/en-US/about/) (en-US)
+- [Terms and Conditions](https://islandsafari.com/en-US/booking-terms/) (en-US)
+- [Contact](https://islandsafari.com/en-US/contact/) (en-US)
+- [Dawei (Tavoy)](https://islandsafari.com/en-US/dawei-tavoy/) (en-US)
+- [Shared departure](https://islandsafari.com/en-US/departure/) (en-US)
+- [Departures](https://islandsafari.com/en-US/departures/) (en-US)
+- [2-7 February 2027](https://islandsafari.com/en-US/departures/february-2027/) (en-US)
+- [12-17 January 2027](https://islandsafari.com/en-US/departures/january-2027/) (en-US)
+- [18-22 March 2027](https://islandsafari.com/en-US/departures/march-2027/) (en-US)
+- [Photos & Videos](https://islandsafari.com/en-US/gallery/) (en-US)
+- [Itineraries](https://islandsafari.com/en-US/itineraries/) (en-US)
+- [Ten days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-10-days/) (en-US)
+- [Four days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-4-days/) (en-US)
+- [Five days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-5-days/) (en-US)
+- [Six days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-6-days/) (en-US)
+- [Kawthaung - Ranong](https://islandsafari.com/en-US/kawthaung-ranong/) (en-US)
+- [Explore the Mergui Archipelago](https://islandsafari.com/en-US/mergui-archipelago/) (en-US)
+- [Moken communities](https://islandsafari.com/en-US/moken-communities/) (en-US)
+- [Myeik (Mergui)](https://islandsafari.com/en-US/myeik-mergui/) (en-US)
+- [News & Stories](https://islandsafari.com/en-US/news-stories/) (en-US)
+- [Now is the time to book a trip to this long-lost island](https://islandsafari.com/en-US/news-stories/by-joe-cummings/) (en-US)
+- [Real Life](https://islandsafari.com/en-US/news-stories/by-keith-lyons-jan-2018/) (en-US)
+- [New dawn for remote Andaman Sea island tourism](https://islandsafari.com/en-US/news-stories/by-keith-lyons-nov-2018/) (en-US)
+- [Sailing among Myanmar's islands of mystery](https://islandsafari.com/en-US/news-stories/by-miki-meek-mar-2013/) (en-US)
+- [On board MV Sea Gipsy](https://islandsafari.com/en-US/news-stories/on-board-mv-sea-gipsy/) (en-US)
+- [Secret cave joins Myanmar tours](https://islandsafari.com/en-US/news-stories/secret-cave-joins-tours/) (en-US)
+- [Exploring the Mergui Archipelago with Thomas Schmid](https://islandsafari.com/en-US/news-stories/thomas-schmid-2019/) (en-US)
+- [Plan your trip](https://islandsafari.com/en-US/plan-your-trip/) (en-US)
+- [Privacy Policy](https://islandsafari.com/en-US/privacy-policy/) (en-US)
+- [Private Mergui Archipelago charters](https://islandsafari.com/en-US/private-charters/) (en-US)
+- [MV Sea Gipsy](https://islandsafari.com/en-US/sea-gipsy/) (en-US)
 
-## Essential Files
-- [Sitemap](https://islandsafari.com/sitemap.xml): XML sitemap for all pages.
-- [Full Content](/llms-full.txt): A single file containing all page summaries for easier ingestion.
+## Optional
+- [Sitemap](https://islandsafari.com/sitemap.xml): every indexable page
+- [Full content](https://islandsafari.com/llms-full.txt): the text of every page in one file
