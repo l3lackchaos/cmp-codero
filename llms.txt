@@ -3,39 +3,39 @@
 > Explore the Mergui Archipelago aboard MV Sea Gipsy. Choose a shared cruise or charter the boat exclusively for a group of up to 10 guests.
 
 ## Pages
-- [Home page](https://islandsafari.com/en-US/) (en-US)
-- [About Myanmar](https://islandsafari.com/en-US/about-myanmar/) (en-US)
-- [About Island Safaris](https://islandsafari.com/en-US/about/) (en-US)
-- [Terms and Conditions](https://islandsafari.com/en-US/booking-terms/) (en-US)
-- [Contact](https://islandsafari.com/en-US/contact/) (en-US)
-- [Dawei (Tavoy)](https://islandsafari.com/en-US/dawei-tavoy/) (en-US)
-- [Shared departure](https://islandsafari.com/en-US/departure/) (en-US)
-- [Departures](https://islandsafari.com/en-US/departures/) (en-US)
-- [2-7 February 2027](https://islandsafari.com/en-US/departures/february-2027/) (en-US)
-- [12-17 January 2027](https://islandsafari.com/en-US/departures/january-2027/) (en-US)
-- [18-22 March 2027](https://islandsafari.com/en-US/departures/march-2027/) (en-US)
-- [Photos & Videos](https://islandsafari.com/en-US/gallery/) (en-US)
-- [Itineraries](https://islandsafari.com/en-US/itineraries/) (en-US)
-- [Ten days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-10-days/) (en-US)
-- [Four days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-4-days/) (en-US)
-- [Five days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-5-days/) (en-US)
-- [Six days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-6-days/) (en-US)
-- [Kawthaung - Ranong](https://islandsafari.com/en-US/kawthaung-ranong/) (en-US)
-- [Explore the Mergui Archipelago](https://islandsafari.com/en-US/mergui-archipelago/) (en-US)
-- [Moken communities](https://islandsafari.com/en-US/moken-communities/) (en-US)
-- [Myeik (Mergui)](https://islandsafari.com/en-US/myeik-mergui/) (en-US)
-- [News & Stories](https://islandsafari.com/en-US/news-stories/) (en-US)
-- [Now is the time to book a trip to this long-lost island](https://islandsafari.com/en-US/news-stories/by-joe-cummings/) (en-US)
-- [Real Life](https://islandsafari.com/en-US/news-stories/by-keith-lyons-jan-2018/) (en-US)
-- [New dawn for remote Andaman Sea island tourism](https://islandsafari.com/en-US/news-stories/by-keith-lyons-nov-2018/) (en-US)
-- [Sailing among Myanmar's islands of mystery](https://islandsafari.com/en-US/news-stories/by-miki-meek-mar-2013/) (en-US)
-- [On board MV Sea Gipsy](https://islandsafari.com/en-US/news-stories/on-board-mv-sea-gipsy/) (en-US)
-- [Secret cave joins Myanmar tours](https://islandsafari.com/en-US/news-stories/secret-cave-joins-tours/) (en-US)
-- [Exploring the Mergui Archipelago with Thomas Schmid](https://islandsafari.com/en-US/news-stories/thomas-schmid-2019/) (en-US)
-- [Plan your trip](https://islandsafari.com/en-US/plan-your-trip/) (en-US)
-- [Privacy Policy](https://islandsafari.com/en-US/privacy-policy/) (en-US)
-- [Private Mergui Archipelago charters](https://islandsafari.com/en-US/private-charters/) (en-US)
-- [MV Sea Gipsy](https://islandsafari.com/en-US/sea-gipsy/) (en-US)
+- [Home page](https://islandsafari.com/en-US) (en-US): Explore the Mergui Archipelago aboard MV Sea Gipsy. Choose a shared cruise or charter the boat exclusively for a group of up to 10 guests.
+- [About Myanmar](https://islandsafari.com/en-US/about-myanmar) (en-US): An introduction to Myanmar, its cultural heritage and southern coast, with links to Mergui Archipelago journeys and practical trip planning.
+- [About Island Safaris](https://islandsafari.com/en-US/about) (en-US): Explore the Mergui Archipelago with Island Safaris, using MV Sea Gipsy as your base between island stops.
+- [Terms and Conditions](https://islandsafari.com/en-US/booking-terms) (en-US): Island Safaris terms and conditions.
+- [Contact](https://islandsafari.com/en-US/contact) (en-US): Your Mergui Archipelago journey can start with a date, a favourite island photograph or simply a wish to spend a few days on the water.
+- [Dawei (Tavoy)](https://islandsafari.com/en-US/dawei-tavoy) (en-US): Discover the regional background of Dawei, formerly Tavoy, with town heritage, nearby coastal scenery and clearly marked travel information for review.
+- [Shared departure](https://islandsafari.com/en-US/departure) (en-US): Explore the selected Mergui cruise, its itinerary, price and next enquiry step.
+- [Departures](https://islandsafari.com/en-US/departures) (en-US): Travel as a couple and share the journey with a small group aboard MV Sea Gipsy.
+- [2-7 February 2027](https://islandsafari.com/en-US/departures/february-2027) (en-US): Explore the selected Mergui cruise, its itinerary, price and next enquiry step.
+- [12-17 January 2027](https://islandsafari.com/en-US/departures/january-2027) (en-US): Explore the selected Mergui cruise, its itinerary, price and next enquiry step.
+- [18-22 March 2027](https://islandsafari.com/en-US/departures/march-2027) (en-US): Explore the selected Mergui cruise, its itinerary, price and next enquiry step.
+- [Photos & Videos](https://islandsafari.com/en-US/gallery) (en-US): Photographs and films of MV Sea Gipsy, island scenery and life on the water in the Mergui Archipelago.
+- [Itineraries](https://islandsafari.com/en-US/itineraries) (en-US): Compare four Mergui Archipelago cruises aboard MV Sea Gipsy, with route highlights, prices, boat nights and shared departure options.
+- [Ten days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-10-days) (en-US): Set aside more time for the islands on our longest journey aboard MV Sea Gipsy.
+- [Four days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-4-days) (en-US): Explore Say Tan Kyun, Cock's Comb and Horse Shoe Island on a four-day Mergui package with one hotel night and two nights aboard MV Sea Gipsy.
+- [Five days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-5-days) (en-US): Give yourself another day among the southern islands, with three nights aboard MV Sea Gipsy.
+- [Six days in the Mergui Archipelago](https://islandsafari.com/en-US/itinerary-6-days) (en-US): Explore island bays and mangrove scenery on a six-day journey aboard MV Sea Gipsy.
+- [Kawthaung - Ranong](https://islandsafari.com/en-US/kawthaung-ranong) (en-US): Discover Kawthaung and Ranong, the gateway towns for an Island Safaris cruise, with arrival planning and sightseeing information for review.
+- [Explore the Mergui Archipelago](https://islandsafari.com/en-US/mergui-archipelago) (en-US): Forested islands rise above the Andaman Sea, with sandy bays, rocky shores and mangrove waterways along their edges.
+- [Moken communities](https://islandsafari.com/en-US/moken-communities) (en-US): Learn about Moken communities and their relationship with the Mergui Archipelago, with guidance on respectful visits and information for client review.
+- [Myeik (Mergui)](https://islandsafari.com/en-US/myeik-mergui) (en-US): An introduction to Myeik, also known as Mergui, its maritime history, waterfront and architecture, with regional travel details for client review.
+- [News & Stories](https://islandsafari.com/en-US/news-stories) (en-US): Travel stories, archive reports and press coverage of Island Safaris and journeys through the Mergui Archipelago.
+- [Now is the time to book a trip to this long-lost island](https://islandsafari.com/en-US/news-stories/by-joe-cummings) (en-US): Joe Cummings explores the island region and the early development of places to stay offshore. An archive account, not a guide to current resort availability.
+- [Real Life](https://islandsafari.com/en-US/news-stories/by-keith-lyons-jan-2018) (en-US): An account of travelling off the grid aboard Sea Gipsy, with island beaches, shared life on deck and time away from everyday connections.
+- [New dawn for remote Andaman Sea island tourism](https://islandsafari.com/en-US/news-stories/by-keith-lyons-nov-2018) (en-US): Keith Lyons examines 2018 island tourism and development. Note: conditions and arrangements have changed since the original publication date.
+- [Sailing among Myanmar's islands of mystery](https://islandsafari.com/en-US/news-stories/by-miki-meek-mar-2013) (en-US): Miki Meek recounts a six-day voyage with friends and family among the islands.
+- [On board MV Sea Gipsy](https://islandsafari.com/en-US/news-stories/on-board-mv-sea-gipsy) (en-US): A look at life aboard Sea Gipsy and journeys through the Mergui Archipelago.
+- [Secret cave joins Myanmar tours](https://islandsafari.com/en-US/news-stories/secret-cave-joins-tours) (en-US): An archive report on a cave excursion in southern Myanmar, separate from the island cruise itineraries.
+- [Exploring the Mergui Archipelago with Thomas Schmid](https://islandsafari.com/en-US/news-stories/thomas-schmid-2019) (en-US): A journalist's account of a journey among the islands, preserved with the original author credit and the later editorial context shown on the existing website.
+- [Plan your trip](https://islandsafari.com/en-US/plan-your-trip) (en-US): A little preparation helps you choose the right journey and arrive knowing what to expect.
+- [Privacy Policy](https://islandsafari.com/en-US/privacy-policy) (en-US): Privacy Policy draft for client review. Not approved for publication.
+- [Private Mergui Archipelago charters](https://islandsafari.com/en-US/private-charters) (en-US): Make MV Sea Gipsy the base for your own group's journey through the Mergui Archipelago.
+- [MV Sea Gipsy](https://islandsafari.com/en-US/sea-gipsy) (en-US): Wake aboard MV Sea Gipsy, with the islands outside your curtained sleeping gazebo and another day on the water ahead.
 
 ## Optional
 - [Sitemap](https://islandsafari.com/sitemap.xml): every indexable page
