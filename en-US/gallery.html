@@ -630,6 +630,26 @@ fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke
 aria-label="Next photograph"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"
 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button></div></dialog>
 <script type="text/javascript">
+    // ช่วงมือถือ 300px - 767px
+const mobileMQ = window.matchMedia('(min-width: 300px) and (max-width: 767px)');
+
+$$('[data-drive-video-id]').forEach(figure => {
+    $('.video-launch', figure)?.addEventListener('click', event => {
+        const id = figure.dataset.driveVideoId;
+        if (!/^[\w-]{20,80}$/.test(id)) return;
+        const url = `https://drive.google.com/file/d/${id}/preview`;
+
+        // มือถือ: เปิดแท็บใหม่
+        if (mobileMQ.matches) {
+            event.preventDefault();
+            window.open(url, '_blank', 'noopener,noreferrer');
+            return;
+        }
+
+        // เดสก์ท็อป/แท็บเล็ต: เล่นใน iframe เหมือนเดิม
+        mount(figure, url);
+    });
+});
 // navigation.js — destination dropdown menu (details.nav-dropdown)
 (() => {
     'use strict';
