@@ -4418,36 +4418,37 @@
     </dialog>
     <script type="text/javascript">
         (function () {
-            // ช่วงหน้าจอ 300 - 767px
-            var mq = window.matchMedia('(min-width: 300px) and (max-width: 767px)');
+  // ช่วงหน้าจอ 300 - 767 พิกเซล
+  var mq = window.matchMedia('(min-width: 300px) and (max-width: 767px)');
 
-            // ลิงก์ที่จะใช้เปิดแท็บใหม่ (YouTube)
-            var YT = 'a[href*="youtube.com/watch"], a[href*="youtu.be/"]';
+  function getDriveUrl(figure) {
+    // 1) สร้างจาก data-drive-video-id
+    var id = figure.getAttribute('data-drive-video-id');
+    if (id) return 'https://drive.google.com/file/d/' + encodeURIComponent(id) + '/view';
 
-            document.addEventListener('click', function (e) {
-                if (!mq.matches) return;                        // นอกช่วง → ทำงานปกติ
-                if (e.target.closest('a.drive-google')) return; // drive-google ให้ทำงานตามเดิม
+    // 2) สำรอง: ใช้ลิงก์ drive.google.com ที่อยู่ใน figure
+    var a = figure.querySelector('a[href*="drive.google.com"]');
+    return a ? a.href : null;
+  }
 
-                var link = e.target.closest(YT);
+  // ใช้ capture phase เพื่อดักก่อนที่ตัวเล่นวิดีโอเดิมจะทำงาน
+  document.addEventListener('click', function (e) {
+    if (!mq.matches) return;                         // นอกช่วง 300-767px ให้ทำงานแบบเดิม
 
-                // ถ้าไม่ได้คลิกที่ลิงก์โดยตรง (เช่นคลิกรูปปก/ปุ่มเล่น)
-                // ให้ไล่ขึ้นไปหา container ที่มีลิงก์ YouTube อยู่ 1 อันพอดี
-                if (!link) {
-                    var el = e.target;
-                    while (el && el !== document.body) {
-                        var found = el.querySelectorAll ? el.querySelectorAll(YT) : [];
-                        if (found.length === 1) { link = found[0]; break; }
-                        if (found.length > 1) break;                // ใหญ่เกินไป (ครอบหลายวิดีโอ)
-                        el = el.parentElement;
-                    }
-                }
-                if (!link) return;
+    var figure = e.target.closest('.drive-google');
+    if (!figure) return;
 
-                e.preventDefault();
-                e.stopImmediatePropagation();                   // กันตัวเล่นวิดีโอเดิมทำงาน
-                window.open(link.href, '_blank', 'noopener,noreferrer');
-            }, true); // true = จับก่อน handler เดิมของเว็บ
-        })();
+    // ถ้ากดที่ลิงก์ "Watch video" อยู่แล้ว ปล่อยให้ <a target="_blank"> ทำงานตามปกติ
+    if (e.target.closest('a')) return;
+
+    var url = getDriveUrl(figure);
+    if (!url) return;
+
+    e.preventDefault();
+    e.stopImmediatePropagation();                    // ไม่ให้เล่นวิดีโอในหน้า
+    window.open(url, '_blank', 'noopener,noreferrer'); // เปิดแท็บใหม่
+  }, true);
+})();
         // navigation.js — destination dropdown menu (details.nav-dropdown)
         (() => {
             'use strict';
