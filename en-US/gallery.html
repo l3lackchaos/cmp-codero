@@ -630,6 +630,37 @@ fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke
 aria-label="Next photograph"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"
 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button></div></dialog>
 <script type="text/javascript">
+    (function () {
+  // ช่วงหน้าจอ 300 - 767px
+  var mq = window.matchMedia('(min-width: 300px) and (max-width: 767px)');
+
+  // ลิงก์ที่จะใช้เปิดแท็บใหม่ (YouTube)
+  var YT = 'a[href*="youtube.com/watch"], a[href*="youtu.be/"]';
+
+  document.addEventListener('click', function (e) {
+    if (!mq.matches) return;                        // นอกช่วง → ทำงานปกติ
+    if (e.target.closest('a.drive-google')) return; // drive-google ให้ทำงานตามเดิม
+
+    var link = e.target.closest(YT);
+
+    // ถ้าไม่ได้คลิกที่ลิงก์โดยตรง (เช่นคลิกรูปปก/ปุ่มเล่น)
+    // ให้ไล่ขึ้นไปหา container ที่มีลิงก์ YouTube อยู่ 1 อันพอดี
+    if (!link) {
+      var el = e.target;
+      while (el && el !== document.body) {
+        var found = el.querySelectorAll ? el.querySelectorAll(YT) : [];
+        if (found.length === 1) { link = found[0]; break; }
+        if (found.length > 1) break;                // ใหญ่เกินไป (ครอบหลายวิดีโอ)
+        el = el.parentElement;
+      }
+    }
+    if (!link) return;
+
+    e.preventDefault();
+    e.stopImmediatePropagation();                   // กันตัวเล่นวิดีโอเดิมทำงาน
+    window.open(link.href, '_blank', 'noopener,noreferrer');
+  }, true); // true = จับก่อน handler เดิมของเว็บ
+})();
 // navigation.js — destination dropdown menu (details.nav-dropdown)
 (() => {
     'use strict';
