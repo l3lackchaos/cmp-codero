@@ -630,6 +630,49 @@ fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke
 aria-label="Next photograph"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"
 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button></div></dialog>
 <script type="text/javascript">
+    (function () {
+  // Screen width 300px - 767px (mobile)
+  var mq = window.matchMedia('(min-width: 300px) and (max-width: 767px)');
+
+  function isDriveLink(el) {
+    return el && el.href && /^https?:\/\/(drive|docs)\.google\.com\//i.test(el.href);
+  }
+
+  // Capture phase so this runs before the site's existing lightbox/modal
+  document.addEventListener('click', function (e) {
+    if (!mq.matches) return; // outside 300-767px, behave as normal
+
+    var a = e.target.closest('a[href]');
+    if (!isDriveLink(a)) return;
+
+    e.preventDefault();
+    e.stopImmediatePropagation(); // stop the existing player from opening
+
+    // /view -> /preview so the video plays directly on mobile
+    var url = a.href.replace(/\/view(\?.*)?$/i, '/preview');
+
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }, true);
+
+  // Also set target="_blank" on the links while on mobile
+  function patchLinks() {
+    document.querySelectorAll('a[href*="drive.google.com"]').forEach(function (a) {
+      if (mq.matches) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener noreferrer');
+      } else {
+        a.removeAttribute('target');
+      }
+    });
+  }
+
+  patchLinks();
+  if (mq.addEventListener) {
+    mq.addEventListener('change', patchLinks);
+  } else {
+    mq.addListener(patchLinks);
+  }
+})();
 // navigation.js — destination dropdown menu (details.nav-dropdown)
 (() => {
     'use strict';
