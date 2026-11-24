@@ -631,47 +631,62 @@ aria-label="Next photograph"><svg aria-hidden="true" width="24" height="24" view
 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button></div></dialog>
 <script type="text/javascript">
     (function () {
-  // Screen width 300px - 767px (mobile)
+  var DEBUG = true;
   var mq = window.matchMedia('(min-width: 300px) and (max-width: 767px)');
+  var DRIVE_RE = /(?:drive|docs)\.google\.com\/(?:file\/d\/|open\?id=|uc\?.*id=)([\w-]+)/i;
 
-  function isDriveLink(el) {
-    return el && el.href && /^https?:\/\/(drive|docs)\.google\.com\//i.test(el.href);
+  function log() {
+    if (DEBUG) console.log.apply(console, ['[drive-mobile]'].concat([].slice.call(arguments)));
   }
 
-  // Capture phase so this runs before the site's existing lightbox/modal
-  document.addEventListener('click', function (e) {
-    if (!mq.matches) return; // outside 300-767px, behave as normal
+  // Look for a Drive URL in an element's attributes (href, data-*, onclick, src...)
+  function driveIdFromEl(el) {
+    if (!el || !el.attributes) return null;
+    for (var i = 0; i < el.attributes.length; i++) {
+      var m = String(el.attributes[i].value).match(DRIVE_RE);
+      if (m) return m[1];
+    }
+    return null;
+  }
 
-    var a = e.target.closest('a[href]');
-    if (!isDriveLink(a)) return;
+  // Walk up from the click target; also check the surrounding card
+  function findDriveId(target) {
+    var el = target;
+    while (el && el !== document.body) {
+      var id = driveIdFromEl(el);
+      if (id) return id;
+
+      // If this container holds exactly one video link and it's a Drive one, use it
+      var links = el.querySelectorAll
+        ? el.querySelectorAll('a[href*="drive.google.com"], a[href*="youtube.com"], a[href*="youtu.be"]')
+        : [];
+      if (links.length === 1) {
+        var id2 = driveIdFromEl(links[0]);
+        if (id2) return id2;
+      }
+      el = el.parentElement;
+    }
+    return null;
+  }
+
+  function handler(e) {
+    var width = window.innerWidth;
+    var inRange = mq.matches;
+    var id = findDriveId(e.target);
+    log('click', e.type, 'width=' + width, 'inRange=' + inRange, 'driveId=' + id, e.target);
+
+    if (!inRange || !id) return;
 
     e.preventDefault();
-    e.stopImmediatePropagation(); // stop the existing player from opening
+    e.stopImmediatePropagation();
 
-    // /view -> /preview so the video plays directly on mobile
-    var url = a.href.replace(/\/view(\?.*)?$/i, '/preview');
-
-    window.open(url, '_blank', 'noopener,noreferrer');
-  }, true);
-
-  // Also set target="_blank" on the links while on mobile
-  function patchLinks() {
-    document.querySelectorAll('a[href*="drive.google.com"]').forEach(function (a) {
-      if (mq.matches) {
-        a.setAttribute('target', '_blank');
-        a.setAttribute('rel', 'noopener noreferrer');
-      } else {
-        a.removeAttribute('target');
-      }
-    });
+    window.open('https://drive.google.com/file/d/' + id + '/preview', '_blank', 'noopener');
   }
 
-  patchLinks();
-  if (mq.addEventListener) {
-    mq.addEventListener('change', patchLinks);
-  } else {
-    mq.addListener(patchLinks);
-  }
+  // Capture phase on window, so it runs before any other click handler
+  window.addEventListener('click', handler, true);
+
+  log('loaded');
 })();
 // navigation.js — destination dropdown menu (details.nav-dropdown)
 (() => {
