@@ -2,43 +2,27 @@
 
 ---
 
+## index (en-US)
+
+Path: /
+
+We're Humans is a technology partner building intelligent software, scalable platforms and secure systems for modern businesses.
+
+---
+
 ## about-us (en-US)
 
 Path: /about-us/
 
-Meet humanit, an experienced IT support company providing managed IT, security and technology solutions for businesses.
+Meet We're Humans, a digital agency in Pattaya providing web development, digital marketing, SEO and IT services for businesses worldwide.
 
 ---
 
-## compliance (en-US)
+## ai-solutions (en-US)
 
-Path: /compliance/
+Path: /ai-solutions/
 
-IT compliance services supporting PDPA, ISO 27001, audits and security requirements for businesses in Thailand.
-
----
-
-## boi-export (en-US)
-
-Path: /compliance/boi-export/
-
-IT and compliance support for BOI exporters, helping strengthen security, audit readiness and supply-chain continuity.
-
----
-
-## compliance-pack (en-US)
-
-Path: /compliance/compliance-pack/
-
-Managed Services Compliance Pack supporting PDPA, ISO 27001, audits, security and regulatory requirements.
-
----
-
-## pdpa-iso (en-US)
-
-Path: /compliance/pdpa-iso/
-
-PDPA and ISO 27001 support for businesses in Thailand, with security controls, data protection and audit-ready IT practices.
+Practical AI solutions for businesses, from intelligent automation and AI tools to integrations, assistants and smarter workflows.
 
 ---
 
@@ -46,180 +30,36 @@ PDPA and ISO 27001 support for businesses in Thailand, with security controls, d
 
 Path: /contact-us/
 
-Contact humanit for managed IT, cybersecurity and technology support for businesses across Eastern Thailand.
+Contact us at We're Humans in Pattaya for web development, SEO, digital marketing, branding and IT services. Speak directly with our team.
 
 ---
 
-## industries (en-US)
+## news (en-US)
 
-Path: /industries/
+Path: /news/
 
-Industry-specific IT services, security and compliance support for manufacturers, exporters, real estate and financial businesses.
-
----
-
-## exporters (en-US)
-
-Path: /industries/exporters/
-
-IT for exporters to strengthen security, protect data, support audits and maintain reliable supply-chain operations.
+Explore digital news, insights and updates from We're Humans, covering web development, SEO, digital marketing, technology and more.
 
 ---
 
-## factories (en-US)
+## our-work (en-US)
 
-Path: /industries/factories/
+Path: /our-work/
 
-IT solutions for manufacturing that reduce downtime, secure factory systems and support reliable production operations.
-
----
-
-## insurance (en-US)
-
-Path: /industries/insurance/
-
-IT services for insurance firms and brokers, supporting data security, compliance, audits and reliable business systems.
+Explore our work in web design, development, e-commerce, SEO and digital solutions for businesses across a range of industries.
 
 ---
 
-## real-estate (en-US)
+## services-overview (en-US)
 
-Path: /industries/real-estate/
+Path: /services-overview/
 
-IT services for real estate businesses, helping protect data, improve security and support reliable property operations.
-
----
-
-## legal (en-US)
-
-Path: /legal/
-
-Legal and contractual information covering agreements, service levels, data protection and compliance at humanit.
+Explore our technology services across software, cloud and data, security, compliance, design, content and digital growth.
 
 ---
 
-## msa-overview (en-US)
+## software-development (en-US)
 
-Path: /legal/msa-overview/
+Path: /software-development/
 
-Managed Services Support Policy covering service scope, SLAs, security, PDPA, responsibilities and support tiers.
-
----
-
-## sla-dpa-summary (en-US)
-
-Path: /legal/sla-dpa-summary/
-
-SLA and DPA summary covering service levels, incident response, data protection, PDPA and customer responsibilities.
-
----
-
-## pricing-and-plans (en-US)
-
-Path: /pricing-and-plans/
-
-Compare managed IT service plans with flexible pricing for security, support, monitoring, backup and compliance.
-
----
-
-## services (en-US)
-
-Path: /services/
-
-Managed IT services for businesses in Thailand, including cybersecurity, monitoring, backups, IT support and strategic planning.
-
----
-
-## backup-and-recovery (en-US)
-
-Path: /services/backup-and-recovery/
-
-Backup and recovery services protect your data, reduce downtime and help your business recover quickly from IT disasters.
-
----
-
-## backup-dr (en-US)
-
-Path: /services/backup-dr/
-
-Managed backup and disaster recovery in Thailand. Protect critical data, reduce downtime and recover faster from IT incidents.
-
----
-
-## cctv (en-US)
-
-Path: /services/cctv/
-
-CCTV systems for businesses in Pattaya and Chonburi, with professional installation, monitoring options and ongoing support.
-
----
-
-## it-hardware-and-software-procurement (en-US)
-
-Path: /services/it-hardware-and-software-procurement/
-
-Simplify IT procurement with expert hardware, software and licensing support tailored to your business needs.
-
----
-
-## managed-antivirus (en-US)
-
-Path: /services/managed-antivirus/
-
-Managed antivirus protects your business from malware and online threats with proactive monitoring and real-time protection.
-
----
-
-## managed-risk-and-security (en-US)
-
-Path: /services/managed-risk-and-security/
-
-Regulatory compliance support helps your business prepare for audits, protect sensitive data and reduce security risks.
-
----
-
-## managed-services (en-US)
-
-Path: /services/managed-services/
-
-Proactive IT management in Thailand with monitoring, maintenance, security and support to reduce downtime and IT risk.
-
----
-
-## patch-management (en-US)
-
-Path: /services/patch-management/
-
-Patch management keeps your systems secure and up to date, reducing vulnerabilities, downtime and IT risks.
-
----
-
-## remote-monitoring-access (en-US)
-
-Path: /services/remote-monitoring-access/
-
-Proactive remote IT monitoring and support to detect issues early, resolve problems faster and reduce disruption.
-
----
-
-## security-operations (en-US)
-
-Path: /services/security-operations/
-
-Cyber security monitoring, threat detection and incident response for businesses in Thailand. Reduce risk and strengthen protection.
-
----
-
-## strategic-it-planning (en-US)
-
-Path: /services/strategic-it-planning/
-
-Strategic IT planning that aligns technology with your business goals, growth plans and future requirements.
-
----
-
-## web-protection-and-filtering (en-US)
-
-Path: /services/web-protection-and-filtering/
-
-Web protection and filtering helps block malware, phishing and unsafe websites while giving businesses greater access control.
+Custom software development built around your business, from web applications and internal systems to integrations and automation.

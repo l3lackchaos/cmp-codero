@@ -1,115 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://devalor.site/</loc>
+    <lastmod>2026-11-26T10:32:04Z</lastmod>
+  </url>
+  <url>
     <loc>https://devalor.site/about-us</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
+    <lastmod>2026-11-26T10:32:04Z</lastmod>
   </url>
   <url>
-    <loc>https://devalor.site/compliance</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/compliance/boi-export</loc>
-    <lastmod>2026-11-26T10:21:39Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/compliance/compliance-pack</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/compliance/pdpa-iso</loc>
-    <lastmod>2026-11-26T10:21:39Z</lastmod>
+    <loc>https://devalor.site/ai-solutions</loc>
+    <lastmod>2026-11-26T10:32:04Z</lastmod>
   </url>
   <url>
     <loc>https://devalor.site/contact-us</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
+    <lastmod>2026-11-26T10:32:03Z</lastmod>
   </url>
   <url>
-    <loc>https://devalor.site/industries</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
+    <loc>https://devalor.site/news</loc>
+    <lastmod>2026-11-26T10:32:03Z</lastmod>
   </url>
   <url>
-    <loc>https://devalor.site/industries/exporters</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
+    <loc>https://devalor.site/our-work</loc>
+    <lastmod>2026-11-26T10:32:04Z</lastmod>
   </url>
   <url>
-    <loc>https://devalor.site/industries/factories</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
+    <loc>https://devalor.site/services-overview</loc>
+    <lastmod>2026-11-26T10:32:04Z</lastmod>
   </url>
   <url>
-    <loc>https://devalor.site/industries/insurance</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/industries/real-estate</loc>
-    <lastmod>2026-11-26T10:21:39Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/legal</loc>
-    <lastmod>2026-11-26T10:21:39Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/legal/msa-overview</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/legal/sla-dpa-summary</loc>
-    <lastmod>2026-11-26T10:21:39Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/pricing-and-plans</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/backup-and-recovery</loc>
-    <lastmod>2026-11-26T10:21:39Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/backup-dr</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/cctv</loc>
-    <lastmod>2026-11-26T10:21:39Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/it-hardware-and-software-procurement</loc>
-    <lastmod>2026-11-26T10:21:39Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/managed-antivirus</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/managed-risk-and-security</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/managed-services</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/patch-management</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/remote-monitoring-access</loc>
-    <lastmod>2026-11-26T10:21:39Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/security-operations</loc>
-    <lastmod>2026-11-26T10:21:39Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/strategic-it-planning</loc>
-    <lastmod>2026-11-26T10:21:39Z</lastmod>
-  </url>
-  <url>
-    <loc>https://devalor.site/services/web-protection-and-filtering</loc>
-    <lastmod>2026-11-26T10:21:40Z</lastmod>
+    <loc>https://devalor.site/software-development</loc>
+    <lastmod>2026-11-26T10:32:04Z</lastmod>
   </url>
 </urlset>
