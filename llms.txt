@@ -1,7 +1,34 @@
 # devalor.site
 
 ## Pages
-- [The systems your business runs on.](https://devalor.site/en-US/home-page) (en-US): We're Humans is a technology partner building intelligent software, scalable platforms and secure systems for modern businesses.
+- [about-us](https://devalor.site/about-us) (en-US): Meet humanit, an experienced IT support company providing managed IT, security and technology solutions for businesses.
+- [compliance](https://devalor.site/compliance) (en-US): IT compliance services supporting PDPA, ISO 27001, audits and security requirements for businesses in Thailand.
+- [boi-export](https://devalor.site/compliance/boi-export) (en-US): IT and compliance support for BOI exporters, helping strengthen security, audit readiness and supply-chain continuity.
+- [compliance-pack](https://devalor.site/compliance/compliance-pack) (en-US): Managed Services Compliance Pack supporting PDPA, ISO 27001, audits, security and regulatory requirements.
+- [pdpa-iso](https://devalor.site/compliance/pdpa-iso) (en-US): PDPA and ISO 27001 support for businesses in Thailand, with security controls, data protection and audit-ready IT practices.
+- [contact-us](https://devalor.site/contact-us) (en-US): Contact humanit for managed IT, cybersecurity and technology support for businesses across Eastern Thailand.
+- [industries](https://devalor.site/industries) (en-US): Industry-specific IT services, security and compliance support for manufacturers, exporters, real estate and financial businesses.
+- [exporters](https://devalor.site/industries/exporters) (en-US): IT for exporters to strengthen security, protect data, support audits and maintain reliable supply-chain operations.
+- [factories](https://devalor.site/industries/factories) (en-US): IT solutions for manufacturing that reduce downtime, secure factory systems and support reliable production operations.
+- [insurance](https://devalor.site/industries/insurance) (en-US): IT services for insurance firms and brokers, supporting data security, compliance, audits and reliable business systems.
+- [real-estate](https://devalor.site/industries/real-estate) (en-US): IT services for real estate businesses, helping protect data, improve security and support reliable property operations.
+- [legal](https://devalor.site/legal) (en-US): Legal and contractual information covering agreements, service levels, data protection and compliance at humanit.
+- [msa-overview](https://devalor.site/legal/msa-overview) (en-US): Managed Services Support Policy covering service scope, SLAs, security, PDPA, responsibilities and support tiers.
+- [sla-dpa-summary](https://devalor.site/legal/sla-dpa-summary) (en-US): SLA and DPA summary covering service levels, incident response, data protection, PDPA and customer responsibilities.
+- [pricing-and-plans](https://devalor.site/pricing-and-plans) (en-US): Compare managed IT service plans with flexible pricing for security, support, monitoring, backup and compliance.
+- [services](https://devalor.site/services) (en-US): Managed IT services for businesses in Thailand, including cybersecurity, monitoring, backups, IT support and strategic planning.
+- [backup-and-recovery](https://devalor.site/services/backup-and-recovery) (en-US): Backup and recovery services protect your data, reduce downtime and help your business recover quickly from IT disasters.
+- [backup-dr](https://devalor.site/services/backup-dr) (en-US): Managed backup and disaster recovery in Thailand. Protect critical data, reduce downtime and recover faster from IT incidents.
+- [cctv](https://devalor.site/services/cctv) (en-US): CCTV systems for businesses in Pattaya and Chonburi, with professional installation, monitoring options and ongoing support.
+- [it-hardware-and-software-procurement](https://devalor.site/services/it-hardware-and-software-procurement) (en-US): Simplify IT procurement with expert hardware, software and licensing support tailored to your business needs.
+- [managed-antivirus](https://devalor.site/services/managed-antivirus) (en-US): Managed antivirus protects your business from malware and online threats with proactive monitoring and real-time protection.
+- [managed-risk-and-security](https://devalor.site/services/managed-risk-and-security) (en-US): Regulatory compliance support helps your business prepare for audits, protect sensitive data and reduce security risks.
+- [managed-services](https://devalor.site/services/managed-services) (en-US): Proactive IT management in Thailand with monitoring, maintenance, security and support to reduce downtime and IT risk.
+- [patch-management](https://devalor.site/services/patch-management) (en-US): Patch management keeps your systems secure and up to date, reducing vulnerabilities, downtime and IT risks.
+- [remote-monitoring-access](https://devalor.site/services/remote-monitoring-access) (en-US): Proactive remote IT monitoring and support to detect issues early, resolve problems faster and reduce disruption.
+- [security-operations](https://devalor.site/services/security-operations) (en-US): Cyber security monitoring, threat detection and incident response for businesses in Thailand. Reduce risk and strengthen protection.
+- [strategic-it-planning](https://devalor.site/services/strategic-it-planning) (en-US): Strategic IT planning that aligns technology with your business goals, growth plans and future requirements.
+- [web-protection-and-filtering](https://devalor.site/services/web-protection-and-filtering) (en-US): Web protection and filtering helps block malware, phishing and unsafe websites while giving businesses greater access control.
 
 ## Optional
 - [Sitemap](https://devalor.site/sitemap.xml): every indexable page
