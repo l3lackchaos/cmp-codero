@@ -1,11 +1,11 @@
 {
-  "build_id": "93fe9d9b-d2a7-48a9-88b5-f68fcb58a7b6",
-  "site_id": "278f7e80-ee53-4f30-ab6d-a106827537f5",
-  "tenant_id": "9d691b71-8d12-45a9-a44d-d580cc51591f",
-  "domain": "islandsafari.com",
-  "completed_at": "2026-11-26T04:49:29.759215+00:00",
-  "total_pages": 34,
-  "built_pages": 34,
+  "build_id": "befb7caa-878b-4f9a-a959-c69046106061",
+  "site_id": "51c0fa79-36b0-416f-aba0-73609678b892",
+  "tenant_id": "550e8400-e29b-41d4-a716-446655440001",
+  "domain": "devalor.site",
+  "completed_at": "2026-11-26T08:51:37.482216+00:00",
+  "total_pages": 1,
+  "built_pages": 1,
   "failed_pages": 0,
   "status": "completed"
 }

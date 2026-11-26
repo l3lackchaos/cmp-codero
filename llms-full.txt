@@ -1,274 +1,54 @@
-# Island Safaris Mergui | Small-group island expeditions
+# devalor.site
 
 ---
 
-## Home page (en-US)
-
-Path: /en-US/
-
-Home page
-
----
-
-## About Myanmar (en-US)
-
-Path: /en-US/about-myanmar/
-
-About Myanmar
-
----
-
-## About Island Safaris (en-US)
-
-Path: /en-US/about/
-
-About Island Safaris
-
----
-
-## Terms and Conditions (en-US)
-
-Path: /en-US/booking-terms/
-
-Terms and Conditions
-
----
-
-## Contact (en-US)
-
-Path: /en-US/contact/
-
-Contact
-
----
-
-## Dawei (Tavoy) (en-US)
-
-Path: /en-US/dawei-tavoy/
-
-Dawei (Tavoy)
-
----
-
-## Shared departure (en-US)
-
-Path: /en-US/departure/
-
-Shared departure
-
----
-
-## Departures (en-US)
-
-Path: /en-US/departures/
-
-Departures
-
----
-
-## 2-7 February 2027 (en-US)
-
-Path: /en-US/departures/february-2027/
-
-2-7 February 2027
-
----
-
-## 12-17 January 2027 (en-US)
-
-Path: /en-US/departures/january-2027/
-
-12-17 January 2027
-
----
-
-## 18-22 March 2027 (en-US)
-
-Path: /en-US/departures/march-2027/
-
-18-22 March 2027
-
----
-
-## Photos & Videos (en-US)
-
-Path: /en-US/gallery/
-
-Photos & Videos
-
----
-
-## Itineraries (en-US)
-
-Path: /en-US/itineraries/
-
-Mergui Archipelago
-itineraries
-
----
-
-## Ten days in the Mergui Archipelago (en-US)
-
-Path: /en-US/itinerary-10-days/
-
-Ten days in the Mergui Archipelago
-
----
-
-## Four days in the Mergui Archipelago (en-US)
-
-Path: /en-US/itinerary-4-days/
-
-Four days in the Mergui Archipelago
-
----
-
-## Five days in the Mergui Archipelago (en-US)
-
-Path: /en-US/itinerary-5-days/
-
-Five days in the Mergui Archipelago
-
----
-
-## Six days in the Mergui Archipelago (en-US)
-
-Path: /en-US/itinerary-6-days/
-
-Six days in the Mergui Archipelago
-
----
-
-## Kawthaung - Ranong (en-US)
-
-Path: /en-US/kawthaung-ranong/
-
-Kawthaung and Ranong
-
----
-
-## Explore the Mergui Archipelago (en-US)
-
-Path: /en-US/mergui-archipelago/
-
-Explore the Mergui Archipelago
-
----
-
-## Moken communities (en-US)
-
-Path: /en-US/moken-communities/
-
-Moken communities
-
----
-
-## Myanmar eVisa application guide (en-US)
-
-Path: /en-US/myanmar-e-visa/
-
-Myanmar eVisa application guide
-
----
-
-## Myeik (Mergui) (en-US)
-
-Path: /en-US/myeik-mergui/
-
-Myeik (Mergui)
-
----
-
-## News & Stories (en-US)
-
-Path: /en-US/news-stories/
-
-News & Stories
-
----
-
-## Now is the time to book a trip to this long-lost island (en-US)
-
-Path: /en-US/news-stories/by-joe-cummings/
-
-Joe Cummings explores the island region and the early development of places to stay offshore. An archive account, not a guide to current resort availability.
-
----
-
-## Real Life (en-US)
-
-Path: /en-US/news-stories/by-keith-lyons-jan-2018/
-
-An account of travelling off the grid aboard Sea Gipsy, with island beaches, shared life on deck and time away from everyday connections.
-
----
-
-## New dawn for remote Andaman Sea island tourism (en-US)
-
-Path: /en-US/news-stories/by-keith-lyons-nov-2018/
-
-Keith Lyons examines 2018 island tourism and development. Note: conditions and arrangements have changed since the original publication date.
-
----
-
-## Sailing among Myanmar's islands of mystery (en-US)
-
-Path: /en-US/news-stories/by-miki-meek-mar-2013/
-
-Miki Meek recounts a six-day voyage with friends and family among the islands.
-
----
-
-## On board MV Sea Gipsy (en-US)
-
-Path: /en-US/news-stories/on-board-mv-sea-gipsy/
-
-A look at life aboard Sea Gipsy and journeys through the Mergui Archipelago.
-
----
-
-## Secret cave joins Myanmar tours (en-US)
-
-Path: /en-US/news-stories/secret-cave-joins-tours/
-
-An archive report on a cave excursion in southern Myanmar, separate from the island cruise itineraries.
-
----
-
-## Exploring the Mergui Archipelago with Thomas Schmid (en-US)
-
-Path: /en-US/news-stories/thomas-schmid-2019/
-
-A journalist's account of a journey among the islands, preserved with the original author credit and the later editorial context shown on the existing website.
-
----
-
-## Plan your trip (en-US)
-
-Path: /en-US/plan-your-trip/
-
-Plan your Mergui Archipelago trip
-
----
-
-## Privacy Policy (en-US)
-
-Path: /en-US/privacy-policy/
-
-Privacy Policy
-
----
-
-## Private Mergui Archipelago charters (en-US)
-
-Path: /en-US/private-charters/
-
-Private Mergui Archipelago charters
-
----
-
-## MV Sea Gipsy (en-US)
-
-Path: /en-US/sea-gipsy/
-
-MV Sea Gipsy
+## The systems your business runs on. (en-US)
+
+Path: /en-US/home-page/
+
+Technology & Creative Partner
+The systems your business runs on.
+We're an engineering-led technology and creative partner. We design, build and operate intelligent, secure, scalable platforms — a practical alternative to building in-house or settling for a traditional agency.
+See our work
+Meet uForge
+More than an agency
+We're the team behind the
+platform.
+Most studios stop at the website. We build the systems underneath it: the platforms, applications and data infrastructure that run real operations. We’re engineering-led from the first line of code, and we prove it by building and running our own products, not just our clients’.
+WHAT WE DO
+Four disciplines,
+one partner.
+Intelligent
+Systems
+Custom platforms and applications built around how you actually work software that runs your operations, not just your homepage.
+Cloud & Data
+Platforms
+Cloud-native infrastructure and data pipelines engineered to scale with you and to stay up when the load actually arrives.
+Privacy, Security &
+Compliance
+Security and data protection designed into the core from day one, demonstrable in an audit, not bolted on afterwards. Built for whatever your market requires.
+Design, Content &
+Growth
+Brand, design, content and search are the growth layer that makes the systems usable and the business impossible to miss.
+One partner across all four, so nothing falls through the seams between them.
+Our platform
+We don't just build systems.
+We run our own.
+UFORGE is our own platform:
+sales, hiring and finance unified on a single record, with multi-jurisdiction compliance built into the core. It’s how we run werehumans, and the clearest proof of how we think and what we can build for you.
+One record, end to end
+Compliance designed in, not bolted on
+Every country's books on one ledger
+Explore uForge
+Why werehumans
+Built to be the partner you
+keep.
+Engineering-led
+Real engineering behind every project, not just design files handed over a wall. We build things that hold up under load and audit.
+A partner, not a vendor
+We build long-term relationships and stay to run what we build. The work doesn’t end at launch; it starts there.
+The in-house alternative
+The capability of an internal product team, without the payroll, the hiring cycle, or the single point of failure.
+Tell us what you're trying to build.
+Whether it’s a platform, a product, or the system that finally ties your operation together, start with a conversation.
+Get in Touch
