@@ -2,121 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://devalor.site/</loc>
-    <lastmod>2026-11-27T06:03:40Z</lastmod>
+    <lastmod>2026-11-27T09:41:31Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devalor.site/about-us</loc>
-    <lastmod>2026-11-27T07:41:34Z</lastmod>
+    <loc>https://devalor.site/enquire</loc>
+    <lastmod>2026-11-27T09:41:31Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devalor.site/ai-solutions</loc>
-    <lastmod>2026-11-27T07:41:55Z</lastmod>
+    <loc>https://devalor.site/full-day-service</loc>
+    <lastmod>2026-11-27T09:41:31Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devalor.site/contact-us</loc>
-    <lastmod>2026-11-27T07:42:23Z</lastmod>
+    <loc>https://devalor.site/set-list</loc>
+    <lastmod>2026-11-27T09:41:31Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devalor.site/cookie-policy-2025</loc>
-    <lastmod>2026-11-27T07:42:30Z</lastmod>
+    <loc>https://devalor.site/showcase</loc>
+    <lastmod>2026-11-27T09:41:31Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devalor.site/news</loc>
-    <lastmod>2026-11-27T07:42:16Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/our-work</loc>
-    <lastmod>2026-11-27T07:42:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/privacy-policy-2025</loc>
-    <lastmod>2026-11-27T07:42:51Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/services-overview</loc>
-    <lastmod>2026-11-27T07:41:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/software-development</loc>
-    <lastmod>2026-11-27T07:41:48Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/th</loc>
-    <lastmod>2026-11-27T06:03:40Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/th/about-us</loc>
-    <lastmod>2026-11-27T07:41:34Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/th/ai-solutions</loc>
-    <lastmod>2026-11-27T07:41:55Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/th/contact-us</loc>
-    <lastmod>2026-11-27T07:42:23Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/th/cookie-policy-2025</loc>
-    <lastmod>2026-11-27T07:42:30Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/th/news</loc>
-    <lastmod>2026-11-27T07:42:16Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/th/our-work</loc>
-    <lastmod>2026-11-27T07:42:03Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/th/privacy-policy-2025</loc>
-    <lastmod>2026-11-27T07:42:51Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/th/services-overview</loc>
-    <lastmod>2026-11-27T07:41:41Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://devalor.site/th/software-development</loc>
-    <lastmod>2026-11-27T07:41:48Z</lastmod>
+    <loc>https://devalor.site/watch-us</loc>
+    <lastmod>2026-11-27T09:41:31Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
