@@ -11,6 +11,7 @@
 - [privacy-policy-2025](https://devalor.site/privacy-policy-2025) (en-US): Read the We're Humans Privacy Policy to learn how we collect, use, protect and manage personal information when you use our website.
 - [services-overview](https://devalor.site/services-overview) (en-US): Explore our technology services across software, cloud and data, security, compliance, design, content and digital growth.
 - [software-development](https://devalor.site/software-development) (en-US): Custom software development built around your business, from web applications and internal systems to integrations and automation.
+- [index](https://devalor.site/th) (th-TH): We're Humans is a technology partner building intelligent software, scalable platforms and secure systems for modern businesses.
 
 ## Optional
 - [Sitemap](https://devalor.site/sitemap.xml): every indexable page
