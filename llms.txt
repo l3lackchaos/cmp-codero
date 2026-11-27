@@ -1,12 +1,26 @@
 # devalor.site
 
 ## Pages
-- [index](https://devalor.site/) (en-US)
-- [enquire](https://devalor.site/enquire) (en-US)
-- [full-day-service](https://devalor.site/full-day-service) (en-US)
-- [set-list](https://devalor.site/set-list) (en-US)
-- [showcase](https://devalor.site/showcase) (en-US)
-- [watch-us](https://devalor.site/watch-us) (en-US)
+- [index](https://devalor.site/) (en-US): We're Humans is a technology partner building intelligent software, scalable platforms and secure systems for modern businesses.
+- [about-us](https://devalor.site/about-us) (en-US): Meet We're Humans, a digital agency in Pattaya providing web development, digital marketing, SEO and IT services for businesses worldwide.
+- [ai-solutions](https://devalor.site/ai-solutions) (en-US): Practical AI solutions for businesses, from intelligent automation and AI tools to integrations, assistants and smarter workflows.
+- [contact-us](https://devalor.site/contact-us) (en-US): Contact us at We're Humans in Pattaya for web development, SEO, digital marketing, branding and IT services. Speak directly with our team.
+- [cookie-policy-2025](https://devalor.site/cookie-policy-2025) (en-US): Read the We're Humans Cookie Policy to learn how we use cookies, analytics and other technologies, and how you can manage your preferences.
+- [news](https://devalor.site/news) (en-US): Explore digital news, insights and updates from We're Humans, covering web development, SEO, digital marketing, technology and more.
+- [our-work](https://devalor.site/our-work) (en-US): Explore our work in web design, development, e-commerce, SEO and digital solutions for businesses across a range of industries.
+- [privacy-policy-2025](https://devalor.site/privacy-policy-2025) (en-US): Read the We're Humans Privacy Policy to learn how we collect, use, protect and manage personal information when you use our website.
+- [services-overview](https://devalor.site/services-overview) (en-US): Explore our technology services across software, cloud and data, security, compliance, design, content and digital growth.
+- [software-development](https://devalor.site/software-development) (en-US): Custom software development built around your business, from web applications and internal systems to integrations and automation.
+- [index](https://devalor.site/th) (th-TH): We're Humans is a technology partner building intelligent software, scalable platforms and secure systems for modern businesses.
+- [about-us](https://devalor.site/th/about-us) (th-TH): Meet We're Humans, a digital agency in Pattaya providing web development, digital marketing, SEO and IT services for businesses worldwide.
+- [ai-solutions](https://devalor.site/th/ai-solutions) (th-TH): Practical AI solutions for businesses, from intelligent automation and AI tools to integrations, assistants and smarter workflows.
+- [contact-us](https://devalor.site/th/contact-us) (th-TH): Contact us at We're Humans in Pattaya for web development, SEO, digital marketing, branding and IT services. Speak directly with our team.
+- [cookie-policy-2025](https://devalor.site/th/cookie-policy-2025) (th-TH): Read the We're Humans Cookie Policy to learn how we use cookies, analytics and other technologies, and how you can manage your preferences.
+- [news](https://devalor.site/th/news) (th-TH): Explore digital news, insights and updates from We're Humans, covering web development, SEO, digital marketing, technology and more.
+- [our-work](https://devalor.site/th/our-work) (th-TH): Explore our work in web design, development, e-commerce, SEO and digital solutions for businesses across a range of industries.
+- [privacy-policy-2025](https://devalor.site/th/privacy-policy-2025) (th-TH): Read the We're Humans Privacy Policy to learn how we collect, use, protect and manage personal information when you use our website.
+- [services-overview](https://devalor.site/th/services-overview) (th-TH): Explore our technology services across software, cloud and data, security, compliance, design, content and digital growth.
+- [software-development](https://devalor.site/th/software-development) (th-TH): Custom software development built around your business, from web applications and internal systems to integrations and automation.
 
 ## Optional
 - [Sitemap](https://devalor.site/sitemap.xml): every indexable page
