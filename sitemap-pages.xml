@@ -2,34 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://devalor.site/</loc>
-    <lastmod>2026-11-26T10:32:04Z</lastmod>
+    <lastmod>2026-11-27T05:02:58Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devalor.site/about-us</loc>
-    <lastmod>2026-11-26T10:32:04Z</lastmod>
+    <lastmod>2026-11-27T05:02:58Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devalor.site/ai-solutions</loc>
-    <lastmod>2026-11-26T10:32:04Z</lastmod>
+    <lastmod>2026-11-27T05:02:58Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devalor.site/contact-us</loc>
-    <lastmod>2026-11-26T10:32:03Z</lastmod>
+    <lastmod>2026-11-27T05:02:58Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devalor.site/cookie-policy-2025</loc>
+    <lastmod>2026-11-27T05:02:58Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devalor.site/news</loc>
-    <lastmod>2026-11-26T10:32:03Z</lastmod>
+    <lastmod>2026-11-27T05:02:58Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devalor.site/our-work</loc>
-    <lastmod>2026-11-26T10:32:04Z</lastmod>
+    <lastmod>2026-11-27T05:02:58Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devalor.site/privacy-policy-2025</loc>
+    <lastmod>2026-11-27T05:02:58Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devalor.site/services-overview</loc>
-    <lastmod>2026-11-26T10:32:04Z</lastmod>
+    <lastmod>2026-11-27T05:02:58Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devalor.site/software-development</loc>
-    <lastmod>2026-11-26T10:32:04Z</lastmod>
+    <lastmod>2026-11-27T05:02:58Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

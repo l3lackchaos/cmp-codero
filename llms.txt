@@ -5,8 +5,10 @@
 - [about-us](https://devalor.site/about-us) (en-US): Meet We're Humans, a digital agency in Pattaya providing web development, digital marketing, SEO and IT services for businesses worldwide.
 - [ai-solutions](https://devalor.site/ai-solutions) (en-US): Practical AI solutions for businesses, from intelligent automation and AI tools to integrations, assistants and smarter workflows.
 - [contact-us](https://devalor.site/contact-us) (en-US): Contact us at We're Humans in Pattaya for web development, SEO, digital marketing, branding and IT services. Speak directly with our team.
+- [cookie-policy-2025](https://devalor.site/cookie-policy-2025) (en-US): Read the We're Humans Cookie Policy to learn how we use cookies, analytics and other technologies, and how you can manage your preferences.
 - [news](https://devalor.site/news) (en-US): Explore digital news, insights and updates from We're Humans, covering web development, SEO, digital marketing, technology and more.
 - [our-work](https://devalor.site/our-work) (en-US): Explore our work in web design, development, e-commerce, SEO and digital solutions for businesses across a range of industries.
+- [privacy-policy-2025](https://devalor.site/privacy-policy-2025) (en-US): Read the We're Humans Privacy Policy to learn how we collect, use, protect and manage personal information when you use our website.
 - [services-overview](https://devalor.site/services-overview) (en-US): Explore our technology services across software, cloud and data, security, compliance, design, content and digital growth.
 - [software-development](https://devalor.site/software-development) (en-US): Custom software development built around your business, from web applications and internal systems to integrations and automation.
 
