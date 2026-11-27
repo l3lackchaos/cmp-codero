@@ -1,11 +1,11 @@
 {
-  "build_id": "1e86bcc3-b1ef-42fc-a490-b1af858698be",
+  "build_id": "c12cde5c-b4b6-446a-9b09-bfadf6a87ca3",
   "site_id": "51c0fa79-36b0-416f-aba0-73609678b892",
   "tenant_id": "550e8400-e29b-41d4-a716-446655440001",
   "domain": "devalor.site",
-  "completed_at": "2026-11-27T07:38:04.067939+00:00",
-  "total_pages": 11,
-  "built_pages": 11,
+  "completed_at": "2026-11-27T07:43:23.264039+00:00",
+  "total_pages": 20,
+  "built_pages": 20,
   "failed_pages": 0,
   "status": "completed"
 }
